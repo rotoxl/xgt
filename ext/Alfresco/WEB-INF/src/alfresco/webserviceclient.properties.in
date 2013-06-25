@@ -1,6 +1,0 @@
-#
-# Set the following property to reference the Alfresco server that you would like web service client
-# to communicate with
-
-#servidor desarrollo SCC
-repository.location=http://192.168.12.72:18080/alfresco/api

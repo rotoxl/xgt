@@ -1,0 +1,40 @@
+﻿<Context path="/v200912" reloadable="true" >
+<Resource name="jdbc/Burke/Picos" auth="Container" type="javax.sql.DataSource"
+          maxActive="50" maxIdle="2" maxWait="5000" removeAbandoned="true"  removeAbandonedTimeout="60" logAbandoned="true"
+          username="PICOS_ESTABLE" password="PICOS_ESTABLE" 
+          driverClassName="oracle.jdbc.driver.OracleDriver"
+          url="jdbc:oracle:thin:@//alpha6.burke.net:1525/bdesa11g"/> <!-- alpha6.burke.net -->
+               
+<Resource
+    name="jdbc/Burke/GDR"
+    type="javax.sql.DataSource"
+    maxActive="40"
+    maxIdle="2"
+    username="sa"
+    maxWait="5000"
+    validationQuery="SELECT 1"
+    driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+    password="Alten2012"
+    url="jdbc:sqlserver://192.168.11.201;databasename=GDR_Gotta;"/>
+
+<Resource name="jdbc/Burke/Cervantes" auth="Container" type="javax.sql.DataSource"
+          maxActive="50" maxIdle="2" maxWait="5000" removeAbandoned="true"  removeAbandonedTimeout="60" logAbandoned="true"
+          username="embla_cervantes" password="embla_cervantes" 
+          driverClassName="oracle.jdbc.driver.OracleDriver"
+          url="jdbc:oracle:thin:@//192.168.11.34:1521/EMBLADES.BURKE.NET"/>
+              
+<Resource
+    name="jdbc/Burke/Rhea"
+    type="javax.sql.DataSource"
+    maxActive="20"
+    maxIdle="0"
+    username="rhea"
+    maxWait="5000"
+    driverClassName="oracle.jdbc.driver.OracleDriver"
+    password="rhea"
+    removeAbandoned="true"
+    removeAbandonedTimeout="60"
+    logAbandoned="true"
+    url="jdbc:oracle:thin:@//192.168.11.34:1521/EMBLADES.BURKE.NET"/>
+
+</Context>

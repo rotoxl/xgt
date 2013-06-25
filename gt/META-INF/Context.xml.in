@@ -1,4 +1,0 @@
-﻿<Context path="/gotta" reloadable="true" >
-	<Resource name="jdbc/Burke/xgt_local" 	username="root" 			password="salta" 		url="jdbc:mysql://localhost:3306/gotus_gt" 		type="javax.sql.DataSource" driverClassName="com.mysql.jdbc.Driver" maxIdle="5" maxWait="10000" maxActive="10"/>
-	<Resource name="jdbc/Burke/xgt_rds" 	username="sa" 			password="tripletr3s" 		url="jdbc:mysql://aa1gm2a06fyieb4.cvhhzihqggpz.eu-west-1.rds.amazonaws.com:3306/gotus_gt" 		type="javax.sql.DataSource" driverClassName="com.mysql.jdbc.Driver" maxIdle="5" maxWait="10000" maxActive="10"/>
-</Context>

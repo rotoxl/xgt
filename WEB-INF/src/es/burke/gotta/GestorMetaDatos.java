@@ -829,16 +829,21 @@ public class GestorMetaDatos {
 		String nuevaT = "INSERT INTO "+conex.getPrefijo()+"DIC_TABLAS (nombre,campoclave,lecturan,lectura1,escritura,usp,descripcion, columnaDescripcion, columnaBusqueda) VALUES (?,?,?,?,?,?,?, ?,?)";
 		String modifT = "UPDATE "+conex.getPrefijo()+"DIC_TABLAS SET campoclave=?,lecturan=?,lectura1=?,escritura=?,usp=?,descripcion=?, columnaDescripcion=?, columnaBusqueda=? WHERE nombre=?";
 		
+		String clave="--";
+		if (fila.has("clave") && !fila.get("clave").equals(JSONObject.NULL)){
+			clave=fila.getString("clave");
+			}
+		
 		if (fila.getBoolean(esBorrado)){
 			sqlsBorrar.add(borrarT); paramsSQLBorrar.add( creaLista( fila.getString("nombre") )) ;
 			}
 		else if (fila.getBoolean(esNuevo)){
-			sqls.add(nuevaT); paramsSQL.add( creaLista(fila.getString("nombre"), fila.get("clave").equals(JSONObject.NULL)?"--":fila.getString("clave"), fila.getString("lecturaN"), fila.getString("lectura1"), fila.getString("escritura"),fila.getString("usp"),
+			sqls.add(nuevaT); paramsSQL.add( creaLista(fila.getString("nombre"), clave, fila.getString("lecturaN"), fila.getString("lectura1"), fila.getString("escritura"),fila.getString("usp"),
 					fila.getString("descripcion"), 
 					fila.optString("columnadescripcion"), fila.optString("columnabusqueda")) );
 			}
 		else if (fila.getBoolean(esModif)){
-			sqls.add(modifT); paramsSQL.add( creaLista(fila.get("clave").equals(JSONObject.NULL)?"--":fila.getString("clave"), fila.getString("lecturaN"), fila.getString("lectura1"), fila.getString("escritura"), fila.getString("usp"), fila.getString("descripcion"), 
+			sqls.add(modifT); paramsSQL.add( creaLista(clave, fila.getString("lecturaN"), fila.getString("lectura1"), fila.getString("escritura"), fila.getString("usp"), fila.getString("descripcion"), 
 					fila.optString("columnadescripcion"), fila.optString("columnabusqueda"),
 					fila.getString("nombre")) );
 			}
@@ -848,7 +853,11 @@ public class GestorMetaDatos {
 		String nuevaCol = "INSERT INTO "+conex.getPrefijo()+"DIC_COLUMNAS (nombretabla,nombrecolumna,tipo,longitud,descripcion)VALUES (?,?,?,?,?)";
 		String modifCol = "UPDATE "+conex.getPrefijo()+"DIC_COLUMNAS SET tipo=?,longitud=?,descripcion=? WHERE nombretabla=? and nombreColumna=?";
 		
-		//{'nombre':'CD_Provincia','tabla':'AUX_Ciudades','descripcion':'Provincia','tipo':'String','longitud':'2','esNuevo':true,'esModif':true}
+		if (!fila.has("longitud")) 
+			fila.put("longitud", 1);
+		else if (fila.getInt("longitud")>10000)
+			fila.put("longitud", 10000);
+		
 		if ( fila.getBoolean(esBorrado)){
 			sqlsBorrar.add(borrarCol); paramsSQLBorrar.add( creaLista(fila.getString("tabla"), fila.getString("nombre"))) ;
 			}

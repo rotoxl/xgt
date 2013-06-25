@@ -1,0 +1,7 @@
+Buenas
+
+Ahora se usa el método estándar de leer las propiedades de log4, por lo que
+el fichero log4.properties hay que meterlo en el classpath. El lugar más común
+es en WEB-INF/classes. La mayoría de los IDE copian automáticamente este tipo
+de ficheros desde WEB-INF/src a WEB-INF/classes (y se cepillan lo que haya), 
+así que conviene que haya una copia en ambos.

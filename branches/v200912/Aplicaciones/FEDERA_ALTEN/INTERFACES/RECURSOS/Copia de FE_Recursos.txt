@@ -1,0 +1,8 @@
+901;2007;90106001;        ;14790,00;14790.0011;16/05/2007;16/05/2007;          ;A28191104;90106001 Honorarios preliminares para estudio estructura edificio y posterior refuerzo;  ;Director Gerente OS ;Aprobada;
+901;2007;90106002;        ;2196.58;2196.58;23/10/2007;03/11/2007;          ;B28826576;90106002 Ejecución calas de estructura para su posterior estudio.;  ;;Aprobada;
+901;2007;90106003;        ;14570.93;14570.93;23/10/2007;03/11/2007;          ;B-80000;90106003 Honorarios proyecto de arquitectura que desarrolla el refuerzo de la estructura.;  ;;Aprobada;
+901;2007;90106004;        ;1160.00;1160.00;23/10/2007;03/11/2007;          ;B-80000;90106004 Derechos de visado proyecto de arquitectura.;  ;;Aprobada;
+901;2007;90106005;        ;6960.00;6960.00;23/10/2007;03/11/2007;          ;B-80000;90106005 Honorarios gestor licencia de obras.;  ;;Aprobada;
+901;2007;90106006;        ;a6960.00;6.960,00;23/101/2007;03/11/2007;          ;B-80000;90106006 Honorarios gestores licencia de apertura.;  ;;Aprobada;
+901;2007;90106007;        ;9000.00;9000.00;23/10/2007;03/11/2007;          ;99;90106007 Pago municipal licencia de obra.;  ;;Aprobada;
+901;2007;90106008;        ;215178.48;215178.48;2007/10/23;03/11/2007;          ;A80066665;90106008 Obra civil. Estimación de refuerzo de estructura parcial.;  ;;Aprobada;

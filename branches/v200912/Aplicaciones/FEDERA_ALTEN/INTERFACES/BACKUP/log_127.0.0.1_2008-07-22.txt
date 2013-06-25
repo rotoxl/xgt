@@ -1,0 +1,22 @@
+2008-07-22 09:05:44 : cargando tabla VS_TABLAS(num.reg.cargados=1)
+2008-07-22 09:05:45 : Error cargando lista:La operación solicitada no es compatible en conjuntos exclusivamente de reenvío. sql={call APP_Columnas('Admin','1DAT_FACTURAS',NULL)}
+2008-07-22 09:05:45 : (109 ms) RELLENANDO {NEW} la lista lt_Columnas
+2008-07-22 09:05:45 : (0 ms) generando {NEW} HTML de la lista lt_Columnas
+2008-07-22 09:05:46 : Error cargando lista:La operación solicitada no es compatible en conjuntos exclusivamente de reenvío. sql={call APP_ColumnasSelect('Admin','1DAT_FACTURAS')}
+2008-07-22 09:05:46 : (1327 ms) RELLENANDO {NEW} la lista lt_ColumnasSelect
+2008-07-22 09:05:46 : (0 ms) generando {NEW} HTML de la lista lt_ColumnasSelect
+2008-07-22 09:05:46 : Error cargando lista:La operación solicitada no es compatible en conjuntos exclusivamente de reenvío. sql={call APP_CondCreadas('Admin','1DAT_FACTURAS')}
+2008-07-22 09:05:46 : (94 ms) RELLENANDO {NEW} la lista lt_CondCreadas
+2008-07-22 09:05:46 : (0 ms) generando {NEW} HTML de la lista lt_CondCreadas
+2008-07-22 09:05:50 : Error cargando lista:La operación solicitada no es compatible en conjuntos exclusivamente de reenvío. sql={call APP_GenerarInforme('Admin','1DAT_FACTURAS')}
+2008-07-22 09:05:50 : (328 ms) RELLENANDO {NEW} la lista lst_GenerarInforme
+2008-07-22 09:05:50 : (0 ms) generando {NEW} HTML de la lista lst_GenerarInforme
+2008-07-22 09:05:51 : Error cargando lista:La operación solicitada no es compatible en conjuntos exclusivamente de reenvío. sql={call APP_Columnas('Admin','1DAT_FACTURAS',NULL)}
+2008-07-22 09:05:51 : (125 ms) RELLENANDO {NEW} la lista lt_Columnas
+2008-07-22 09:05:51 : (0 ms) generando {NEW} HTML de la lista lt_Columnas
+2008-07-22 09:05:52 : Error cargando lista:La operación solicitada no es compatible en conjuntos exclusivamente de reenvío. sql={call APP_ColumnasSelect('Admin','1DAT_FACTURAS')}
+2008-07-22 09:05:52 : (125 ms) RELLENANDO {NEW} la lista lt_ColumnasSelect
+2008-07-22 09:05:52 : (0 ms) generando {NEW} HTML de la lista lt_ColumnasSelect
+2008-07-22 09:05:53 : Error cargando lista:La operación solicitada no es compatible en conjuntos exclusivamente de reenvío. sql={call APP_CondCreadas('Admin','1DAT_FACTURAS')}
+2008-07-22 09:05:53 : (1124 ms) RELLENANDO {NEW} la lista lt_CondCreadas
+2008-07-22 09:05:53 : (0 ms) generando {NEW} HTML de la lista lt_CondCreadas

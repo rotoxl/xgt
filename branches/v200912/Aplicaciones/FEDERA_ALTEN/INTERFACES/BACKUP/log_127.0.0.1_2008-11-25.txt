@@ -1,0 +1,2 @@
+2008-11-25 18:23:07 : Error en ejecutaSQLOut: El índice 1 está fuera de intervalo. 0. Ejecutando {call app_DuplicarNifAP("Q1418001B", "2",37146,"cordoba")}
+2008-11-25 18:24:48 : Error en ejecutaSQLOut: El índice 1 está fuera de intervalo. 0. Ejecutando {call app_DuplicarNifAP("Q1418001B", "2",37146,"cordoba")}

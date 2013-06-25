@@ -1,0 +1,1133 @@
+	/* Roberto Nuevos Estilos */
+/* Referencia para los nuevos estilos:
+
+    * Modos detalle y formularios
+          o "titulo-mododetalle": Para los títulos de los Modo Detalle
+          o "titulo-grupo" Para poner nombre a las agrupaciones de elementos (si fuera necesario)
+          o "etiqueta": Todos los Labels de la aplicación, en modos detalles
+          o "etiqueta-drcha": Misma que la anterior pero alineada a la derecha, en algunos modos detalles 
+          o "dato-lectura": Para modos detalle, los datos leidos de la BBDD.
+          o "dato-edición": Para datos de formularios avanzados u otra situaciones donde se edite el dato (excepto filtros)
+          o "enlace" Para los enlaces (también se definirá el "hover"
+          o "comentario" Para comentarios, notas y aclaraciones ("Fecha en formato dd/mm/yyyy", "Pulse para descargar el doc", etc.
+          o "grupo-mododetalle": Para los rectangulos que agrupan campos en los modos detalle 
+    * Filtros
+          o "etiqueta-filtro" Para las etiquetas en los filtros
+          o "dato-filtro": Para campos de edición en los filtros.
+          o "grupo-filtro": Para los rectangulos que agrupan campos en los form. de filtro.
+    * Tablas / Listados
+          o "titulo-lista" Para los títulos de las listas (si lo llevan)
+          o "columna-dato" Para los datos a mostrar en listados
+          o "columna-dato-res" Para las columnas cuyos datos van resaltados en negrita u otro color "especial".
+          o "columna-ico" Para columnas con iconos.
+          o "columna-fecha" Para columnas con fecha
+          o "columna-numero" Para los datos numéricos (se alinea a la derecha)
+    * Menus
+          o "menu" Para las opciones principales del menu
+          o "submenu" para los submenús del menu principal
+          o "menu-item" Para las opciones de menu
+    * Modificadores
+          o "derecha" Alinea a la derecha el texto
+          o "centrado" Alinea en el centro
+          o "justificado" Alinea el texto de forma justificada
+          o "res-mododetalle" Resalta el texto en modos detalle
+          o "res-columna" Resalta el texto en columnas de listados
+          o "res-fila" Resalta el texto en filas de listados
+
+*/
+
+html.ie8 { overflow: visible !important; }
+/*body { overflow: scroll !important; }*/
+html.ie8 body div#splitterV { position: relative; height: 100%; overflow:visible !important;}
+
+/* Modos detalle y formularios */
+
+
+.titulo-mododetalle {
+	color:#31b289; /* Color verde SESCAM */
+	font-size: 17px;
+	font-family: Tahoma, Verdana, Arial;
+	border: none;
+	font-weight: bold; /* NO QUITAR LA NEGRITA */
+}
+
+.titulo-seccion {
+	font-family: Tahoma, Verdana, Arial;
+	color: #31b289; /* Color verde SESCAM */
+	font-size:14px;
+	font-weight: bold;
+	text-align: left;
+	border: none;
+}
+
+.titulo-grupo {
+	font-family: Tahoma, Verdana, Arial;
+	color: #e78931; /* Color naranja SESCAM */
+	font-size:12px;
+	font-weight: bold;
+	border: none;
+}
+
+
+.etiqueta {
+	font-family: Tahoma, Verdana, Arial;
+	color: #333333; /* Gris muy oscuro */
+	font-size:12px;
+	font-weight: normal;
+	border: none;
+}
+
+.etiquetilla {
+	font-family: Tahoma, Verdana, Arial;
+	color: #333333; /* Gris muy oscuro */
+	font-size:8px !important;
+	font-weight: normal;
+	border: none;
+}
+
+.dato-lectura  {
+	font-family: Tahoma, Verdana, Arial;
+	color: black;
+	text-align: left !important;
+	font-size:12px;
+	font-weight: normal;
+	border: 1px solid #CCCCCC;
+	background-color: #F7F7F7;
+	padding-left: 2px;
+}
+
+.dato-edición {
+	font-family: Tahoma, Verdana, Arial;
+	color: black;
+	font-size:12px;
+	font-weight: normal;
+	border: 1px solid #CCCCCC;
+	background-color: white;
+}
+
+.enlace, .enlace:link, .enlace:visited {
+	color:#31b289; /* Color verde SESCAM */
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+.enlace:hover {
+	color: #e78931; /* Color naranja SESCAM */
+	text-decoration: underline;
+}
+
+.enlace:active {
+	text-decoration: none;
+}
+
+
+.comentario {
+	font-family: Tahoma, Verdana, Arial;
+	color:#8b8b8b; /* Color gris */
+	font-size:10px;
+	font-weight: normal;
+	font-style: italic;
+	border: none; 
+}
+
+.grupo-mododetalle {
+	border: none;
+	background-color: #EEEEEE; /* Color gris claro para fondo */
+}
+
+.grupo-seccion {
+	border: 1px solid #80D0B0; /* Color verde NO	 SESCAM */
+	background-color: #FAFAFA; /* Color gris claro para fondo */
+}
+
+.boton {
+	font-family: Tahoma, Verdana, Arial;
+	color: #333333; /* Gris muy oscuro */
+	font-size:12px;
+	font-weight: normal;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+	padding-bottom: 5px;
+}
+
+.control-amarillo {
+		     background-color: #FAFAFA !important; /*color amarillo para cualquier control*/
+	          }
+
+
+/* Filtros */
+
+.etiqueta-filtro {
+	font-family: Verdana, Tahoma, Arial;
+	color: darkgray;
+	font-size:12px;
+	font-weight: bold;
+	border: none;
+}
+
+.dato-filtro input.txt_bsm {
+	font-family: Verdana, Tahoma, Arial !important;
+	color: black;
+	font-size:12px;
+	font-weight: normal;
+	border: 1px solid #CCCCCC !important;
+	background-color: #e5b91c; /* Color amarillo SESCAM */
+}
+
+.grupo-filtro {
+	border: 1px solid #e5b91c; /* Color amarillo SESCAM */
+	background-color: #F7F7F7; /* Color gris claro para fondo */
+}
+
+.boton-filtro {
+	font-family: Tahoma, Verdana, Arial;
+	color: #333333; /* Gris muy oscuro */
+	font-size:12px;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+	padding-bottom: 5px;
+}
+
+/* Oculta las PK de las tablas de los buscadores */
+
+.oculta {
+ visibility: hidden;
+ display:none;
+}
+
+/* Tablas / Listados */
+
+.titulo-lista {
+	font-family: Verdana, Tahoma, Arial;
+	color:#31b289;
+	font-size:12pt;
+	font-weight: bold;
+}
+
+.columna-dato {
+	font-family: Verdana, Tahoma, Arial;
+	color: darkgray;
+	font-size:12px;
+	font-weight: normal;
+}
+
+.columna-dato-res {
+	color:#e78931; /* Color naranaja SESCAM */
+}
+
+.columna-ico {
+	width: 16px;
+	text-align: center;
+}
+
+.columna-fecha {
+	width: 135px;
+	color: #666666; /* Color gris oscuro standard */
+	text-align: center;
+}
+
+.columna-numero {
+	text-align: right;
+}
+
+/* Menus */
+
+.menu {
+
+}
+
+.submenu {
+
+}
+
+.menu-item {
+
+}
+
+/* Modificadores para las clases anteriores */
+
+.derecha, div.derecha {
+	text-align: right !important;
+}
+
+.izquierda, div.izquierda {
+	text-align: left !important;
+}
+
+.centrado, div.centrado {
+	text-align: center !important;
+}
+
+.justificado, div.justificado {
+	text-align: justify !important;
+}
+
+
+.res-mododetalle {
+	font-weight: bold;
+}
+
+.res-columna {
+	font-weight: bold;
+	color: #e78931; /* Color naranja SESCAM */
+}
+
+.res-fila {
+	background-color: #e5b91c; /* Color amarillo SESCAM */
+	color: black;
+}
+
+.topper { /* Para superponer elementos  */
+	z-index: 10 !important;
+}
+
+
+/* Fin Roberto Nuevos Estilos */
+
+/* PROPIOS DEL TRAMITADOR */
+/* Son necesarios apra aplicar decoradores sobre el arbol */
+
+.ta_ img {
+	background-image: url(ico/expediente/expediente_blanco_16x16.png);
+}
+	
+.ta_-1 img {
+	background-image: url(ico/expediente/expediente_blanco_16x16.png);
+}
+	
+.ta_50 img {
+	background-image: url(ico/expediente/expediente_amarillo_16x16.png);
+}
+	
+.ta_09 img {
+	background-image: url(ico/expediente/expediente_gris_16x16.png);
+}
+
+.ta_55 img {
+	background-image: url(ico/expediente/expediente_verde_16x16.png);
+}
+
+.ta_01 img {
+	background-image: url(ico/expediente/expediente_gris_16x16.png);
+}
+
+.ta_02 img {
+	background-image: url(ico/expediente/expediente_gris_16x16.png);
+}
+
+.ta_03 img {
+	background-image: url(ico/expediente/expediente_gris_16x16.png);
+}
+.ta_04 img {
+	background-image: url(ico/expediente/expediente_gris_16x16.png);
+}
+
+.ta_05 img {
+	background-image: url(ico/expediente/expediente_gris_16x16.png);
+}
+
+.ta_06 img {
+	background-image: url(ico/expediente/expediente_gris_16x16.png);
+}
+
+.ta_07 img {
+	background-image: url(ico/expediente/expediente_gris_16x16.png);
+}
+
+.ta_57 img {
+	background-image: url(ico/expediente/expediente_azul_16x16.png);
+}
+
+.ta_52 img {
+	background-image: url(ico/expediente/expediente_amarillo_16x16.png);
+}
+
+.ta_51 img {
+	background-image: url(ico/expediente/expediente_magenta_16x16.png);
+}
+
+.ta_54 img {
+	background-image: url(ico/expediente/expediente_cian_16x16.png);
+}
+
+.ta_53 img {
+	background-image: url(ico/expediente/expediente_naranja_16x16.png);
+}
+
+.ta_59 img {
+	background-image: url(ico/expediente/expediente_rosa_16x16.png);
+}
+
+.ta_56 img {
+	background-image: url(ico/expediente/expediente_cian_16x16.png);
+}
+
+.ta_58 img {
+	background-image: url(ico/expediente/expediente_negro_16x16.png);
+}
+	
+
+#menuDetalleExpediente {
+	position: float;
+	background-color: #FAFAFA;
+	border: 1px solid darkgray;
+	font-weight: bold;
+	top: 20px;
+	right: 20px;
+	width: 150px;
+	height: 25px;
+	z-indez: 101;
+}
+
+/* FIN PROPIOS DEL TRAMITADOR */
+
+/* MODIFICACIONES GOTTA Defaults*/
+
+#botoneraDisenho {
+	z-index: 2;
+	top: 70px;
+}
+
+a.web.flotante {
+
+	background-image:url(web2.png);
+
+}
+
+.panelSup {
+height:88px !important;
+}
+
+.botonera {
+height:18px !important;
+}
+
+/* Cabecera */
+body {
+font-family:Verdana,Tahoma,sans-serif;
+scrollbar-face-color #0051A0;
+scrollbar-shadow-color: #4093C9;
+scrollbar-highlight-color: #8BA5E4;
+scrollbar-darkshadow-color: #D6DFF7;
+scrollbar-track-color: #D6DFF7;
+scrollbar-arrow-color: #DBA779;
+scrollbar-3dlight-color: #D6DFF7;
+}
+
+h1{
+	padding-left:34px;
+	padding-top:2px;
+	padding-bottom: 2px;
+	margin-top: 8px;
+
+	display: block;
+	left:0px;
+	top:110px;
+	width:100%;
+	height:18px;
+	font-size: 8pt;
+	color:#FFFFFF;
+	text-align: left;
+	font-weight:bold;
+	position:absolute;
+	background: #1e4074 url(ico/h1_bolo.gif) no-repeat left top;
+}
+
+#splitterV{
+top:88px !important;
+}
+
+#sepSplitterV, #panelDer, #panelIzq__DETALLES{
+top:3px !important;
+}
+
+#modolista__CONREV{
+top:88px !important;
+}
+
+div#botonera.panelSup {
+	background-image:url(cabecera.png);
+	background-color:white;
+	height:120px;
+}
+
+div#botoneraIzq, div#botoneraAdmin, div#botoneraDra{
+	top:72px;
+
+}
+div.menuSombra{
+	margin-top:116px;
+
+}
+a.botonera, a.botonera.estado_on {
+color:black;
+}
+
+/* Fin cabecera */
+
+.tab {
+	font-family: Tahoma, Arial;
+}
+
+table.tab {
+margin:0px;
+padding:0;
+position:absolute;
+height: 12px;
+text-align: center;
+}
+
+.tab > .tab{
+/*	width:100%; */
+}
+.tab .pestanha{
+	background: white;
+	border: 1px solid #b1bcd0;
+/*	width:100%; */
+/*	border: #e78931 1px solid;  */
+}
+
+td.pesInicioOff {
+	background-image: url(./ico/pesInicioOff.png);
+
+}
+
+td.pesInicioOn {
+	background-image: url(./ico/pesInicioOn.png);
+}
+
+td.pesFinOff {
+	background-image: url(./ico/pesFinOff.png);
+
+}
+
+
+td.pesFinOn {
+	background-image: url(./ico/pesFinOn.png);
+}
+
+td.pesFondoOn {
+	background-image: url(./ico/pesFondoOn.png);
+	background-repeat: repeat-x;
+	
+}
+td.pesFondoOn a {
+	padding: 0px 12px;
+}
+td.pesFondoOff {
+	background-image: url(./ico/pesFondoOff.png);
+	background-repeat: repeat-x;
+	padding: 0px;
+	height: 22px;
+}
+td.pesFondoOff a {
+	padding: 0px 12px;
+}
+
+td.obligatorio, td.noObligatorio {
+font-size:8pt;
+font-weight:bold;
+color: #666666;
+padding-top:6px;
+text-align:right;
+vertical-align:top;
+width:18%;
+}
+
+td.noObligatorio {
+font-weight:normal;
+}
+
+a.tab{
+	color: black;  /* #e78931;  */
+	width:100%;
+}
+
+.lvw td {
+	font-family: Tahoma !important;
+}
+
+.sortable{
+	width:100% !important;
+}
+
+/*
+td.resalte6{
+    background-color:#EBC9C6;
+}
+
+td.resalte5{
+background-color:#F7EF9E;
+}
+
+td.resalte4{
+    background-color:#C6FFC3;
+    }
+*/
+
+a.navegacion{
+	background-image:url(./ico/web2.png);
+  background-position:left center;
+	color: #00267F !important;
+}
+
+button.cmd, button.cmd:hover {
+	background-color:transparent !important;
+}
+
+NoBackground {
+background-color:none;
+border:0px;
+}
+#control320 {
+text-align:center;
+}
+
+
+.verde{
+color:#31b289;
+}
+.gris{
+color:#8b8b8b;
+}
+.naranja{
+color:#e78931;
+}
+.bordeNaranja{
+border:#e78931 1px solid;
+}
+.dorado{
+color:#e5b91c;
+font-size:12px;
+}
+.azul{
+color:#093864;
+}
+
+.filaRD .txt,.filaRDS .txt{
+	text-decoration: none !important;
+}
+
+
+div div.filaRDS,div div.filaRD {
+	background-color:white !important;
+	border:0 solid black !important;
+}
+div.filaRD:hover {
+
+	background-color:white !important;
+	border: none;
+}
+
+a{
+	text-decoration: none !important;
+	color:#00267F ;
+	
+}
+a:hover{
+text-decoration: underline;
+}
+.flotante .cabecera .icono{
+float:right;
+}
+.flotante .cabecera p{
+display:none;
+}
+.flotante .cabecera{
+height:14px;
+border: none;
+}
+.flotante .pie{
+border: none;
+position:absolute;
+top:0px;
+height:10px;
+width:22px;
+left:100%;
+}
+.flotante .equis {
+right:2px;
+top:2px;
+}
+.tituloLista.verde{
+font-size:12pt;
+}
+.etiquetaLista.gris{
+font-weight:bolder;
+}
+
+
+.naranja thead tr.lvw{
+	background-image:none;
+	background-color:#33a282;
+}
+.naranja table.sortable thead th:hover{
+	background-color:#E78931;
+}
+
+
+a.volcarExcel {
+	background: url(ico/excel_16.png) no-repeat !important;
+	text-align: center !important;
+}
+
+
+.naranja thead:hover th:hover a.sortheader:hover, thead:hover th:hover a.volcarExcel:hover{
+	background: #F0F0F0;
+}
+.naranja thead th a.sortheader,thead th a.volcarExcel{
+	color:#2ba984;
+
+}
+.naranja table.sortable td,table.sortable th{
+	border: 1px solid #e78931;
+}
+.sortable th{
+	background: #FFFFFF;
+
+}
+/****Anchos especiales de tabla***/
+.ancho_ico{
+	width: 16px;
+	text-align: center;
+}
+.ancho_fecha{
+	width: 135px;
+	color: #666666;
+
+}
+.sortable th a{
+	color: #4F8C9E; /*ICB#2ab189;*/
+	font-weight: bold;
+	padding: 1px;
+}
+.naranja table.sortable {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+ td.lvwFecha {
+text-align:left;
+}
+a.botonera, a.botoneraON,a.menuML, a.menuMLS, a.menuMLespecial {
+color:#8b8b8b;
+}
+a.menuMLS {
+background-color:#ddd;
+}
+
+control-verde{
+background-color:#99cc00;
+}
+
+/*
+Los estilos acabados en R son los que SIEMPRE poseen negrita. Ergo NO QUITAR LA NEGRITA de esos estilos.
+*/
+
+.titulo1 {
+	font-size: 13pt;
+	color: #31B289;
+	border-style: none;
+}
+
+.titulo1 a {
+	text-decoration:underline;
+}
+
+.titulo1 a:hover {
+	color: #666666;
+}
+
+.titulo1R {
+	font-size: 15pt;
+	font-family: Verdana;
+	color: #31B289;
+	border: none;
+
+	font-weight: bold; /* NO QUITAR LA NEGRITA */
+}
+
+.titulo1R a {
+	text-decoration:underline;
+}
+
+.titulo1R a:hover {
+	color: #666666;
+}
+
+.titulo2 {
+	font-size: 10pt;
+	font-family: Verdana;
+	color: #31B289;
+	border: none;
+}
+
+.titulo2 a {
+	text-decoration:underline;
+}
+
+.titulo2 a:hover {
+	color: #666666;
+}
+
+.titulo2R {
+	font-size: 10pt;
+	font-family: Verdana;
+	color: #31B289;
+	border: none;
+
+	font-weight: bold; /* NO QUITAR LA NEGRITA */
+}
+
+.titulo2R a {
+	text-decoration:underline;
+}
+
+.titulo2R a:hover {
+	color: #666666;
+}
+
+.titulo3 {
+	font-size: 7pt;
+	font-family: Verdana;
+	color: #31B289;
+	border: none;
+	font-align:right;
+}
+
+.titulo3 a {
+	text-decoration:underline;
+}
+
+.titulo3 a:hover {
+	color: #666666;
+}
+
+.titulo3R {
+	font-size: 8pt;
+	font-family: Verdana;
+	color: #31B289;
+	border: none;
+	text-align:right;
+	font-weight: bold; /* NO QUITAR LA NEGRITA */
+}
+
+.titulo3R a {
+	text-decoration:underline;
+}
+
+.titulo3R a:hover {
+	color: #666666;
+}
+
+.titulo5 {
+	font-size: 7pt;
+	font-family: Verdana;
+	color: #31B289;
+	border: none;
+	font-align:right;
+}
+
+.titulo5R {
+	font-size: 8pt;
+	font-family: Verdana;
+	color: #31B289;
+	border: none;
+	
+	text-align:right;
+	font-weight: underline; 
+}
+
+.titulo5R a {
+	text-decoration:underline;
+}
+
+.titulo5R a:hover {
+	color: #666666;
+}
+.detalle {
+	font-size: 8pt;
+	font-family: Verdana;
+	color: #31B289;
+	border: none;
+}
+
+.detalle a {
+	color: #8B8B8B;
+}
+
+.detalle a:hover {
+	color: #666666;
+}
+
+.detalleR {
+	font-size: 7pt;
+	font-family: Verdana;
+	color: #8B8B8B;
+	font-weight: bold;
+	border: none;
+}
+
+.detalleR a {
+	color: #8B8B8B;
+}
+
+.detalleR a:hover {
+	color: #666666;
+}
+
+.detalleTab {
+	font-size: 8pt;
+	font-family: Verdana;
+	color: #8B8B8B;
+	border: none;
+}
+
+.detalleTabIzda {
+	font-size: 8pt;
+	font-family: Verdana;
+	color: #8B8B8B;
+	border: none;
+	text-align: left;
+}
+
+
+.detalleTab a {
+	color: #8B8B8B;
+}
+
+.detalleTab a:hover {
+	color: #666666;
+}
+
+.detalleTabR {
+	font-size: 8pt;
+	font-family: Verdana;
+	color: #8B8B8B;
+	font-weight: bold;
+	border: none;
+	text-align:right;
+}
+
+.detalleTabR a {
+	color: #8B8B8B;
+}
+
+.detalleTabR a:hover {
+	color: #666666;
+}
+
+/*
+Para asignar propiedades concretas a la clase tabla.
+*/
+.tabla {
+	background-color:white;
+	color:#666666;
+	font-size:8pt;
+	text-align:left;
+	white-space:normal;
+	border:0px solid black;
+}
+
+.tabla table.sortable{
+	background-color:white;
+	color: #666666;
+}
+
+.tabla th {
+	border:0px solid green;
+	background-color:none;
+	background-image:none;
+	/*display:none;*/
+}
+
+.tabla table.sortable a.sortheader{
+	background-color:none; /*Lo coge*/
+	background-image:none;
+}
+
+.tabla table.sortable th a.volcarExcel {
+	background-color:none; /*Lo coge*/
+	background-image:none;
+}
+
+.tabla th a.volcarExcel {
+	background-color:none; /*Lo coge*/
+	background-image:none;
+}
+
+/*
+Para asignar propiedades concretas a la clase tablaOrdenable.
+*/
+.tablaOrdenable {
+	background-color:white;
+	color:#666666;
+	font-size:8pt;
+	text-align:left;
+	white-space:normal;
+/*	border:1px solid black;*/
+}
+
+.tablaOrdenable th {
+	border:1px solid black;
+}
+
+.tablaOrdenable table.sortable th {
+	border:1px solid black;
+}
+
+/*
+Para asignar propiedades concretas a las columnas de tabla.
+*/
+.columna {
+	background-color:blue;
+/*	border:1px solid #E78931;*/
+	font-size:8pt;
+	text-align:left;
+	white-space:normal;
+}
+
+/*
+Clase asociada a tablas ordenables del subtipo columna.
+*/
+.columna table.sortable {
+	border:1px solid black;
+}
+
+.txt_bsp {
+	background-attachment:scroll;
+	background-color:pink;
+	background-image:none;
+	background-position:0 0;
+	background-repeat:repeat;
+	color:#666666;
+	background-color:#FFFF99 !important;
+}
+
+.txt_bsm {
+	background-attachment:scroll;
+	background-color:#FFFF99 !important;
+	background-color:#E1C8C4;
+	background-image:none;
+	background-position:0 0;
+	background-repeat:repeat;
+	color:#666666;
+}
+
+
+.concepto {
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-align: right !important;
+	border-style: none;
+}
+.concepto_detalle {
+	font-size: 11px;
+	color: #666666;
+	text-align: left !important;
+	text-decoration: none;
+	border-style: none;
+}
+tabla.lvw, tabla.sortable, tabla.bsc {
+	color: #666666;
+
+}
+
+.concepto.lbl {
+	border-style: none;
+}
+
+.concepto.ext {
+	border-style: none;
+}
+
+.conceptodetalle.lbl {
+	border-style: none;
+}
+
+.conceptodetalle.ext {
+	border-style: none;
+}
+
+/*Hace invisible la cabecera de las ventanas flotantes*/
+div.cabecera {
+	/*background: url(ico/barra_flotante.gif) repeat-x;*/
+}
+div.cabecera p {
+	/*display: none !important;
+	visibility: hidden  !important;*/
+}
+div.ventana {
+	background: #FFFFFF url(ico/marca_agua.gif) no-repeat right bottom !important;
+}
+/*
+div.txt.lvwFecha, div.txt.lvwNumero {
+	text-align:left;
+}
+*/
+
+.casilla{
+	background-color:#FFFFFF !important;
+	}
+
+td.contenido a{
+color: #666666 !important;
+}
+.arbolGris{
+color:#666666 !important;
+}
+.arbolgris a{
+color:#666666 !important;
+}
+.arbolgris a:hover{
+color:#666666 !important;
+}
+a.arbolgris {
+color:#666666 !important;
+}
+
+td.contenidoS a, a.contenido:focus {
+background-color:#B2DBC7;
+color:white;
+}
+
+tr.lvwS, table.sortable tr.lvwS {
+background-color:#FBD265 !important;
+border: 0px solid;
+/*background-color:#45CB8A !important;*/
+color:#666666;
+}
+tr.lvw:hover{
+background-color:#FBDC89 !important;
+border: 0px solid;
+/*background-color:#B2DBC7!important;*/
+}
+tr.lvwS td, tr.lvwS span, tr.lvwE span {
+color:#666666 !important;
+}
+
+a.botonera.menuGlobalDeLaAplicacion.imagen.texto {
+	display: block;
+} /* ernesto*/
+
+
+div.md div.par input {padding-left:0px;padding-right:0px; }
+/*La linea acontinuación elimina el interrogante que aparecia en las cabeceras de los detalles flotantes en internet explorer*/span.globoAyuda.formulario{width:0px; height:0px;} /*width y height=0, ie7*/
+
+#control100010008{
+cursor:default !important;
+}
+
+#control236{
+cursor:default !important;
+}
+
+#control256{
+cursor:default !important;
+}
+
+#control276{
+cursor:default !important;
+}
+

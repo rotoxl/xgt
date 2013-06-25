@@ -1,0 +1,2 @@
+1;0;1;92107148008681;2007;;la rehabilitación de servicios sanitarios en Aldea Infantil "Virgen de la Candelaria" en Salcedo, Perú;2007/04/30;10000.00;3800.00;;Si;07/2007;2007/05/04;Tercer mundo;;;;;0;0;20070148;921-07-148;1;Comité Interno OS;2007/05/04;;
+1;1;1;G63650675;3800.00;

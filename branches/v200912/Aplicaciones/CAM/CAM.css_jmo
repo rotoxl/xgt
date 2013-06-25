@@ -1,0 +1,255 @@
+/*div#botoneraArribaDerecha {position:fixed; left:0px; top:0px;} */
+div#menuUpper{
+	background-image:url(../../Aplicaciones/CAM/png/CAM_LOGO.png);
+	left: 0px;
+	top:0px;
+	width:292px;
+}
+div#menuUpper.botonera{
+	height:75px;
+}
+#botonera.panelSup {
+	background-color:#7A303D;
+	background: -moz-linear-gradient(top, #CEDBED, #2172AD); /*MOZILLA*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#CEDBED), to(#2172AD)); /* SAFARI, CHROME*/
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#CEDBED', EndColorStr='#2172AD'); /* IEXPLORER */ 
+	background-repeat:repeat-x;
+	height:95px;
+}
+#botoneraDisenho{
+	top:95px;
+}
+#botoneraIzq{
+	top:75px;
+}
+#botoneraAdmin{
+	top:75px;
+}
+#botoneraDra{
+	top:75px;
+}
+#sepSplitterV
+{
+	background-color:#2172AD;
+	border:1px solid #2172AD;
+	background-image: none;
+	width: 1px
+}
+a.botonera{
+	border:2px solid transparent
+}
+a.menuML:hover,a.menuML.estado_hover
+{
+	background-color: #9BBCDA;
+}
+div.tab div.lbl{
+	background-color:#F0F2FF !important;
+	border-color:#F0F2FF !important;
+	color:#000000;
+}
+thead tr, thead tr, tbody th
+{
+	background-color:#9BBCDA;
+	background-image:none;
+}
+td.contenidoS a, a.contenido:focus {
+    background-color: #2172AD;
+    color: white;
+}
+#control72pest0{
+	margin-left:80px; !important;
+}
+#control72pest1{
+	margin-left:80px; !important;
+}
+div.title{
+	background-color:#2172AD;
+	font-size:12px;
+	font-weight:bold;
+	vertical-align:middle;
+	margin-left:1px;
+	margin-right:1px;
+	color:white;
+	border:0px;
+	
+}
+.accion {
+    border: medium none;
+    color: #666666 !important;
+    font-family: Verdana,Arial,Tahoma !important;
+    font-size: 12px !important;
+    text-align: left;
+}
+
+/*SANDRA*/
+
+/*para que se puedan pulsar correctamente los botones de editar, depurar...*/
+div#botoneraIzq {
+    width: 560px; 
+}
+
+
+/* cajainicio */
+.cajainicio {     
+	height: 24px !important;
+}
+div.cajainicio table.tab {     
+	width: 100%;
+}
+.cajainicio div.pestanha.activa {
+	height: 0px !important;	
+	border: 0px none !important;
+}
+div.cajainicio table.tab td.pesFondoOn {     
+	background: url(./png/roundfondo.png) repeat-x !important;     
+	border: 0px none !important;     
+	padding: 0px !important;     
+	height: 24px !important;
+}
+div.cajainicio table.tab td.pesFondoOn a.tab {     
+	color: #FFFFFF !important;     
+	display: block;     
+	font-weight: bold;     
+	text-align: left !important;     
+	font-size: 12px;     
+	cursor: default;     
+	outline: 0px none;
+}
+div.cajainicio table.tab td.pesInicioOn {     
+	background-image: url(./png/roundini.png) !important;     
+	width: 7px !important;
+}
+div.cajainicio table.tab td.pesFinOn {     
+	background-image: url(./png/roundfin.png) !important;     
+	width: 7px !important;
+}
+
+
+
+/* cajainicio */
+
+/* estilo post-it */
+.bombilla  {
+        background-image:url(bombilla.png);background-repeat: no-repeat;
+        background-position:left center;
+
+        background-color:#FFFADB;color:#776B1B; border:1px solid #CBB945;
+
+        font-family:helvetica,sans-serif; font-size:11px;
+
+        vertical-align:middle;
+        }
+/* FIN estilo post-it*/
+
+
+div#menuInicio {
+color:#FFFFFF;
+height:47px;
+overflow:visible;
+position:absolute;
+top:3px !important;
+left:10px !important;
+width:234px;
+}
+
+div#menuInicio a.botonera {
+/*background-color:#cc0000;*/
+border: 1px solid transparent;
+color:#FFFFFF;
+display:block;
+height:60px;/*47px;*/
+width:400px;/*234px;*/
+text-decoration:none;
+}
+
+
+div#mododetalle__Inicial.md div.rd button.cmd
+{
+    background-color: transparent !important;
+    opacity: 0.05;
+    padding: 0px;
+	/*padding: 40px;*/
+	z-index: 6;
+}
+
+div#mododetalle__Inicial.md div.rd div.txt {
+    overflow: visible;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+div#mododetalle__Inicial.pic {
+	z-index: 2;
+}
+
+div#mododetalle__Inicial.md div.rec {
+	border: 1px solid #A9BFD3;
+}
+
+div#mododetalle__Inicial.md div.txt {
+	z-index: 1 !important;
+}
+
+div#control1083.rd  div.txt{
+	text-align: left !important;
+	/*z-index: 5 !important;*/
+}
+
+/*div#control1051.rd  div.txt{
+	z-index: 7 !important;
+}*/
+
+div#control1083 .filaRD button.cmd{
+	width: 153px !important;
+	height: 40.4px !important;
+	top: 0 !important;
+	left: 0 !important;
+}
+
+div#mododetalle__Inicial.md  div.filaRD.fila.seleccionada {
+	background-color: #EEEEEE !important;
+    border: 1px solid #6699FF;
+}
+
+.recTituloSinBorde{
+	color: #2172AD;
+	border: none;
+	font-weight: bold;     
+	text-align: left !important;     
+	font-size: 12px; 
+}
+
+div#mododetalle__DET_MANT.md  button.cmd{
+	background-color: #FFFFFF !important;
+}
+
+
+div#mododetalle__DET_MANT.md  button.cmd{
+	background-color: #FFFFFF !important;
+}
+
+div#COND01_1.md  div.filaRD.fila.seleccionada {
+	background-color: transparent !important;
+    border: none;
+}
+
+/*FIN SANDRA*/
+
+
+div#mododetalle__Comp2.md  div.filaRD.fila.seleccionada {
+	background-color: #EEEEEE !important;
+    border: 1px solid #6699FF;
+}
+
+/*
+.boton, .boton:hover {
+    background-color: #D7DF9D !important;
+    border-style: outset;
+    border-width: 2px 1px 2px 2px;
+    cursor: pointer;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 10px;
+    padding: 0;
+}*/
+
+

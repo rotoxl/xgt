@@ -1,0 +1,58 @@
+Actualizado con los datos del segundo correo sobre esto
+
+<cac:ContractingParty>
+        <cbc:ContractingPartyTypeCode 
+		languageID="es" 
+		listURI="http://contrataciondelestado.es/codice/cl/1.04/ContractingAuthorityCode-1.04.gc" 
+		listVersionID="2006" 
+		name="Administración General del Estado">1</cbc:ContractingPartyTypeCode>
+        <cbc:ActivityCode 
+		languageID="es" 
+		listURI="http://contrataciondelestado.es/codice/cl/1.04/ContractingAuthorityActivityCode-1.04.gc" 
+		listVersionID="2006" 
+		name="Medio Ambiente">26</cbc:ActivityCode>
+        <cbc:BuyerProfileURIID>https://preprod-contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&amp;idBp=ZWUv6H9LcC4%3D</cbc:BuyerProfileURIID>
+        <cac:Party>
+            <cbc:WebsiteURI>http://www.chtajo.es</cbc:WebsiteURI>
+            <cac:PartyIdentification>
+                <cbc:ID 
+		schemeName="ID_PLATAFORMA">10000320033324</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyIdentification>
+                <cbc:ID 
+		schemeName="CIF">Q2817005H</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Confederación Hidrográfica del Tajo - B2B</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:AddressFormatCode 
+		languageID="es" 
+		listURI="http://contrataciondelestado.es/codice/cl/1.04/AddressFormatCode-1.0.gc" 
+		listVersionID="2007" 
+		name="Spanish Format">1</cbc:AddressFormatCode>
+                <cbc:CityName>Madrid</cbc:CityName>
+                <cbc:PostalZone>28071</cbc:PostalZone>
+                <cac:AddressLine>
+                    <cbc:Line>Avda. de Portugal 81</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode 
+		    languageID="es" 
+		    listURI="http://docs.oasis-open.org/ubl/os-ubl-2.0/cl/gc/default/CountryIdentificationCode-2.0.gc" 
+		    listVersionID="0.3" 
+		    name="España">ES</cbc:IdentificationCode>
+                    <cbc:Name>España</cbc:Name>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:Contact>
+                <cbc:Name>Confederación Hidrográfica del Tajo - B2B</cbc:Name>
+                <cbc:Telephone>914539734</cbc:Telephone>
+                <cbc:Telefax>914700304</cbc:Telefax>
+                <cbc:ElectronicMail>mariajesus.gonzalez@chtajo.es</cbc:ElectronicMail>
+            </cac:Contact>
+            <cac:Person>
+                <cbc:JobTitle>ROC</cbc:JobTitle>
+            </cac:Person>
+        </cac:Party>
+    </cac:ContractingParty>

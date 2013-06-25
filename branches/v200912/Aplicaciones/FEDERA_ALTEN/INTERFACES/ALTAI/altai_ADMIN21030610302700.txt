@@ -1,0 +1,16 @@
+T;;33355222L;Guillermo Calvo Martín;;Calle Ronda nº 9;;;;;19001;GUADALAJARA;Guadalajara;949221133;666555444;34534534;;CONTACTO2;;;;;;2;aaaaaaaa@bbbbb.com;1
+B;;;Guillermo Calvo Martín;Calle Ronda nº 9;GUADALAJARA;Guadalajara;19001; ;;;
+T;;3901420E;CARLOS HERNANDEZ;;CALLE AQUI;;;;;28020;GUADALAJARA;Guadalajara;666888555;645634564;46346345;;CARLOS HERNANDEZ;;;;;;4;;1
+B;;;CARLOS HERNANDEZ;CALLE AQUI;GUADALAJARA;Guadalajara;28020; ;;;
+A;1;21/03/2006;;4;Factura 3;H;340;654321;;;Guillermo Calvo Martín;;;;;;;;340;E;Notas de la factura;;3;;
+A;2;21/03/2006;4;;Factura 3;D;7;654321;;;Guillermo Calvo Martín;;;;;;;;7;E;Notas de la factura;;3;;
+O;CEN1;7;
+A;3;21/03/2006;3;;Factura 3;D;2;654321;;;Guillermo Calvo Martín;;;;;;;;2;E;Notas de la factura;;3;;
+I;28/06/2005;7;5;;;;654321;;33355222L;1;7;2;;;340;;N;N;Guillermo Calvo Martín
+A;4;21/03/2006;;;Factura 3;D;2;654321;;;Guillermo Calvo Martín;;;;;;;;2;E;Notas de la factura;;3;;
+R;33355222L;Guillermo Calvo Martín;G;;340;7;2;340;2;;;;
+A;1;21/03/2006;;6000;factura de gastos de desp;H;1160;fra.0002;;;CARLOS HERNANDEZ;;;;;;;;1160;E;Notas de la factura;;28;;
+A;2;21/03/2006;6000;;factura de gastos de desp;D;3000;fra.0002;;;CARLOS HERNANDEZ;;;;;;;;3000;E;Notas de la factura;;28;;
+O;CEN1;2000;;CEN2;1000;
+A;3;21/03/2006;3;;factura de gastos de desp;D;480;fra.0002;;;CARLOS HERNANDEZ;;;;;;;;480;E;Notas de la factura;;28;;
+I;18/07/2005;3000;16;;;;fra.0002;;3901420E;1;3000;480;;;1160;;N;N;CARLOS HERNANDEZ

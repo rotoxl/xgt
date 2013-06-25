@@ -1,0 +1,5 @@
+config tns_admin.
+Crear una entrada en el regedit.
+* HKEY_LOCAL_MACHINE\SOFTWARE\ORACLE\KEY_OraClient10g_home1
+* Crea un nuevo => Valor alfanumerico. EL valor de este debe ser o:(unidad de red dodne esta el TNSNAME.ORA).
+  el nombre de esta nueva clave es TNS_ADMIN.

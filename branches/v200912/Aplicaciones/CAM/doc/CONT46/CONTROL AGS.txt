@@ -1,0 +1,19 @@
+select count(1) from aux_provincias p
+       inner join aux_paises pai on
+             pai.cd_pais = p.cd_pais
+       inner join instregn@lawson plaw on
+             pai.cd_pais_lawson = plaw.country_code
+             and p.cd_provincia = plaw.region
+where p.cd_pais = 'ES'
+and p.cd_provincia = 28;
+
+
+select count(1) from aux_paises p
+       inner join instctrycd@lawson plaw on
+             p.cd_pais_lawson = plaw.country_code
+where p.cd_pais = 'ES'
+
+select count(1) from aux_ciudades c
+       inner join instatproc@lawson cl on
+             to_char(c.cd_ciudad) = cl.stat_proc
+where c.cd_ciudad = '4640'

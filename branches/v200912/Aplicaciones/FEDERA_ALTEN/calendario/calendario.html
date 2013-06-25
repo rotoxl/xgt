@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Calendario</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+</head>
+
+<body>
+<style type="text/css">
+body {
+	/*background-image: url(./calendario.png);*/
+	background-repeat: repeat-x;
+	background-color: #E3F4CC;
+}
+td.nombremes{color:#0E5302;font-family:arial;font-size:12px; font-weight:bold; text-align:center;}
+td.nombredia{color:#0E5302;font-family:arial;font-size:11px; font-weight:bold; text-align:right;}
+td.numerodia{color:#0E5302;font-family:arial;font-size:10px; font-weight:normal; text-align:right; padding-left: 3px;}
+</style>
+
+<table width="200" height="90" border="0" cellpadding="1" cellspacing="1" STYLE="position:absolute; left:0px; top:-10px; width: 175px; height: 80px;">
+<tr>
+<td width="810"></a></td>
+</tr>
+<tr><td align="center" valign="bottom"><embed src="6.swf" width="82" height="82" align="left" style="" wmode="transparent" type="application/x-shockwave-flash">
+<param name=wmode value=transparent>
+</embed></td>
+<td width="100" valign="bottom" color="#0E5302">
+
+<br>
+<SCRIPT language="JavaScript">
+monthnames = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var linkcount=0;
+function addlink(month, day, href) {
+var entry = new Array(3);
+entry[0] = month;
+entry[1] = day;
+entry[2] = href;
+this[linkcount++] = entry;
+}
+Array.prototype.addlink = addlink;
+linkdays = new Array();
+monthdays = new Array(12);
+monthdays[0]=31;
+monthdays[1]=28;
+monthdays[2]=31;
+monthdays[3]=30;
+monthdays[4]=31;
+monthdays[5]=30;
+monthdays[6]=31;
+monthdays[7]=31;
+monthdays[8]=30;
+monthdays[9]=31;
+monthdays[10]=30;
+monthdays[11]=31;
+todayDate=new Date();
+thisday=todayDate.getDay();
+thismonth=todayDate.getMonth();
+thisdate=todayDate.getDate();
+thisyear=todayDate.getYear();
+thisyear = thisyear % 100;
+thisyear = ((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
+if (((thisyear % 4 == 0) 
+&& !(thisyear % 100 == 0))
+||(thisyear % 400 == 0)) monthdays[1]++;
+startspaces=thisdate;
+while (startspaces > 7) startspaces-=7;
+<!--Cambio esta línea para que la semana comience por lunes-->
+<!--startspaces = thisday - startspaces + 1;-->
+startspaces = thisday - startspaces;
+if (startspaces < 0) startspaces+=7;
+/*document.write("<FONT face='arial'>");<!--Font Face-->*/
+document.write("<table border=0 " );<!--Border size if any-->
+document.write("bordercolor=#739B73 style='font-size : 11px; color : #0E5302;' cellpadding=0 cellspacing=1>");
+
+document.write("<tr><td colspan=7 class=nombremes> " 
++ monthnames[thismonth] + " " + thisyear 
++ "</td></tr>");
+document.write("<tr>");
+document.write("<td class=nombredia>L</td>");
+document.write("<td class=nombredia>M</td>");
+document.write("<td class=nombredia>X</td>");
+document.write("<td class=nombredia>J</td>");
+document.write("<td class=nombredia>V</td>");
+document.write("<td class=nombredia>S</td>");
+document.write("<td class=nombredia>D</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+for (s=0;s<startspaces;s++) {
+document.write("<td></td>");
+}
+count=1;
+while (count <= monthdays[thismonth]) {
+for (b = startspaces;b<7;b++) {
+linktrue=false;
+document.write("<td class=numerodia>");
+for (c=0;c<linkdays.length;c++) {
+if (linkdays[c] != null) {
+if ((linkdays[c][0]==thismonth + 1) && (linkdays[c][1]==count)) {
+document.write("<a href=\"" + linkdays[c][2] + "\">");
+linktrue=true;
+}
+}
+}
+if (count==thisdate) {
+document.write("<font color='#C41E3A'>");
+}
+if (count <= monthdays[thismonth]) {
+document.write(count);
+}
+else {
+document.write(" ");
+}
+if (count==thisdate) {
+document.write("</font>");
+}
+if (linktrue)
+document.write("</a>");
+document.write("</td>");
+count++;
+}
+document.write("</tr>");
+document.write("<tr>");
+startspaces=0;
+}
+document.write("</table>");
+
+</SCRIPT>
+</td>
+</tr>
+</table>
+</body>
+</html>

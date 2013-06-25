@@ -1,0 +1,127 @@
+PROCEDURE Map_Estado_Facturas_Altai (
+   fich   IN       VARCHAR2,
+   res    OUT      INT
+)
+IS
+   -- ruta \\Piscis\Gotta\Caja_Madrid\INTERFACES\ALTAI\';
+   numreg     INTEGER         := 0;
+                                -- NUMERO DE REGISTRO QUE CONTIENE EL FICHERO
+   cont       INTEGER         := 0;              -- CONTADOR DE LOS REGISTROS
+   factura    VARCHAR2 (10)   := '';
+                            -- CODIGO DE LA FACTURA DEL REGISTRO,9 CARACTERES
+   error      VARCHAR2 (5)    := '';         -- CODIGO DE ERROR, 3 CARACTERES
+   dserror    VARCHAR2 (2000) := '';        -- DESCRIPCION DEL ERROR ANTERIOR
+   des_logs   VARCHAR2 (2000) := '';
+
+   fact_e         INT:=0;                       --CONTADOR FACTURAS RECIBIDAS
+   fact_c         INT:=0;               --CONTADOR FACTURAS CONTABILIZADAS OK
+   fact_r         INT:=0;                        --CONTADOR FACTURAS ERRÓNEAS
+   fact_ce        INT:=0;                    --CONTADOR FACTURAS ACTUALIZADAS
+   
+   interfaz INTERFACES.NOMBRE_INTERFACE%TYPE := 'INTERFACE_ALTAI_2_E';
+   fecha_interfaz DATE:= SYSDATE;
+   cadena	  VARCHAR2(2000);
+   registrosFICH OWA_TEXT.multi_line;  -- registrosFICH es un multiline coon los registros de nuestro archivo
+   tmpCLOB CLOB:=' '; -- creamos un CLOB inicializado para pasarselo a la clase java
+      
+   rc         INT:=retOK;
+   retFila    INT; --valor devuelto por cada fila (si OK o error) 
+
+BEGIN
+  registrosFICH:=Utils.tokenCLOB(File_Io_Plano.loadCLOB(tmpCLOB,fich));
+   
+  numreg := registrosFICH.num_rows;
+		   
+   WHILE (cont<numreg)
+   LOOP
+      cont := cont + 1;            -- SE LE AÑADE UNO AL CONTADOR DE REGISTROS   
+      cadena :=registrosFICH.ROWS(cont);  
+      retFila:=retOK;
+    
+   -- nos mandan registros con el CODIGO DE FACTURA
+   -- y si ha habido algun ERROR        (2 CAMPOS)
+   -- solo procesaremos las fcturas que hayan sido enviadas realmente
+
+      SELECT Utils.tokenindex(cadena,';',1)--SUBSTR (cadena, 0, 10)
+        INTO factura
+        FROM DUAL;
+
+      SELECT Utils.tokenindex(cadena, ';',2)--SUBSTR (cadena, -3, 3)
+        INTO error
+        FROM DUAL;
+
+      fact_e:= fact_e + 1;  --incrementamos contador de facturas recibidas		
+      
+	  IF (error > 0) THEN
+         retFila:=retError;
+ 		 fact_r:= fact_r + 1;  --- incrementamos contador de facturas erróneas
+        
+		 BEGIN
+		    SELECT descripcion
+              INTO dserror
+              FROM ERRORES_IO
+             WHERE cod_error = error;
+		 EXCEPTION
+		    WHEN NO_DATA_FOUND THEN
+			  dserror:='no existe descripción para el código de error: ' || error;
+			WHEN OTHERS THEN
+			  dserror:= 'error al obtener la descripción del error con código: ' || error ||'.' || SQLERRM;
+		 END; 
+
+         des_logs := 'Línea ' || cont || 'Error en Factura num: ' || factura || ',' || dserror || '. ';
+         InsertarLineaLog(fecha_interfaz, interfaz, des_logs, logErrNoCritico, factura);
+	  ELSE
+	  ----si no hay error	  
+         fact_c:= fact_c + 1;	--incrementamos contador de facturas contabilizadas OK
+		 BEGIN
+		   UPDATE DAT_FACTURAS
+              SET cd_estado = 'C',
+			      f_contabilizacion=fecha_interfaz,
+				  f_pago=fecha_interfaz
+              WHERE cd_factura = factura;				 
+
+			  fact_ce:= fact_ce + 1; --incrementamos contador de facturas actualizadas
+			 
+		   EXCEPTION
+			  WHEN OTHERS THEN
+                 retFila:=retError;
+    		     des_logs := 'Línea ' || cont || 'Error en actualizar Factura num: ' || factura || 
+				             ',' || dserror || '. '	|| SQLERRM;
+                 InsertarLineaLog(fecha_interfaz, interfaz, des_logs, logErrNoCritico, factura);
+		   END;	  	  	  
+      END IF;
+	  
+	  IF retFila=retError THEN
+	     rc:=retError;
+	  END IF;
+
+   END LOOP;
+
+   IF rc = retOK   THEN
+--      DBMS_OUTPUT.PUT_LINE ('Terminado correctamente');
+      res := retOK;
+      des_logs:='Ejecución sin errores. Reg. totales: ' || numreg || 
+	                                   ' Reg. leídos: ' || cont || 
+                                   ' Fact. recibidas: ' || fact_e ||								 
+                                    ' Fact. erróneas: ' || fact_r ||
+				   		      ' Fact. contabilizadas: ' || fact_c ||
+                     ' Fact. actualizadas (estado C): ' || fact_ce;	  
+      InsertarLineaLog(fecha_interfaz, interfaz, des_logs, logErrNoCritico, NULL);				 
+   ELSE
+--      DBMS_OUTPUT.PUT_LINE ('Terminado incorrectamente');
+      res := retError;
+      des_logs:='Ejecución con errores. Reg. totales:' || numreg || 
+	                                   ' Reg. leídos:' || cont || 							 
+                                   ' Fact. recibidas: ' || fact_e ||								 
+                                    ' Fact. erróneas: ' || fact_r ||
+				   		      ' Fact. contabilizadas: ' || fact_c ||
+                     ' Fact. actualizadas (estado C): ' || fact_ce;								  
+      InsertarLineaLog(fecha_interfaz, interfaz, des_logs, logErrNoCritico, NULL);	  
+   END IF;
+EXCEPTION
+   WHEN OTHERS THEN
+      res := retError;
+      des_logs:= 'Error en la ejecución. SQLCODE: ' || SQLCODE || 'Descripción: ' || SQLERRM;
+      InsertarLineaLog(fecha_interfaz,interfaz,des_logs, logErrCritico, NULL);
+	  
+END;

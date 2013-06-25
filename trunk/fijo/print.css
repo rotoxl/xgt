@@ -1,0 +1,313 @@
+html,body {
+	overflow: visible;
+}
+div.lvw.tabla div.datos{
+	overflow: visible;
+}
+div.contenedorlista {
+	position: relative !important;
+	/*
+	border: red 1px solid;
+	*/
+	float: left;
+}
+
+div.clearBoth {
+	clear: both;
+}
+
+/*
+div.contenedorlista{border:1px solid orange}
+div.placeholder{ border:1px solid green; margin-left:50;}
+*/
+div.placeholder {
+	width: 5px;
+}
+
+div#splitterV {
+	width: 0px !important;
+	position: relative !important;
+	/*width:0px !important; height:0px !important;*/
+}
+
+div#sepSplitterV {
+	display: none !important;
+}
+
+div.clsPane {
+	position: relative !important;
+	left: 0px !important;
+	overflow: visible;
+	
+}
+
+div.md {
+	position: relative;
+	overflow: visible !important;
+	left: 0px;
+	top: 0px;
+}
+
+div#botoneraDisenho,div#botonera,div#botoneraAdmin,div#botoneraIzq,div#botoneraDra,div#logo,div#panelIzq,div#panelIzq div.md,div#divarbol,div#splitterV div.clsPane:first-child
+	{
+	display: none !important;
+	visibility: hidden;
+	height: 0px !important;
+	width: 0px !important;
+}
+
+img {
+	border: none;
+	z-index: 10;
+}
+a.img {
+	border:none;
+	z-index:0;
+	}
+
+div.txt,div.lbl {
+/*	overflow: visible !important;*/
+	padding-right: 2px;
+	padding-bottom: 1px;
+}
+
+a.cmd_bsp {
+	background-image: url(lupa.png);
+	background-position: 2px 4px;
+	background-repeat: no-repeat;
+	padding: 3px 0px 2px 2px;
+	text-decoration: none;
+}
+
+input.txt_bsp {
+	border: 0px none;
+}
+
+div.md div.palote {
+	
+	display:block;
+	position: relative !important;
+	float: left;
+	background-color: pink;
+	zoom:1; /* para q no se gripe ie6*/	
+}
+
+div.lvw,div.arb,div.rd {
+	position: relative !important;
+	/*		top:0px !important; height:-1px !important;*/
+	overflow: visible !important;
+	float: left;
+}
+
+button.cmd {
+	display: none !important;
+}
+
+input.par {
+	border: none;
+}
+
+div.rec {
+	display: none !important;
+	border: 1px silver solid !important;
+	visibility: visible;
+}
+
+table.sortable {
+	background-color: #EEEEEE;
+	border: 0px none;
+	border-collapse: separate;
+	border-spacing: 1px;
+	color: black;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 8pt;
+	padding: 0px;
+	text-align: left;
+	page-break-inside: avoid;
+}
+
+input.lvw_chk {
+	display: none
+}
+
+table.sortable th,table.sortable a {
+	color: gray;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	text-align: left;
+	text-decoration: none;
+}
+
+table.sortable th {
+	border-right: 1px solid white;
+}
+
+table.sortable td {
+	background-color: white;
+}
+
+/*Pestañas*/
+div.tab table.tab {
+	display: none;
+}
+
+div.pestanha {
+	float: left;
+}
+/*
+div.pestanha div.contenedorlista {
+	margin-top: -39px;
+	margin-bottom: 39px;
+}
+*/
+div.pestanha div.lvw,div.rd,div.arb,div.clearBoth {
+	margin-top: 0px;
+}
+
+div.tab {
+	display: list-item!important;
+	list-style:none;
+	overflow: visible !important;
+	position: relative; 
+	margin-top: 9px; 
+	margin-bottom: 25px !important; 
+	padding-bottom: 20px;
+}
+div.rd div.xfilaRD {
+	page-break-inside:avoid;
+	}
+div.tab div.pestanha {
+	display: block !important;
+	overflow: visible; /* El título de la pestaña 'asoma' y no se ve de otro modo */
+	border: 1px solid silver;
+	position: inherit;
+	margin-top: 9px; 
+	margin-bottom: 25px !important;
+	margin-bottom: 20px;
+	
+	padding-bottom:10px;
+	width: 100%;
+}
+
+div.pestanaha:first-child{page-break-before:avoid;}
+.sinDatos {
+	position:relative;
+}
+div.tab div.nombrepestanha {
+	border: 1px solid silver;
+	border-bottom: none;
+	background-color: #F0F2FF;
+	color: gray;
+	font-family: Tahoma, Verdana, sans-serif; font-size: 8pt; font-weight: bold;
+	
+	margin-bottom: -19px;
+	position: relative;
+	margin-left: -1px;
+	margin-top: -19px;
+	width: 250px; height: 19px;
+	padding-left: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	display:block !important;
+}
+div.tab.pestanhasIzquierda div.nombrepestanha{
+	margin-left: -1px;
+	margin-top: -19px;
+	}
+	
+div.tab div.nombrepestanha span.cerrar{
+	background-image:url(equis.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	padding-left:13px;
+	padding-right:4px;
+	}
+div.lvw div.datos, div.rd {
+overflow:visible !important;
+}
+/*control arb*/
+div.arb {
+	overflow: hidden;
+}
+
+table.arbol {
+	border: none;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	table-layout: fixed;
+	white-space: nowrap;
+}
+
+table.arbol tr,table.arbol td {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+td.masMenos {
+	width: 16px;
+}
+
+td.contenido,td.contenido a.contenido {
+	color: black;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+iframe.www {
+	background-color: white;
+	border: none;
+}
+
+.www {
+	z-index: 3;
+}
+
+.gra,.img,.pic,.txt,.lbl,.bsp,.par,.txt,.cmd,.arb,.rec,.www, select.desp {
+	position: absolute;
+}
+
+.rec {
+	z-index: 1;
+}
+
+.rd,.tab {
+	z-index: 3;
+}
+
+.img,.pic,.lbl {
+	z-index: 2;
+}
+
+.bsp,.par,.txt,.cmd,div.lvw,.arb {
+	z-index: 5;
+}
+
+.rd {
+	overflow: visible;
+}
+
+div.rd div.filaRD {
+	position: relative;
+	overflow: visible;
+	display: block;
+	margin-top: 0px;
+}
+div.rd div.filaRD, div.rd div.xfilaRD {page-break-inside: avoid;}
+div.maxElementos {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 8pt;
+	color: gray
+}
+
+div.maxElementos a {
+	display: none;
+}
+tr.lvwS td, tr.lvwS span, tr.lvwE span {
+	color:black;
+}

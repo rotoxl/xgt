@@ -1,0 +1,26 @@
+version=1.0.8
+
+#Contexto de los servicios sin modulo de seguridad
+url=http://piscis3:8090/pfirma-v8
+
+#Contexto de los servicios sin modulo de segurirdad
+url.secure=http://piscis3:8090/pfirma-sec-v8
+
+# EndPointReferences para servicios sin modulo de seguridad
+epr.ocsp                   = ${url}/services/ValidacionCertificadosService
+epr.tsp                    = ${url}/services/SelladoTiempoService
+epr.registro               = ${url}/services/RegistroOperacionesService
+epr.xadesadv               = ${url}/services/XadesAdvService
+epr.validacion             = ${url}/services/SignatureValidationService
+epr.xadesbes               = ${url}/services/XadesBesService
+epr.pkcs7                  = ${url}/services/Pkcs7Service
+epr.xadesValidation        = ${url}/services/XadesValidationService
+# EndPointReferences para servicios con modulo de seguridad
+epr.ocsp.secure            = ${url.secure}/services/ValidacionCertificadosService
+epr.tsp.secure             = ${url.secure}/services/SelladoTiempoService
+epr.registro.secure        = ${url.secure}/services/RegistroOperacionesService
+epr.xadesadv.secure        = ${url.secure}/services/XadesAdvService
+epr.validacion.secure      = ${url.secure}/services/SignatureValidationService
+epr.xadesbes.secure        = ${url.secure}/services/XadesBesService
+epr.pkcs7.secure           = ${url.secure}/services/Pkcs7Service
+epr.xadesValidation.secure = ${url.secure}/services/XadesValidationService

@@ -1,0 +1,81 @@
+<project name="Deployer" default="compile" basedir=".">
+
+	<!-- Executable Targets -->
+
+	<target name="compile" description="Compila y empaqueta, cara galleta">
+		<mkdir dir="${basedir}/WEB-INF/classes" />
+		<!--
+  		Aplicación a incluir en el WAR-EAR.
+  		¡¡Cuidado!! el WEB-INF/gotta.properties no se toca
+		-->
+		<property name="aplicaciones" value="tutorial07" />
+
+		<javac destdir="${basedir}/WEB-INF/classes" optimize="off" debug="on" failonerror="true" srcdir="${basedir}/WEB-INF/src" encoding="UTF-8" excludes="**/*.smap">
+			<classpath>
+				<fileset dir="${basedir}/WEB-INF/lib">
+					<include name="*.jar" />
+				</fileset>
+				<!--
+				La siguiente linea presupone la compilacion desde el webapps de tomcat. TODO
+				-->
+				<fileset dir="/home/rrh376m/tomcat-5.5.28/common/lib">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+			<include name="**" />
+			<exclude name="tags/**" />
+		</javac>
+		<war destfile="GottaX.war" webxml="${basedir}/WEB-INF/web.xml">
+			<!-- Incluyo los diferentes directorios de Gotta. También el META-INF con
+  			el mime.types
+			-->
+			<fileset dir="${basedir}">
+				<exclude name="*.in" />
+				<exclude name="*.cmd" />
+				<exclude name="*.exe" />
+				<exclude name="*.bat" />
+				<exclude name="*.sh" />
+				<include name="*.jsp" />
+				<include name="*.html" />
+				<include name="fijo/" />
+				<include name="twain/" />
+				<include name="Aplicaciones/${aplicaciones}/" />
+				<include name="WEB-INF/gotta.properties" />
+				<!--
+  								Cuidado¡. Va el classes al completo, con log4j.properties,y
+  								todo lo que tenga
+					-->
+				<include name="WEB-INF/classes/" />
+				<include name="META-INF/mime.types/" />
+				<!-- Incluimos weblogic.xml. Seguramente tb tendrá que ir aquí jboss-web.xml -->
+				<include name="WEB-INF/weblogic.xml" />
+
+			</fileset>
+			<lib dir="${basedir}/WEB-INF/lib">
+				<!-- Excluimos los jar que chocan en Weblogic (y posiblemente en otros, como jboss). 
+  			       El listado está en http://gottalab.burke.net/ReferenciaInstalaciones
+  			  -->
+				<exclude name="ax*" />
+				<exclude name="geronimo-stax*.jar" />
+				<exclude name="spec*.jar" />
+				<exclude name="jaxrpc.jar" />
+				<exclude name="jdom.jar" />
+				<exclude name="stax*.jar" />
+				<exclude name="xalan*.jar" />
+			</lib>
+
+			<classes dir="${basedir}/WEB-INF/classes" />
+		</war>
+		<!--
+		El script depende de la existencia de $USER_HOME/gottaxdist/appserver-metadata/
+		que contendrá los descriptores de despliegue de IAS y de Weblogic
+		-->
+		<ear destfile="${basedir}/Gotta.ear" appxml="${basedir}/appserver-metadata/application.xml">
+			<metainf dir="${basedir}/appserver-metadata">
+			</metainf>
+			<fileset dir="${basedir}" includes="*.war" />
+		</ear>
+	</target>
+
+
+</project>

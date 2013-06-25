@@ -1,0 +1,195 @@
+============================================================================
+= Errores
+============================================================================
+	depurador 	* escribir trámite: no va tan fino como debería
+			* css filas ya ejecutadas
+			* css footer tramFinalizado cuando hay varios trámites en el lote
+		
+
+
+
+
+============================================================================
+= ME GUSTARÍA METER
+============================================================================
+DISPOSITIVOS TÁCTILES
+	* formularios
+		HECHO tamaño de los controles
+		HECHO control de errores en formulario requiere hover para ver el mensaje de error
+		* drag de los formularios
+		HECHO globos de ayuda en formularios basados en click en vez de hover
+	* listas
+		HECHO seleccionar filas sin usar el ctrl
+		HECHO menú contextual (-> pulsación larga)
+		* doble click para lanzar trámites (-> pulsación larga, menú ejecutar)	
+	* monitor
+		* hover para ver la cadena de conexión
+	* depurador
+		* ha dejado de funcionar con lo de la carga bajo demanda
+		* hover para ver los valores de las variables
+	* splitter
+	* diseñador
+		* ha dejado de medio funcionar con la carga bajo demanda (se podía sacar el editor de niveles y poco más)
+
+ACCESIBILIDAD
+	* meter texto alternativo en arb, lvw, subgrid, img, pic, gra
+	* ¿meter roles de ARIA? los txt deberían ir vinculados a las columnas de las tablas
+PRUEBAS UNITARIAS CON BD
+	* bd y esquema
+		* contar tablas/columnas/referencias/campos
+		* contar caminos/trámites/acciones
+		* contar usuarios/permisos
+		* contar niveles/menús/guiones
+	* trámites (bucles, SUB, FOR)
+		* lanzar trámites no interactivos que hagan cálculos
+		* cargar niveles/listas/gráficas
+			* cargar, expandir, maxElementos
+			* comparar número de nodos y resultados
+		* buscadores
+	*extensores
+		* general: operaciones con cadenas
+		* LDAP: lectura de una rama, escritura de una rama, comprobación de esa nueva rama, borrado de esa nueva rama
+		* excel: recuperar un excel, rellenarlo, comprobar valores de ciertas celdas. Excel 2003 y 2007
+		* archivo: copiar archivo, comprobar, borrar, comprobar, comprobar tamaño
+		* jasper: averiguar si es posible contar el número de páginas o filas utilizadas. También se puede comprobar el tamaño del pdf generado ¿?
+
+CONTROLES
+	HECHO * quitar los colores de VB
+	HECHO, Y QUEDAN COJONUDOS buscadores son muy raros, posición vertical de trozos es difícil de gestionar. Además, la estética del buscador es idéntica a la de los campos fecha
+	* nuevo control "Plantilla HTML", que aceptará un html con marcadores en plan <%*.DAT_Intervinientes.Nombre%>. SERÍA COJONUDO
+JASPER Y WORD
+	* emisión de Jasper y Word SIN llamadas a otras ventanas
+		* puede haber problemas con el refresco completo del navegador: habría que capturar los refrescos y advertir de que hay operaciones pendientes
+	* también debería ser capaz, una vez refrescado el navegador, de recuperar los informes en progreso y emitidos
+	* al arrastrar una imagen al navegador, subirla al directorio icoWeb y meter el img (mientras sube el img muestra una barra de progreso)
+	* al arrastrar un dot o plantilla jrxml, subirla a los directorios dotWeb, rptWeb. En el caso de los jrxml hay que borrar el compilado.
+	* copiar cosas de sitecake (http://www.youtube.com/watch?v=qgH1ECDwRnc):
+
+DEPURADOR
+	* saltar a otra acción del mismo trámite
+	HECHO * generación automática del trámite de altas y modificaciones ¿más snippets?
+
+	* quitar referencias a xclientWidth...
+	* ¿cambio de splitter? http://methvin.com/splitter/
+
+GENERAL
+	HECHO * CSS separado en normal y asistentes, carga bajo demanda
+	HECHO * JS de asistentes cargado bajo demanda
+	
+¿DEMASIADO MODERNO? HTML5
+	* gráficas a js: http://www.highcharts.com/
+	* meter un modo de recuperación de trámites que hayan fallado, basado en localStorage
+	* cambiar DOM:
+		* de DIV a tags semánticos (nav, header, section, aside...): http://slides.html5rocks.com/#slide17  -> no funciona en ie7
+		* microdatos http://slides.html5rocks.com/#slide19
+		* nuevos tipos de campos de formulario: http://slides.html5rocks.com/#slide21
+		* input type="email|number|tel"
+		* placeholder como texto por defecto
+	* quitar Cookies excepto para "recordar usuario en este equipo" y pasar a localStorage y sessionStorage. PROBLEMA: Habría que ver como se recupera en "volcado a Excel" la ordenación de columnas en listas
+	* iniciamos con tag semánticos: header, nav, article
+
+EDITOR DE NIVELES
+	* editor de guiones
+
+
+
+
+=========================================================
+= trunk (posterior a v2012_06)
+=========================================================
+	* Habilitada la resolución de enlaces simbólicos (context.xml: allowLinking="true). Al menos en la carpeta "Aplicaciones" funciona
+	* Test unitarios para evaluador (es.burke.tests.EvaluadorTest)
+
+
+
+
+
+
+
+=========================================================
+= v2012_06
+=========================================================
+	Nuevo programador de tareas
+
+	Diccionario: 
+	 * soporte en asistente para columnaBusqueda y columnaDescripcion
+	 * tabla EXP_ModoLista ya no es necesaria, basta con nivel menuGeneral
+
+	Explorador
+	 * los botones ahora admiten una llamada a javascript como acción al pulsarlos
+	 * soporte para meter listas, desplegables y otros dentro de RD
+	 * mayor facilidad para personalizar el comportamiento de controles javascript: basta con personalizar el método Control.prototype.toDOM_18
+	 * TABs con las pestañas a la izquierda: más personalizables por CSS, incluso colores y demás
+	 * limitar el nº de caracteres de un bsp
+	 * el logo ahora sale colocado y visible por defecto, pero transparente
+	 * asistente para rellenar EXP_Menu ahora funciona bien
+	 * History API (Firefox, Chrome): ahora los botones adelante/atrás del navegador funcionan bien
+
+	Editor de niveles
+	 * más asistentes: gráfica, app_tramites, app_menuGeneral, app_menuDetalle, nivel de oracle, nivel de sql-server, nivel de jython, gantt, app_documentos
+	 * sale info del nodo activo en formulario de parámetros y la zona de resultados del editor de niveles
+	 * se recuerda la posición splitter
+	 * caso de prueba en editor de niveles: añadiendo una etiqueta #caso de prueba: y12\e13, al darle a ejecutar te usa esos valores como parámetros
+	 * botón para editar cualquier proc almacenado o vista de la bd (antes sólo se podían editar los niveles)
+	 * recuperar los niveles que tenías abiertos en la sesión anterior ("Recuperar los recientes")
+	  
+	General
+	 * texto "Sin elementos" del árbol personalizable por CSS 
+	 * botoneras de asistentes unificadas totalmente (puede que haya que ajustar algún CSS de aplicación, claro)
+	 * Exportar a excel respeta los formatos fc de la lista
+	 * limpieza de directorio lib (han sobrado como 15 jars)
+	 * + funciones internas unificadas
+	 * sombras únicamente por CSS (se ha simplificado el dom de todos los formularios)
+	 * refrito en buscadores: orientación a objetos
+	 * tablas temporales unificadas (desaparecen clases TablaExcel y TablaDefExcel), que se reusan para leer Excel, RSS...
+	 * refrito en sorttable.js: orientación a objetos
+	 * junto el código de subida de archivos con frmDinamico.js
+	 * internacionalización de aplicaciones
+	 * gotta como servidor de servicios web (ejecutar un nivel/lanzar un trámite): nada de axis, es un servlet normal y corriente
+	 * subida de ficheros ahora lleva un indicador del progreso "subiendo: 100 de 100000 bytes (1%)"
+	 * alfresco: nuevo método para sacar y bajar ficheros sin pasar por disco duro (empieza a descargar casi instantaneamente, y antes tardaba 10 segundos para volcar al disco un archivo de 200 MB)
+	 * todas las imágenes renombradas según su función (depurador.refrescar.on, depurador.refrescar.off, depurador.icono)
+	 
+	Fusión de informes Word
+	 * se ha añadido información sobre los marcadores al monitor de la aplicación ("Nombre de marcador; Valor devuelto:ret)
+
+	Diseñador
+	 * rejilla para ajustar más fácilmente el diseño en detalles
+
+	Depurador:
+	 * botón para reordenar acciones (dejando huecos de 10 entre acción y acción)
+	 * botón para releer acciones y continuar por donde estábamos
+	 * recordar posición splitter
+	 * recordar estado del botón "editar"
+	 * tamaño de columnas configurable
+	 * tb, tt y tf destacadas, con menú contextual se sacan opciones de ordenación automáticas
+	 * variables: las variables que vienen de buscadores (@expediente -> @expediente, @expediente0, @expediente1) se muestran relacionadas de forma visual
+	 * tamaño de columnas configurable
+	  
+	Mapa de tramitación:
+	 * refrito completo
+	 * mostrar qué trámites llevan firma
+	 * los SUBs/FORs se muestran "dentro" del trámite padre, y traspasan sus propiedades a este. Si un tramite 'tp' tiene un sub 'ts' y este tiene un PEN 'tpen', este se muestra en el circuito como colgando del padre 'tp'
+
+	Recarga de aplicaciones
+	 * cambiado a un jsp
+	 * cambiada estética
+	 * se sacan errores del diccionario
+	 * se sacan más estadísticas 
+	     * 37 tablas / 1000 columnas / 50 campos / 30 relaciones
+	     * 80 opciones en el menú
+	     * 23 niveles / 12 vistas / 14 detalles / 1000 controles
+	     * 10 caminos / 135 trámites / 3000 acciones
+	     * 10 usuarios
+	 * añadidos errores de incialización de niveles jython
+
+	Monitor:
+	 * añadida columna "hora de la operación"
+	 * añadida información sobre fusión de informes Word
+	 * añadida información sobre conexión mediante servicios Web
+	 * carga bajo demanda para conexiones lentas o servidores en producción
+
+	Extensores
+	 * mini librería de tratamiento de imágenes: recortar, redimensionar, escala de grises, cambiar el tipo de imagen
+	 * shell en cliente (mediante un applet: se usa en GDR para grabar y leer chips de tarjetas inteligentes. La respuesta se envía al trámite para procesarla)
+	 * experimentos con las notificaciones push

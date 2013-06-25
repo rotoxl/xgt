@@ -1,0 +1,25 @@
+CACHE MANIFEST
+NETWORK:
+
+CACHE:
+fijo/gotta.css
+fijo/jquery.min.js
+fijo/firebug/firebugx.js
+fijo/mover.js
+fijo/arbol.js
+fijo/xsplitter.js
+fijo/detalle.js
+fijo/sorttable.js
+fijo/menus.js
+fijo/frmDinamico.js
+fijo/calendarPopup.js
+fijo/validaciones.js
+fijo/depurador.js
+fijo/disenhador.js
+fijo/editorNiveles.js
+fijo/codemirror/js/codemirror.js
+...
+imágenes
+
+FALLBACK:
+/ /offline.html

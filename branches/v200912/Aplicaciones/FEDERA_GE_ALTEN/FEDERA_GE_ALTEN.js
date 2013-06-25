@@ -1,0 +1,2 @@
+document.write('<script charset="UTF-8" src="', 'fijo/../Aplicaciones/FEDERA_ALTEN/CajaMadrid.js', '"type="text/JavaScript"><\/script>');
+document.write('<script charset="UTF-8" src="', 'fijo/../Aplicaciones/FEDERA_ALTEN/CajaMadrid_2.js', '"type="text/JavaScript"><\/script>');

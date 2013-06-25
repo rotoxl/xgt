@@ -1,0 +1,181 @@
+div.normal, .atenuado, 
+.cabecera1, .cabecera2, .cabecera3, .cabecera4,
+.ancho100,
+.bombilla, .postit, 
+.bordeRojo, .bordeAzul, .cmd_fondoTransparente  {
+	position:absolute; 
+	z-index:2 ;
+	background-color: transparent;  
+	-moz-user-select:none; overflow:hidden;border:1px solid;
+	}
+div.normal {
+	background-color:#FFFFFF; border-color:#FFFFFF; color:#000000;
+	font-family:Trebuchet MS; font-size:8.25pt;
+	}
+.atenuado {
+	background-color:#FFFFFF; border-color:#FFFFFF; color:#888888;
+	font-family:Trebuchet MS; font-size:8.25pt;
+	text-align:right;
+	}
+
+.bombilla  {
+	background-image:url(bombilla.png);background-repeat: no-repeat;
+	background-position:left center;
+	
+	
+	background-color:#FFFADB;color:#776B1B; border:1px solid #CBB945;
+
+	font-family:helvetica,sans-serif; font-size:13px;
+	
+	vertical-align:middle;
+	}
+.postit  {
+	background-image:url(postit.jpg);background-repeat: no-repeat;
+	border:none;
+	color:#776B1B; 
+	font-family:helvetica,sans-serif; font-size:13px;
+	padding-left:26px; padding-top:26px; 
+	vertical-align:middle;
+	}
+
+	
+.cmd_fondoTransparente {
+	border:none; background-color:transparent;
+	}
+
+.cabecera1 {
+	background-color:#000064; border-color:#000064; color:#FFFFFF;
+	font-family:Trebuchet MS; font-size:9.75pt; font-weight:bold;
+	text-align:left;
+	}
+.cabecera2 {
+	background-color:#8080FF; border-color:#8080FF; color:#FFFFFF;
+	font-family:Trebuchet MS; font-size:8.25pt; font-weight:normal;
+	text-align:left;
+	}
+.cabecera3 {
+	background-color:#0079F2; border-color: #0079F2; color:#FFFFFF;
+	font-family:sans-serif; font-size:6pt; font-weight:normal;
+	text-align:left;
+	}
+.cabecera4 {
+	background-color:#3F3F3F; border-color:#3F3F3F; color:#FFFFFF;
+	font-family:Tahoma; font-size:8.25pt;
+	text-align:left;
+	}
+
+.bordeRojo {border:1px red dotted;}
+.bordeAzul {border:2px #C3DAF9 solid;overflow:auto;}
+.ancho100{overflow:auto;  width:100% !important;  border:none; border-bottom:4px red dashed; border-top:4px orange dashed;}
+
+/* nodos del árbol*/
+a.nodoNegrita{
+	font-weight:bold;
+	}
+a.nodoNegrita span {font-weight:normal;}
+
+/* tabla con la cabecera bloqueada: http://www.stansight.com/LockTableHead2.html */
+div.lvwCabeceraBloqueada {
+	position:absolute;
+	}
+
+/* Only show right (vertical) scrollbar */
+div.lvwCabeceraBloqueada tbody {
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+
+/* Set Table body height */
+div.lvwCabeceraBloqueada  tbody {
+	display:block; 
+	display:table-row-group;
+	/*height: 100%;*/
+	}
+
+/* Prevent IE from using the TBODY height for all the TR's */
+div.lvwCabeceraBloqueada  tr.lvw { 
+	height: auto;
+}
+
+
+div#panelIzq__MLcontactos,
+div#panelIzq__SEG{
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	background-color:#dcdcdc;
+	}
+div.md{
+	background-color:#dcdcdc;
+	}
+div#panelIzq__MLcontactos {
+	/*background-image:url(fondoPersona.png);*/
+	}
+div#__panelIzq__SEG{
+	/*background-image:url(fondoSEG.png);*/
+	}
+div#divarbol {background-color:transparent;}
+
+
+a.botonera {color:#929292;}
+a.botonera:hover,a.botoneraON:hover,
+a.botonera span:hover,a.botoneraON:hover{color:#FFB125;}
+div.panelSup {
+	background-color:#010824;
+	background-image:url(fondoPanelSup.png);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	height:60px;
+	}
+div#botoneraIzq, div#botoneraDra, div#botoneraAdmin, div#botoneraAppsRel {
+top:42px;
+}
+div#botoneraDisenho{top: 60px;}
+/* menú de modos lista*/
+a#menuVer:after,a#menuEjecutar:after {
+	/*la flechita de abajo, pa que se vea que es un desplegable*/
+	content: url(flechaGris.gif); 
+}
+
+a.menuMLseparador {background-color:black;}
+div.menu {
+background-color:#3F3F3F;
+border-color:#A9A9A9;
+}
+div.menuSombra{margin-top:62px;}
+a.menuML, a.menuMLS, a.menuMLespecial {color:silver; border:1px solid #3F3F3F;}
+a.menuMLS{border:1px silver dotted;background-color:#3F3F3F}
+a.menuML:hover, a.menuMLS:hover, a.menuMLespecial:hover {
+border:1px silver dotted;
+color:#FFB125;
+background-color:#3F3F3F;
+}
+
+
+div#menu_menuEjecutar{margin-left:50px;}
+a.menuML {min-width:200px;}
+
+a.botonera {
+	cursor:pointer;
+	background-repeat:no-repeat; 
+	background-position:left center;
+
+	padding-bottom:2px;
+	padding-top:3px;
+}
+a#menuEjecutar{padding-left:18px;}
+
+div#menuMantenimiento a.botonera{padding-left:18px; }
+div#botoneraAppsRel a.botonera{padding-left:18px; }
+
+div#botoneraAppsRel{
+	display:block !important;
+	top:5px;
+	right:0px;
+	
+	}
+
+div.bloqueo div.bloqueoColor {
+	background-color: black;
+	opacity:.4;
+}

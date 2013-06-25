@@ -1,0 +1,352 @@
+/*
+Tema:azul medusa
+http://kuler.adobe.com/#themes/search?term=azul medusa
+
+De claro a oscuro:
+#4192D9
+#F2F2F2
+#AED3F2
+#6AA5D9
+#1E3E59
+
+
+azul claro #E4E8F1
+fondo paneles #F8F8FA
+*/
+
+/* controles personalizados */
+
+.ctlGotta{font-family: tahoma, verdana, sans-serif !important;}
+div.ctlGotta.lbl{
+	color:#b9b9b9 !important; 
+	
+	font-size:13px!important;
+	}
+
+div.lbl.transparente{
+	background-color:transparent !important;
+	}
+
+button.cmd {
+	text-align:left;
+	background-color:transparent !important;
+	color:#777777 !important; 
+	font-size:13px;
+	border:none;
+	border: 1px dotted lightgray !important;
+	}
+button.cmd > img {
+    vertical-align: text-top;
+	margin-right:5px;
+	margin-left: -3px; margin-top: -3px; padding-left: 12px;
+	}
+button.cmd.botones28x28 > img{
+	padding-left: 2px;
+	}
+table.lvw, table.sortable, table.bsc {
+    background-color: #E4E8F2;
+	color:#2F4A90;
+}
+thead tr, thead tr, tbody th, thead tr.bsc {
+    background-color: #F2F2F2;
+    background-image: none;
+}
+a.navegacion, a.email {color:#2F4A90; text-decoration:underline; -moz-text-decoration-style:dotted;}
+
+
+/*cabeceras*/
+div.lbl.cabecera1{
+	background-color: #19558D !important;
+	background-image:-moz-linear-gradient(center bottom , #103657 0%, #1F5E91 100%);
+	color: #FFFFFF !important;
+	
+	border:1px solid #071A29;
+	
+	font-size:13px; font-weight: bold;
+	padding-left: 2px;
+	}
+div.lbl.cabecera2{
+	background-color: #f2f2f2 !important;
+	
+	color: silver !important;
+	
+	border:1px solid #F2F2F2;
+	
+	font-size:13px; 
+	padding-left: 2px;
+	}
+div.lbl.cabecera3{
+	background-color: #1E3E59 !important;
+	border: medium none !important;
+	color: #FFFFFF !important;
+	font-weight: bold;
+	padding-left: 2px;
+	}
+
+
+
+/*
+div.lbl.cabeceraGrupoBotones{
+	background-color: #2C4865 !important;
+    background-image:url(ico/degradado.png);
+	background-repeat:repeat-y;
+	border: medium none !important;
+    color: #FFFFFF !important;
+    font-weight: bold;
+    padding-left: 2px;
+	}
+*/
+
+
+div.lbl.bombilla{
+	
+	padding:9px 0px 4px 22px;
+	
+	background-image:url(ico/info.png);
+	background-repeat:no-repeat;
+	background-position: 3px 9px;
+	
+	background-color:#f2f2f2;
+	color:#777777 !important;
+	font-size:11px;
+font-family:tahoma;	
+	border:none;
+	
+	}
+	
+	
+div.txt, input.txt_bsp, input.txt_bsm{
+	background-color:#FFFFFF !important;
+	font-size:13px!important;
+	color:#2F4A90!important;
+	
+	border: 1px solid #E4E8F2;
+    box-shadow: 0 1px 3px #EAEDF4;
+	
+	}
+div.txt.cabecera1{
+    font-weight:bold;
+	font-size:16px !important;
+	}
+	
+div#control19{background-color:transparent !important; border:1px solid #CCCCCC; padding-top:5px;}	
+div#control19 div.xfilaRD, 
+div#control19 div.xfilaRD div.filaRD{
+	width:250px !important; 
+	height:239px  !important;
+	border:none;
+	}
+
+div#control19 div.xfilaRD button.cmd {border:none;}
+
+div#control19 div.xfilaRD.botonADD button.cmd.botonDEL,
+div#control19 div.xfilaRD.botonADD div.txt{
+	display:none;
+	}
+div#control19  div.txt{
+	background-color:transparent!important; 
+	border:none!important; 
+	text-align:center !important;
+	box-shadow: none!important; }
+
+div#control19 div.xfilaRD.botonDEL button.cmd.botonADD {display:none;}
+div#control19 img.pic{padding-left:10px;}
+
+div.rec.contenedor {background-color:silver; border-radius:40px;}
+
+div.tab button.cmd {background-color:transparent !important;}
+
+
+div.resumen span {
+	color: #f2f2f2;
+	background-color: #1E3E59;
+	border-radius:5px;
+	padding:3px;
+	margin-right:1px;
+	margin-left:3px;
+	display:inline-block;
+	}
+div.resumen span:first-child{margin-left:0px;}
+div.resumen span:last-child{margin-right:3px;}
+
+div.resumen.cargando {
+	background-image:url(../../fijo/throbber.gif); background-position:left center; background-repeat:no-repeat;
+	}
+	
+tr.fila.seleccionada, tr.fila.seleccionada:hover, div.filaRD.fila.seleccionada, div.filaRD.fila.seleccionada:hover, tbody.fila.seleccionada, tbody.fila.seleccionada:hover {
+    background-color: #E4E8F1;
+    color: #536680;
+}
+tr.fila.seleccionada TD, tr.fila.seleccionada span,
+.fila.seleccionada a.email, .fila.seleccionada a.web, .fila.seleccionada a.navegacion{
+    color: #536680;
+}
+ 
+.rec.lineaVertical{
+	border-width:0px 0px 0px 1px;
+	border-color:#E4E8F1;
+	border-style:dotted;
+	position:absolute;
+	}
+body div.lbl.listaEstilos{
+	text-align:center;
+	}
+/*////////////////////////////////////////////////////*/
+
+/*Cabecera*/
+div#logo {
+	background-image:url(ico/logo.png);
+	background-repeat:no-repeat;
+	height:90px; width:63px;
+	border-left:1px dotted #E4E8F1;
+	}
+a.botonera, a.botonera.estado_on {color:#536680;font-size:12px !important;}
+a.botonera:hover {border-color:transparent !important; }
+
+span.botonera.separador{height:14px; border-right:1px dotted #E4E8F1; background-image:none;}
+#botoneraDra li:nth-child(2){display:none;}
+
+#botoneraIzq a.botonera.imagen.texto {
+	background-image:center left;
+    padding-bottom: 4px;
+    padding-left: 28px;
+    padding-top: 7px;
+	}
+#botoneraIzq a.botonera.imagen.texto.estado_on{
+	background-color:#E4E8F1;
+	}
+div.header.panelSup{
+border-bottom: 1px solid #E4E8F1;
+background-color:white;
+height:96px;
+}
+.botonera.jquerycssmenu{margin-top:25px;}
+#botoneraIzq{margin-left: 80px;}
+#botoneraDra{margin-right:8px;}
+
+#botoneraDisenho{
+	background-color:#F6F7F9; 
+	top:93px; 
+	border-left:1px solid #E4E8F1;
+	}
+.header.tituloAcordeon{
+	border-bottom: 1px dotted #536680;
+    color: #536680;
+	}
+#botoneraDisenho #SelectorColumnas {
+    border: 1px solid #E4E8F1;
+	background-color:white;
+	}
+#botoneraDisenho input, #botoneraDisenho a.botonera {
+    color: #536680;
+	}
+#botoneraDisenho, #botoneraDisenho td {
+    color: #536680;
+}
+
+/*detalles*/
+.section.clsPane{
+	background-color:#F8F8FA;
+	}
+div.clsDragBar{
+	background-color:#F8F8FA;
+	border:none;
+	border-left:1px solid #E4E8F1;
+	background-image:none;
+	}
+
+/*tab*/
+div.tab table.tab{margin-top:-1px;}
+div.tab div.pestanha {
+	background-color:#F8F8FA;
+	border-radius:2px;
+	border-color:#E4E8F1; 
+	
+	box-shadow:1px 1px 8px gray
+	}
+div.tab table.tab td {background-image: none!important; }
+td.pesInicioOn, td.pesInicioOff, td.pesFinOn, td.pesFinOff{
+	display:none;
+	}
+div.tab table.tab td.pesFondoOn, div.tab table.tab td.pesFondoOff { 
+	padding-left: 6px;
+    padding-right: 6px;
+	}
+td.pesFondoOn{ 
+	border-width:0px 1px ; 
+	border-style:solid;
+	border-color:#E4E8F1;
+	
+	background-color:#F8F8FA;
+	}
+td.pesFondoOff{opacity:.5}
+
+
+#btnNuevaVentana,#btnVersionParaImprimir, #btnGenerarURL {display:none;}
+#botoneraIzq span.botonera.separador{display:none;}
+
+
+#btnDisenhador span, #btnDepurador span, #btnConstructor span, #btnMonitorSQL span, #btnRecargarAplicacion span{
+	display:inline;
+	}
+#btnDisenhador, #btnDepurador, #btnConstructor, #btnMonitorSQL, #btnRecargarAplicacion,
+#btnRefrescar, #btnSalir, #btnCambiarContrasenha{
+	background-image:none !important;
+	padding-left:4px;
+	}
+.estado_on#btnDisenhador, 
+.estado_on#btnDepurador{font-weight:bold;}
+
+
+.nav#divarbol td.contenido a.contenido, 
+.nav#divarbol td.contenido span{
+	color:#536680; 
+	background-color:#F8F8FA ;
+	padding-bottom:1px;
+	font-size:12px;
+	}
+.nav#divarbol td.contenido.contenidoS,
+.nav#divarbol td.contenido.contenidoS a.contenido,
+.nav#divarbol td.contenido.contenidoS span {
+	background-color:#E4E8F1; 
+
+	}
+	
+	
+a.email {
+    /*
+	background-image: url(ico/mail.png);
+	background-position: 1px 2px;
+	*/
+	background-image:none;
+	padding-left:2px;
+}
+
+
+
+
+/*formularios*/
+td.separador{
+  background-color: #19558D !important;
+    background-image: -moz-linear-gradient(center bottom , #103657 0%, #1F5E91 100%);
+    border: 1px solid #071A29;
+    color: #FFFFFF !important;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 2px;}
+
+div#tramitexpath0 textarea.lvw.readonly:first-child{width:800px; height:250px;}
+
+div.filaRD.fila button.botonDEL {
+	width:40px;
+	border-left:none!important;
+	border-top:none!important;
+	border-bottom-right-radius:10px;
+	}
+div.filaRD.fila:hover button.botonDEL{
+	background-color:white !important;
+	border:none !important;
+	border-right:1px solid silver!important;
+	border-bottom:1px solid  silver !important;
+	}
+

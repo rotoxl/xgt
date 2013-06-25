@@ -1,0 +1,91 @@
+﻿** Programador de tareas
+
+Diccionario: 
+ * soporte en asistente para columnaBusqueda y columnaDescripcion
+ * tabla EXP_ModoLista ya no es necesaria, basta con nivel menuGeneral
+
+Explorador
+ * los botones ahora admiten una llamada a javascript como acción al pulsarlos
+ * soporte para meter listas, desplegables y otros dentro de RD
+ * mayor facilidad para personalizar el comportamiento de controles javascript: basta con personalizar el método Control.prototype.toDOM_18
+ * TABs con las pestañas a la izquierda: más personalizables por CSS, incluso colores y demás
+ * limitar el nº de caracteres de un bsp
+ * el logo ahora sale colocado y visible por defecto, pero transparente
+ * asistente para rellenar EXP_Menu ahora funciona bien
+ * History API (Firefox, Chrome): ahora los botones adelante/atrás del navegador funcionan bien
+
+Editor de niveles
+ * más asistentes: gráfica, app_tramites, app_menuGeneral, app_menuDetalle, nivel de oracle, nivel de sql-server, nivel de jython, gantt, app_documentos
+ * sale info del nodo activo en formulario de parámetros y la zona de resultados del editor de niveles
+ * recordar posición splitter
+ * caso de prueba en editor de niveles: añadiendo una etiqueta #caso de prueba: y12\e13, al darle a ejecutar te usa esos valores como parámetros
+ * botón para editar cualquier proc almacenado o vista de la bd (antes sólo se podían editar los niveles)
+ * recuperar los niveles que tenías abiertos en la sesión anterior ("Recuperar los recientes")
+  
+General
+ * texto "Sin elementos" del árbol personalizable por CSS 
+ * botoneras de asistentes unificadas totalmente (puede que haya que ajustar algún CSS de aplicación, claro)
+ * Exportar a excel respeta los formatos fc de la lista
+ * limpieza de directorio lib (han sobrado como 15 jars)
+ * + funciones internas unificadas
+ * sombras únicamente por CSS (se ha simplificado el dom de todos los formularios)
+ * refrito en buscadores: orientación a objetos
+ * Tablas temporales unificadas (desaparecen clases TablaExcel y TablaDefExcel), que se reusan para leer Excel, RSS...
+ * refrito en sorttable.js: orientación a objetos
+ * junto el código de subida de archivos con frmDinamico.js
+ * internacionalización de aplicaciones
+ * gotta como servidor de servicios web (ejecutar un nivel/lanzar un trámite): nada de axis, es un servlet normal y corriente
+ * subida de ficheros ahora lleva un indicador del progreso "subiendo: 100 de 100000 bytes (1%)"
+ * alfresco: nuevo método para sacar y bajar ficheros sin pasar por disco duro (empieza a descargar casi instantaneamente, y antes se tiraba 10 segundos para volcar al disco un archivo de 200 MB)
+ * todas las imágenes renombradas según su función (depurador.refrescar.on, depurador.refrescar.off, depurador.icono
+ 
+Fusión de informes Word
+ * se ha añadido información sobre los marcadores al monitor de la aplicación ("Nombre de marcador; Valor devuelto:ret)
+
+Diseñador
+ * rejilla para ajustar más fácilmente el diseño en detalles
+
+Depurador:
+ * botón para reordenar acciones (dejando huecos de 10 entre acción y acción)
+ * botón para releer acciones y continuar por donde estábamos
+ * recordar posición splitter
+ * recordar estado del botón "editar"
+ * tamaño de columnas configurable
+ 
+Mapa de tramitación:
+ * refrito completo
+ * mostrar qué trámites llevan firma
+ * los SUBs/FORs se muestran "dentro" del trámite padre, y traspasan sus propiedades a este. Si un tramite 'tp' tiene un sub 'ts' y este tiene un PEN 'tpen', este se muestra en el circuito como colgando del padre 'tp'
+
+Recarga de aplicaciones
+ * cambiado a un jsp
+ * cambiada estética
+ * sacar errores del diccionario
+ * sacar más estadísticas 
+     * 37 tablas / 1000 columnas / 50 campos / 30 relaciones
+     * 80 opciones en el menú
+     * 23 niveles / 12 vistas / 14 detalles / 1000 controles
+     * 10 caminos / 135 trámites / 3000 acciones
+     * 10 usuarios
+ * añadidos errores de incialización de niveles jython
+
+Monitor:
+ * añadida columna "hora de la operación"
+ * añadida información sobre fusión de informes Word
+ * añadida información sobre conexión mediante servicios Web
+ * carga bajo demanda para conexiones lentas o servidores en producción
+
+Depurador:
+  * tb, tt y tf destacadas, con menú contextual se sacan opciones de ordenación automáticas
+  * variables: las variables que vienen de buscadores (@expediente -> @expediente, @expediente0, @expediente1) se muestran relacionadas de forma visual
+  * tamaño de columnas configurable
+    
+Extensores
+ * mini librería de tratamiento de imágenes: recortar, redimensionar, escala de grises, cambiar el tipo de imagen
+ * shell en cliente (mediante un applet: se usa en GDR para grabar y leer chips de tarjetas inteligentes. La respuesta se envía al trámite para procesarla)
+
+Experimentos:
+ * Notificaciones
+
+
+

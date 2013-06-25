@@ -1,0 +1,477 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<script type="text/javascript" src="javascript-test-common.js"></script>
+<script type="text/javascript" src="javascript-test-cades.js"></script>
+<script type="text/javascript" src="javascript-test-cms.js"></script>
+<script type="text/javascript" src="javascript-test-xades.js"></script>
+<title>Testing</title>
+<script>
+function whichBrs() {
+   var agt=navigator.userAgent.toLowerCase();
+   
+   if (agt.indexOf("opera") != -1) return 'Opera';
+   if (agt.indexOf("staroffice") != -1) return 'Star Office';
+   if (agt.indexOf("webtv") != -1) return 'WebTV';
+   if (agt.indexOf("beonex") != -1) return 'Beonex';
+   if (agt.indexOf("chimera") != -1) return 'Chimera';
+   if (agt.indexOf("netpositive") != -1) return 'NetPositive';
+   if (agt.indexOf("phoenix") != -1) return 'Phoenix';
+   if (agt.indexOf("firefox") != -1) return 'Firefox';
+   if (agt.indexOf("safari") != -1) return 'Safari';
+   if (agt.indexOf("skipstone") != -1) return 'SkipStone';
+   if (agt.indexOf("msie") != -1) return 'Internet Explorer';
+   if (agt.indexOf("netscape") != -1) return 'Netscape';
+   if (agt.indexOf("mozilla/5.0") != -1) return 'Mozilla';
+   if (agt.indexOf('\/') != -1) {
+      if (agt.substr(0,agt.indexOf('\/')) != 'mozilla') {
+         return navigator.userAgent.substr(0,agt.indexOf('\/'));
+      }
+      else 
+         return 'Netscape';
+   } 
+   else if (agt.indexOf(' ') != -1)
+      return navigator.userAgent.substr(0,agt.indexOf(' '));
+   else 
+      return navigator.userAgent;
+}
+
+</script>
+</head>
+<style type="text/css">
+.userc_sm { width:110px }
+.userc_lg { width:200px }
+</style>
+<body>
+<h2>Applet de Plataforma de Firma.</h2>
+
+<!--
+<script>instalarComponente()</script>
+-->
+<script>
+document.write('<applet id="applet" name="applet_01" code="es.burke.plataformafirma.applet.AppletFirma" archive="../plataformafirma-applet.jar, ../plataformafirma-applet-thirdparty.jar" width="0" height="0">');
+document.write('<param name="browser" value="' + whichBrs() +'">');
+document.write('</applet>');
+</script> 
+
+<table>
+   <tr>
+      <td colspan="4">Filtro de selección de certificados</td>
+   </tr>
+   <tr>
+      <td>Nombre</td>
+      <td><input type="text" id="inNombre" class="userc_lg"></input></td>
+      <td>Numero de serie</td>
+      <td><input type="text" id="inNSerie" class="userc_lg"></input></td>
+   </tr>
+   <tr>
+      <td>Emisor</td>
+      <td><input type="text" id="inEmisor" class="userc_lg"></input></td>
+      <td>Huella</td>
+      <td><input type="text" id="inHuella" class="userc_lg"></input></td>
+   </tr>
+   <tr>
+      <td colspan="4">
+         <a href="javascript:cargaFiltros();">Iniciar</a>
+      </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+      <td><textarea id="ta_in" rows="18" cols="60"></textarea></td>
+		<td><textarea id="ta_out" rows="18" cols="60" readonly="readonly"></textarea></td>
+	</tr>
+	<tr>
+   	<td>
+         <a href="javascript:copy_OutputToInput();">Copy</a>&nbsp; 
+         <a href="javascript:clear();">Clear</a> 
+      </td>
+	</tr>
+</table>
+<h3>Applet Operations</h3>
+<a href="javascript:displayUtils();">Utils</a> -
+<a href="javascript:displayPKCS7();">CMS</a> -
+<a href="javascript:displayCades();">CAdES</a> -
+<a href="javascript:displayXAdES();">XAdES</a> -
+<a href="javascript:displayXMLDSig();">XMLDSig</a> -
+<a href="javascript:displayPDF();">PDF</a> -
+<a href="javascript:displayUpload();">Upload</a><br/><br/>
+<table cellpadding="5">
+   <!-- ==================================================================== -->
+   <!-- FIRMA COMMON -->
+   <!-- ==================================================================== -->
+   <tr id="tr_test_getcertificate_login" style="display:none">
+      <td>
+         <a href="javascript:test_getcertificate_login();">Get current certificate</a>
+      </td>
+   </tr>
+   <tr id="tr_test_getcertificate_setlogin" style="display:none">
+      <td>
+         <a href="javascript:test_setcertificate_login();">Set current certificate</a>
+      </td>
+   </tr>
+   <tr id="tr_test_getcertificates" style="display:none">
+      <td>
+         <a href="javascript:test_getcertificates();">Get certificate list</a>
+      </td>
+   </tr>
+   <tr id="tr_test_b64" style="display:none">
+      <td><a href="javascript:test_b64();">Base 64</a></td>
+      <td><select id="b64_operation" class="userc_sm"><option>Encode</option><option>Decode</option></select></td>
+   </tr>
+	<tr id="tr_test_b64HashTexto" style="display:none">
+		<td><a href="javascript:test_b64HashTexto();">Digest - Text</a></td>
+		<td><select id="hash_algorithm_texto" class="userc_sm"><option>MD5</option><option>SHA1</option></select></td>
+   </tr>
+   <tr id="tr_test_b64HashB64" style="display:none">
+      <td><a href="javascript:test_b64HashDatosB64();">Digest - B64</a></td>
+      <td><select id="hash_algorithm_b64" class="userc_sm"><option>MD5</option><option>SHA1</option></select></td>
+   </tr>
+   <tr id="tr_test_b64HashFichero" style="display:none">
+      <td><a href="javascript:test_b64HashFichero();">Digest - File</a></td>
+      <td>
+      	<select id="hash_algorithm_file" class="userc_sm"><option>MD5</option><option>SHA1</option></select>
+      	<a href="javascript:test_hash_file_prepare();">Prepare</a>
+      </td>
+	</tr>
+   <!-- ==================================================================== -->
+   <!-- FIRMA CMS -->
+   <!-- ==================================================================== -->
+   <tr id="tr_test_cms_b64" style="display:none">
+      <td><a href="javascript:test_cms_b64();">CMS-Base64</a></td>
+      <td>
+         <select id="cms_b64_type" class="userc_sm"><option>Attached</option><option>Detached</option></select>&nbsp;
+         <a href="javascript:test_cms_b64_prepare();">Prepare</a>
+      </td>
+   </tr>
+   <tr id="tr_test_cms_url" style="display:none">
+      <td><a href="javascript:test_cms_url();">CMS-Url</a></td>
+      <td>
+         <select id="cms_url_type" class="userc_sm" ><option>Attached</option><option>Detached</option></select>&nbsp;
+         <a href="javascript:test_cms_url_prepare_url();">Prepare Url</a>&nbsp;
+         <a href="javascript:test_cms_url_prepare_file();">Prepare File</a>
+      </td>
+   </tr>
+   <tr id="tr_test_cms_prefirma" style="display:none">
+      <td><a href="javascript:test_cms_prefirma();">CMS-Prefirma</a></td>
+      <td>
+         <a href="javascript:test_cms_prefirma_prepare();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ==================================================================== -->
+   <!-- FIRMA CADES -->
+   <!-- ==================================================================== -->
+   <tr id="tr_test_cades_b64" style="display:none">
+      <td><a href="javascript:test_cades_b64();">CAdES-Base64</a></td>
+      <td>
+         <select id="cades_b64_type" class="userc_sm" >
+            <option>Attached</option>
+            <option>Detached</option>
+         </select>&nbsp;
+         <a href="javascript:test_cades_b64_prepare();">Prepare</a>
+      </td>
+   </tr>
+   <tr id="tr_test_cades_url" style="display:none">
+      <td><a href="javascript:test_cades_url();">CAdES-Url</a></td>
+      <td>
+         <select id="cades_url_type" class="userc_sm" >
+            <option>Attached</option>
+            <option>Detached</option>
+         </select>&nbsp;
+         <a href="javascript:test_cades_url_prepare_url();">Prepare URL</a>&nbsp;
+         <a href="javascript:test_cades_url_prepare_file();">Prepare File</a>
+      </td>
+   </tr>
+   <tr id="tr_test_cades_prefirma" style="display:none">
+      <td><a href="javascript:test_cades_prefirma();">CAdES-Prefirma</a></td>
+      <td><a href="javascript:test_cades_prefirma_prepare();">Prepare</a></td>
+   </tr>
+   <!-- ==================================================================== -->
+   <!-- FIRMA XADES -->
+   <!-- ==================================================================== -->
+   <tr id="tr_test_xades_xml" style="display:none">
+      <td>
+         <a href="javascript:test_xades_xml();">XAdES - XML</a>
+      </td>
+      <td>
+         <select id="xades_xml_type" class="userc_sm">
+            <option selected="selected">ENVELOPED</option>
+            <option>ENVELOPING</option>
+            <option>DETACHED</option>
+         </select>
+         IdSignature: <input type="text" id="xades_xml_idsignature" class="userc_sm"/>
+         IdReference: <input type="text" id="xades_xml_idreference" class="userc_sm"/>
+         Role: <input type="text" id="xades_xml_role" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xades_xml();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xades_text" style="display:none">
+      <td>
+         <a href="javascript:test_xades_text();">XAdES - Text</a>
+      </td>
+      <td>
+         <select id="xades_text_type" class="userc_sm">
+            <option selected="selected">ENVELOPED</option>
+            <option>ENVELOPING</option>
+            <option>DETACHED</option>
+         </select>
+         IdSignature: <input type="text" id="xades_text_idsignature" class="userc_sm"/>
+         IdReference: <input type="text" id="xades_text_idreference" class="userc_sm"/>
+         Role: <input type="text" id="xades_text_role" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xades_text();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xades_b64" style="display:none">
+      <td>
+         <a href="javascript:test_xades_b64();">XAdES - B64</a>
+      </td>
+      <td>
+         <select id="xades_b64_type" class="userc_sm">
+            <option selected="selected">ENVELOPED</option>
+            <option>ENVELOPING</option>
+            <option>DETACHED</option>
+         </select>
+         IdSignature: <input type="text" id="xades_b64_idsignature" class="userc_sm"/>
+         IdReference: <input type="text" id="xades_b64_idreference" class="userc_sm"/>
+         Role: <input type="text" id="xades_b64_role" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xades_b64();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xades_url" style="display:none">
+      <td>
+         <a href="javascript:test_xades_url();">XAdES - XML Url</a>
+      </td>
+      <td>         
+         <select id="xades_url_type" class="userc_sm">
+            <option selected="selected">ENVELOPED</option>
+            <option>ENVELOPING</option>
+            <option>DETACHED</option>
+         </select>
+         IdSignature: <input type="text" id="xades_url_idsignature" class="userc_sm"/> 
+         IdReference: <input type="text" id="xades_url_idreference" class="userc_sm"/>
+         Role: <input type="text" id="xades_url_role" class="userc_sm"/>
+         Url: <input type="text" id="xades_url_url" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xades_url();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xades_rawurl" style="display:none">
+      <td>
+         <a href="javascript:test_xades_rawurl();">XAdES - Url</a>
+      </td>
+      <td>         
+         <select id="xades_rawurl_type" class="userc_sm">
+            <option selected="selected">ENVELOPED</option>
+            <option>ENVELOPING</option>
+            <option>DETACHED</option>
+         </select>
+         IdSignature: <input type="text" id="xades_rawurl_idsignature" class="userc_sm"/> 
+         IdReference: <input type="text" id="xades_rawurl_idreference" class="userc_sm"/>
+         Role: <input type="text" id="xades_rawurl_role" class="userc_sm"/>
+         Url: <input type="text" id="xades_rawurl_url" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xades_rawurl();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xades_file" style="display:none">
+      <td>
+         <a href="javascript:test_xades_file();">XAdES - File</a>
+      </td>
+      <td>
+         <select id="xades_file_type" class="userc_sm">
+            <option selected="selected">ENVELOPED</option>
+            <option>ENVELOPING</option>
+            <option>DETACHED</option>
+         </select>
+         IdSignature: <input type="text" id="xades_file_idsignature" class="userc_sm"/> 
+         IdReference: <input type="text" id="xades_file_idreference" class="userc_sm"/>
+         Role: <input type="text" id="xades_file_role" class="userc_sm"/>
+         File: <input type="file" id="xades_file_file"/>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xades_signature" style="display:none">
+      <td>
+         <a href="javascript:test_xades_signature();">XAdES - Signature</a>
+      </td>
+      <td>
+         IdSignature: <input type="text" id="xades_signature_idsignature" class="userc_sm"/>
+         SignatureTarget: <input type="text" id="xades_signature_idreference" class="userc_sm"/>
+         Role: <input type="text" id="xades_signature_role" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xades_signature();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xades_prefirma" style="display:none">
+      <td>
+         <a href="javascript:test_xades_prefirma();">XAdES - Prefirma</a>
+      </td>
+      <td>
+         IdSignature: <input type="text" id="xades_prefirma_idsignature" class="userc_sm"/>
+         Reference: <input type="text" id="xades_prefirma_idreference" class="userc_sm"/>
+         Role: <input type="text" id="xades_prefirma_role" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xades_prefirma();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xades_context" style="display:none">
+      <td>
+         <a href="javascript:test_xades_setXadesContext();">XAdES - SetContext</a>
+      </td>
+      <td>
+         Role: <input type="text" id="xades_context_role" class="userc_sm"/>
+         PolicyId: <input type="text" id="xades_context_policy" class="userc_sm"/>
+         PolicyDesc: <input type="text" id="xades_context_policy_desc" class="userc_sm"/>
+      </td>
+   </tr>
+   <!-- ==================================================================== -->
+   <!-- FIRMA XMLDSIG -->
+   <!-- ==================================================================== -->
+   <tr id="tr_test_xmldsig_xml" style="display:none">
+      <td>
+         <a href="javascript:test_xmldsig_xml();">XMLDSig - XML</a>
+      </td>
+      <td>
+         <select id="xmldsig_xml_type" class="userc_sm">
+            <option selected="selected">ENVELOPED</option>
+            <option>ENVELOPING</option>
+            <option>DETACHED</option>
+         </select>
+         IdSignature: <input type="text" id="xmldsig_xml_idsignature" class="userc_sm"/>
+         IdReference: <input type="text" id="xmldsig_xml_idreference" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xmldsig_xml();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xmldsig_text" style="display:none">
+      <td>
+         <a href="javascript:test_xmldsig_text();">XMLDSig - Text</a>
+      </td>
+      <td>
+         <select id="xmldsig_text_type" class="userc_sm">
+            <option selected="selected">ENVELOPED</option>
+            <option>ENVELOPING</option>
+            <option>DETACHED</option>
+         </select>
+         IdSignature: <input type="text" id="xmldsig_text_idsignature" class="userc_sm"/>
+         IdReference: <input type="text" id="xmldsig_text_idreference" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xmldsig_text();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xmldsig_b64" style="display:none">
+      <td>
+         <a href="javascript:test_xmldsig_b64();">XMLDSig - B64</a>
+      </td>
+      <td>
+         <select id="xmldsig_b64_type" class="userc_sm">
+            <option selected="selected">ENVELOPED</option>
+            <option>ENVELOPING</option>
+            <option>DETACHED</option>
+         </select>
+         IdSignature: <input type="text" id="xmldsig_b64_idsignature" class="userc_sm"/>
+         IdReference: <input type="text" id="xmldsig_b64_idreference" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xmldsig_b64();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_xmldsig_signature" style="display:none">
+      <td>
+         <a href="javascript:test_xmldsig_signature();">XMLDSig - CounterSignature</a>
+      </td>
+      <td>
+         <select id="xmldsig_signature_type" class="userc_sm">
+            <option>UNUSED</option>
+         </select>
+         IdSignature: <input type="text" id="xmldsig_signature_idsignature" class="userc_sm"/>
+         IdReference: <input type="text" id="xmldsig_signature_idreference" class="userc_sm"/>
+         &nbsp;<a href="javascript:prepare_test_xmldsig_signature();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_pdf" style="display:none">
+      <td>
+         <a href="javascript:test_pdf();">PDF - File</a>
+      </td>
+      <td>
+         <table>
+            <tr>
+               <td>Place</td> 
+               <td><input type="text" id="pdf_place" class="userc_sm"/></td>
+               <td>Input</td>
+               <td><input type="file" id="pdf_in"></input></td>
+            </tr>
+            <tr>
+               <td>Reason</td>
+               <td><input type="text" id="pdf_reason" class="userc_sm"/></td>
+               <td>Output</td>
+               <td><input type="text" id="pdf_out"></input></td>
+            </tr>
+         </table>
+         Es necesario especificar el fichero de salida (output).<br/>
+         <a href="javascript:prepare_test_pdf();">Prepare</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_pdf_url" style="display:none">
+      <td>
+         <a href="javascript:test_pdf_url();">PDF - Url</a>
+      </td>
+      <td>
+         <table>
+            <tr>
+               <td>Place</td> 
+               <td><input type="text" id="pdf_url_place" class="userc_sm"/></td>
+               <td>Input</td>
+               <td><input type="text" id="pdf_url_in"></input></td>
+            </tr>
+            <tr>
+               <td>Reason</td>
+               <td><input type="text" id="pdf_url_reason" class="userc_sm"/></td>
+               <td>Output</td>
+               <td><input type="text" id="pdf_url_out"></input></td>
+            </tr>
+         </table>
+         Es necesario especificar el fichero de salida (output).<br>
+         <a href="javascript:prepare_test_pdf_url_http();">Prepare HTTP</a>&nbsp;
+         <a href="javascript:prepare_test_pdf_url_https();">Prepare HTTPS</a>
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_upload" style="display:none">
+      <td>
+         <a href="javascript:test_upload();">Upload B64</a>
+      </td>
+      <td>
+         Url: <input type="text" id="upload_url" class="userc_sm"/></input>
+         Id: <input type="text" id="upload_id" class="userc_sm"/></input>
+         IdC: <input type="text" id="upload_idcookie" class="userc_sm"/></input>
+         <a href="javascript:prepare_test_upload();">Prepare</a>&nbsp;
+      </td>
+   </tr>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <tr id="tr_test_upload_file" style="display:none">
+      <td>
+         <a href="javascript:test_upload_file();">Upload File</a>
+      </td>
+      <td>
+         Url: <input type="text" id="upload_url_file" class="userc_sm"/></input>
+         Id: <input type="text" id="upload_id_file" class="userc_sm"/></input>
+         IdC: <input type="text" id="upload_idcookie_file" class="userc_sm"/></input>
+         File: <input type="file" id="upload_filename_file" class="userc_sm"/></input>
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>

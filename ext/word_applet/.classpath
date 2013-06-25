@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jacob.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Documents and Settings/marcos/Escritorio/descargas/jacob-1.14.1/docs/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="WEB-INF/lib/plugin.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

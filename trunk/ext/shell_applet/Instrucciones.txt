@@ -1,0 +1,18 @@
+﻿1.- Establecer en JAVA_HOME la ruta al jdk
+
+2.- jdk y ant al Path de Windows (tanto al raíz como al bin)
+
+3.- Configurar Java, en panel de control. Añadir como parámetro la primera línea del WordApplet.java:
+	-Xdebug -Xrunjdwp:transport=dt_socket,address=127.0.0.1:8000,suspend=y
+
+4.- abrir cmd, y ejecutar word_applet/crea_jar: esto crea el jar, lo copia al contexto y lo firma
+
+5.- arrancar Tomcat
+
+6.- arrancar el applet: Debug configurations/Nueva "Remote Java Application" de tipo "Standarde (Socket listen)", el el puerto 8000 (debe coincidir
+	con el puerto indicado en el punto 3) y activar "Allow termination of remote VM"
+
+
+Muy importante: debe estar perfectamente coordinado el fuente con el applet que se está ejecutando, así que cada vez que se cambien las fuentes habrá 
+que repetirel paso 4.
+En ocasiones hará falta limpiar la caché del java del navegador: abrir la consola y pulsar X para que se lo vuelva a traer todo

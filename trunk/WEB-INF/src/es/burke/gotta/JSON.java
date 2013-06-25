@@ -832,12 +832,12 @@ public class JSON extends HttpServlet {
 	private IJSONwritable guardaMenu(HttpServletRequest req, Usuario usr) throws ErrorCampoNoExiste, ErrorVolcandoDatos, ErrorFilaNoExiste, ErrorTiposNoCoinciden, ErrorConexionPerdida, JSONException, ErrorTablaNoExiste, NumberFormatException, ErrorArrancandoAplicacion {	
 		Boolean hayQueCrearTramite=Util.obtenValorBoolean(req, "hayQueCrearTramite");
 		
-		String CD_Camino=Util.obtenValor(req, "cd_camino");
+		String CD_Camino=Util.obtenValorOpcional(req, "cd_camino");
 		if (CD_Camino!=null && CD_Camino.equals(Constantes.CAD_VACIA))
 			CD_Camino=null;
 		
-		String CD_Tramite=Util.obtenValor(req, "cd_tramite");
-		if (CD_Tramite.equals(Constantes.CAD_VACIA))
+		String CD_Tramite=Util.obtenValorOpcional(req, "cd_tramite");
+		if (CD_Tramite!=null && CD_Tramite.equals(Constantes.CAD_VACIA))
 			CD_Tramite=null;
 		
 		if (hayQueCrearTramite){
@@ -855,9 +855,9 @@ public class JSON extends HttpServlet {
 		CD_Boton=Long.parseLong( Util.obtenValor(req, "cd_boton"));
 		CD_BarraHerramientas=Util.obtenValor(req, "cd_barraherramientas");
 		CD_MenuPadre=Util.obtenValor(req, "cd_menupadre");
-		Imagen=Util.obtenValor(req, "imagen");
-		texto=Util.obtenValor(req, "texto");
-		titulo=Util.obtenValor(req, "titulo");
+		Imagen=Util.obtenValorOpcional(req, "imagen");
+		texto=Util.obtenValorOpcional(req, "texto");
+		titulo=Util.obtenValorOpcional(req, "titulo");
 		
 		CD_ModoLista=Util.obtenValor(req, "cd_modolista");
 		disposicion=Util.obtenValor(req, "disposicion");
@@ -865,12 +865,12 @@ public class JSON extends HttpServlet {
 		CD_NivelInicial=Util.obtenValor(req, "cd_nivelinicial");
 		botonera=Util.obtenValorBoolean(req, "botonera");
 		
-		url=Util.obtenValor(req, "url");
-		tipo=Util.obtenValor(req, "tipo");
+		url=Util.obtenValorOpcional(req, "url");
+		tipo=Util.obtenValorOpcional(req, "tipo");
 		
-		esNuevo=Util.obtenValorBoolean(req, "esNuevo");
-		esModificar=Util.obtenValorBoolean(req, "esModificado");
-		esEliminar=Util.obtenValorBoolean(req, "esEliminar");
+		esNuevo=Util.obtenValorOpcionalBoolean(req, "esNuevo");
+		esModificar=Util.obtenValorOpcionalBoolean(req, "esModificado");
+		esEliminar=Util.obtenValorOpcionalBoolean(req, "esEliminar");
 		
 		
 		try {

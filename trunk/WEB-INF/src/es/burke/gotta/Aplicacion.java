@@ -243,7 +243,7 @@ public class Aplicacion {
 				" select TablaReferencia as cd,"+
 				"	TablaReferencia as ds,"+
 				"	'./fijo/disenhador.campo' as Icono,"+
-				this.getConexion().fnConcat("'z'", "?", "campoPrincipal", "'.'", "'\\p'")+" as ModoDetalle,"+
+				this.getConexion().fnConcat("'z'", "?", "campoPrincipal", "'.'", "'\\\\p'")+" as ModoDetalle,"+
 				"	'listaColsCampos' as ModoDetalleSiguiente "+
 				" from "+
 				"	"+this.getPrefijo()+"dic_referencias"+
@@ -382,9 +382,10 @@ public class Aplicacion {
 	public void establecerConfiguracionPorDefecto() {
 		configuracion = new Coleccion<String>();
 		
-		setDatoConfig(DIC_Configuracion.icoWeb, "./Aplicaciones/"+this.cd+"/ico/");
-		setDatoConfig(DIC_Configuracion.dotWeb, "./Aplicaciones/"+this.cd+"/dot/");
-		setDatoConfig(DIC_Configuracion.rptWeb, "./Aplicaciones/"+this.cd+"/rpt/");
+		String raiz=Jsp.urlAplicaciones()+this.cd;
+		setDatoConfig(DIC_Configuracion.icoWeb, raiz+"/ico/");
+		setDatoConfig(DIC_Configuracion.dotWeb, raiz+"/dot/");
+		setDatoConfig(DIC_Configuracion.rptWeb, raiz+"/rpt/");
 		setDatoConfig(DIC_Configuracion.firmasWeb, null);
 		
 		setDatoConfig(DIC_Configuracion.metodoValidacion, "ValidacionPorUsuContrasenha");

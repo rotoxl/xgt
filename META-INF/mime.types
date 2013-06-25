@@ -1,0 +1,156 @@
+application/acad                                                             dwg
+application/andrew-inset                                                     ez
+application/clariscad                                                        ccad
+application/drafting                                                         drw
+application/dsptype                                                          tsp
+application/dxf                                                              dxf
+application/excel                                                            xls
+application/i-deas                                                           unv
+application/java-archive                                                     jar
+application/mac-binhex40                                                     hqx
+application/mac-compactpro                                                   cpt
+application/msword                                                           doc dot
+application/octet-stream                                                     bin class dms exe lha lzh com
+application/oda                                                              oda
+application/ogg                                                              ogg ogm
+application/pdf                                                              pdf
+application/pgp                                                              pgp
+application/postscript                                                       ai eps ps
+application/pro_eng                                                          prt
+application/rtf                                                              rtf
+application/set                                                              set
+application/SLA                                                              stl
+application/smil                                                             smi
+application/smil                                                             smil
+application/solids                                                           sol
+application/STEP                                                             step
+application/STEP                                                             stp
+application/vda                                                              vda
+application/vnd.mif                                                          mif
+application/vnd.ms-excel                                                     xlc xll xlm xls xlw
+application/vnd.ms-excel.addin.macroEnabled.12                               xlam
+application/vnd.ms-excel.sheet.binary.macroEnabled.12                        xlsb
+application/vnd.ms-excel.sheet.macroEnabled.12                               xlsm
+application/vnd.ms-excel.template.macroEnabled.12                            xltm
+application/vnd.ms-powerpoint                                                pot pps ppt ppz
+application/vnd.ms-powerpoint.addin.macroEnabled.12                          ppam
+application/vnd.ms-powerpoint.presentation.macroEnabled.12                   pptm
+application/vnd.ms-powerpoint.slideshow.macroEnabled.12                      ppsm
+application/vnd.ms-powerpoint.template.macroEnabled.12                       potm
+application/vnd.ms-word.document.macroEnabled.12                             docm
+application/vnd.ms-word.template.macroEnabled.12                             dotm
+application/vnd.openxmlformats-officedocument.presentationml.presentation    pptx
+application/vnd.openxmlformats-officedocument.presentationml.slideshow       ppsx
+application/vnd.openxmlformats-officedocument.presentationml.template        potx
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet            xlsx
+application/vnd.openxmlformats-officedocument.spreadsheetml.template         xltx
+application/vnd.openxmlformats-officedocument.wordprocessingml.document      docx
+application/vnd.openxmlformats-officedocument.wordprocessingml.template      dotx
+application/vnd.rim.cod                                                      cod
+application/x-arj-compressed                                                 arj
+application/x-bcpio                                                          bcpio
+application/x-cdlink                                                         vcd
+application/x-chess-pgn                                                      pgn
+application/x-cpio                                                           cpio
+application/x-csh                                                            csh
+application/x-debian-package                                                 deb
+application/x-director                                                       dcr dir dxr
+application/x-dvi                                                            dvi
+application/x-freelance                                                      pre
+application/x-futuresplash                                                   spl
+application/x-gtar                                                           gtar
+application/x-gunzip                                                         gz
+application/x-gzip                                                           gz
+application/x-hdf                                                            hdf
+application/x-ipix                                                           ipx
+application/x-ipscript                                                       ips
+application/x-javascript                                                     js
+application/x-koan                                                           skd skm skp skt
+application/x-latex                                                          latex
+application/x-lisp                                                           lsp
+application/x-lotusscreencam                                                 scm
+application/x-mif                                                            mif
+application/x-msdos-program                                                  bat com exe
+application/x-netcdf                                                         cdf nc
+application/x-perl                                                           pl pm
+application/x-rar-compressed                                                 rar
+application/x-sh                                                             sh
+application/x-shar                                                           shar
+application/x-shockwave-flash                                                swf
+application/x-stuffit                                                        sit
+application/x-sv4cpio                                                        sv4cpio
+application/x-sv4crc                                                         sv4crc
+application/x-tar                                                            tar
+application/x-tar-gz                                                         tar.gz tgz
+application/x-tcl                                                            tcl
+application/x-tex                                                            tex
+application/x-tex                                                            tex
+application/x-texinfo                                                        texinfo texi
+application/x-troff                                                          roff t tr
+application/x-troff-man                                                      man
+application/x-troff-me                                                       me
+application/x-troff-ms                                                       ms
+application/x-ustar                                                          ustar
+application/x-wais-source                                                    src
+application/zip                                                              zip
+audio/basic                                                                  au snd
+audio/midi                                                                   kar mid midi
+audio/mpeg                                                                   mp2 mp3 mpga
+audio/TSP-audio                                                              tsi
+audio/ulaw                                                                   au
+audio/x-aifc                                                                 aifc
+audio/x-aiff                                                                 aif aiff
+audio/x-mpegurl                                                              m3u
+audio/x-ms-wax                                                               wax
+audio/x-ms-wma                                                               wma
+audio/x-pn-realaudio                                                         ram rm
+audio/x-realaudio                                                            ra
+audio/x-wav                                                                  wav
+chemical/x-pdb                                                               pdb xyz
+image/cmu-raster                                                             ras
+image/gif                                                                    gif
+image/ief                                                                    ief
+image/jpeg                                                                   jpe jpeg jpg
+image/png                                                                    png
+image/tiff                                                                   tif tiff
+image/x-cmu-raster                                                           ras
+image/x-portable-anymap                                                      pnm
+image/x-portable-bitmap                                                      pbm
+image/x-portable-graymap                                                     pgm
+image/x-portable-pixmap                                                      ppm
+image/x-rgb                                                                  rgb
+image/x-xbitmap                                                              xbm
+image/x-xpixmap                                                              xpm
+image/x-xwindowdump                                                          xwd
+model/iges                                                                   iges igs
+model/mesh                                                                   mesh msh
+model/mesh                                                                   silo
+model/vrml                                                                   vrml wrl
+text/css                                                                     css
+text/html                                                                    html htm
+text/plain                                                                   asc txt text c cc f90 f h hh m
+text/richtext                                                                rtx
+text/rtf                                                                     rtf
+text/sgml                                                                    sgm sgml
+text/tab-separated-values                                                    tsv
+text/vnd.sun.j2me.app-descriptor                                             jad
+text/xml                                                                     xml
+text/x-setext                                                                etx
+video/dl                                                                     dl
+video/fli                                                                    fli
+video/flv                                                                    flv
+video/gl                                                                     gl
+video/mpeg                                                                   mpe mpeg mpg
+video/quicktime                                                              mov qt
+video/vnd.vivo                                                               viv vivo
+video/x-fli                                                                  fli
+video/x-ms-asf                                                               asf
+video/x-ms-asx                                                               asx
+video/x-msvideo                                                              avi
+video/x-ms-wmv                                                               wmv
+video/x-ms-wmx                                                               wmx
+video/x-ms-wvx                                                               wvx
+video/x-sgi-movie                                                            movie
+www/mime                                                                     mime
+x-conference/x-cooltalk                                                      ice
+x-world/x-vrml                                                               vrm vrml

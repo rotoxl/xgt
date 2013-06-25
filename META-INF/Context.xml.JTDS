@@ -1,0 +1,66 @@
+<Context path="/gotta" reloadable="true" >
+	<Resource name="jdbc/Burke/prueCurso" username="sa" password="salta" url="jdbc:jtds:sqlserver://ron-win2k.burke.net:1436/prueCurso;appName=gotta" type="javax.sql.DataSource" maxIdle="10" maxWait="5000" validationQuery="select 1" driverClassName="net.sourceforge.jtds.jdbc.Driver" maxActive="20"/>    
+	<!--
+	<Resource name="jdbc/Burke/prueLOCAL" 	username="sa" 			password="salta" 		url="jdbc:jtds:sqlserver://TINTORRO/prue;SelectMethod=Cursor;" 		type="javax.sql.DataSource" driverClassName="net.sourceforge.jtds.jdbc.Driver" maxIdle="5" maxWait="10000" maxActive="10"/>
+	
+	<Resource name="jdbc/Burke/prue" 	username="sa" 			password="salta" 		url="jdbc:jtds:sqlserver://ron-win2k.burke.net\camara/prue;SelectMethod=Cursor;" 		type="javax.sql.DataSource" driverClassName="net.sourceforge.jtds.jdbc.Driver" maxIdle="5" maxWait="5000" maxActive="10"/>
+	<Resource name="jdbc/Burke/prue2" 	username="sa" 			password="salta" 		url="jdbc:jtds:sqlserver://ron-win2k.burke.net\camara/prue2;SelectMethod=Cursor;" 		type="javax.sql.DataSource" driverClassName="net.sourceforge.jtds.jdbc.Driver" maxIdle="5" maxWait="5000" maxActive="10"/>
+	<Resource name="jdbc/Burke/Embla" 	username="sa" 			password="salta" 		url="jdbc:jtds:sqlserver://ron-win2k.burke.net\cej/Embla;SelectMethod=Cursor;" 		type="javax.sql.DataSource" driverClassName="net.sourceforge.jtds.jdbc.Driver" maxIdle="5" maxWait="5000" maxActive="10"/>
+	
+	<Resource name="jdbc/Burke/SCC" username="dbo_scc"	 password="dbo_scc" url="jdbc:jtds:sqlserver://TAURO2.burke.net\sqlburke/SCC;" type="javax.sql.DataSource" driverClassName="net.sourceforge.jtds.jdbc.Driver" maxIdle="5" maxWait="5000" maxActive="10"/>  
+	<Resource name="jdbc/Burke/API" username="sa" password="salta" url="jdbc:jtds:sqlserver://ron-win2k.burke.net\CEJ/API;SelectMethod=Cursor;" type="javax.sql.DataSource" maxIdle="10" maxWait="5000" validationQuery="select 1" driverClassName="net.sourceforge.jtds.jdbc.Driver" maxActive="20"/>    
+	
+	
+
+
+
+	<Resource name="jdbc/Burke/GestOSLOCAL" username="gestos" password="gestos" url="jdbc:oracle:thin:@//LOCALHOST:1521/XE" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	
+	<Resource name="jdbc/Burke/pc" username="pc" password="pc" url="jdbc:oracle:thin:@//alpha1.burke.net:1521/BDESA10G.burke.net" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+
+	<Resource name="jdbc/Burke/GestOSv2" username="gestosv2" password="gestosv2" url="jdbc:oracle:thin:@//192.168.11.33:1521/BDESA10G.burke.net" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	<Resource name="jdbc/Burke/OficinasBackoffice" username="gestosv2" password="gestosv2" url="jdbc:oracle:thin:@//192.168.11.33:1521/BDESA10G.burke.net" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	<Resource name="jdbc/Burke/AyudasFront" username="gestosv2" password="gestosv2" url="jdbc:oracle:thin:@//192.168.11.33:1521/BDESA10G.burke.net" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	
+	<Resource name="jdbc/Burke/GestOS" username="gestos" password="gestos" url="jdbc:oracle:thin:@//192.168.11.33:1521/bdesa10g.burke.net" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	<Resource name="jdbc/Burke/seguimiento_contratos" username="SEGUIMIENTO_CONTRATOS" password="SEGUIMIENTO_CONTRATOS" url="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.11.33)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=bdesa10g.burke.net)(SERVER=DEDICATED)))" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+		
+	<Resource name="jdbc/Burke/Picos" username="embla_picos" password="embla_picos" url="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.11.33)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=bdesa10g.burke.net)(SERVER=DEDICATED)))" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>	
+<Resource name="jdbc/Burke/Picoslic" auth="Container" type="javax.sql.DataSource"
+               maxActive="50" maxIdle="2" maxWait="5000"
+               username="embla_picos" password="embla_picos" driverClassName="oracle.jdbc.driver.OracleDriver"
+	       removeAbandoned="true"  removeAbandonedTimeout="60" logAbandoned="true"
+               url="jdbc:oracle:thin:@alpha1:1521:bdesa10g"/>
+
+
+	<Resource name="jdbc/Burke/Embla_TR_SESCAM" username="Embla_TR_SESCAM" password="Embla_TR_SESCAM" url="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=alpha2.burke.net)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=emblades.burke.net)(SERVER=DEDICATED)))" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	<Resource name="jdbc/Burke/Embla_Rhea" username="Embla_Rhea" password="Embla_Rhea" url="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=alpha2.burke.net)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=emblades.burke.net)(SERVER=DEDICATED)))" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	
+	<Resource name="jdbc/Burke/MICINN_CMAE" 	username="MICINN_CMAE" 	password="MICINN_CMAE" 	url="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST= alpha1.burke.net)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=BDESA10G.burke.net)(SERVER=DEDICATED)))" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	<Resource name="jdbc/Burke/MPR-TR" 		username="EMBLAX_TR_MAP" password="EMBLAX_TR_MAP" url="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST= alpha2.burke.net)(PORT=1521)))(CONNECT_DATA=(SID=EMBLADES)(SERVER=DEDICATED)))" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	
+
+	<Resource name="jdbc/Burke/Embla2010" username="embla2010" password="embla" url="jdbc:oracle:thin:@//ron.burke.net/xe" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="2" maxWait="5000" type="javax.sql.DataSource" maxActive="4"/>
+	
+	
+	
+	<Resource
+    name="jdbc/Burke/EMBLA_GCI"
+    type="javax.sql.DataSource"
+    maxActive="10"
+    maxIdle="0"
+    username="EMBLA_GCI"
+    maxWait="5000"
+    driverClassName="oracle.jdbc.driver.OracleDriver"
+    password="EMBLA_GCI"
+    removeAbandoned="true"
+    removeAbandonedTimeout="60"
+    logAbandoned="true"
+    url="jdbc:oracle:thin:@//alpha2.burke.net:1521/EMBLADES.BURKE.NET"/>
+    
+     <Resource name="jdbc/Burke/Rhea" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="RHEA" password="RHEA" driverClassName="oracle.jdbc.driver.OracleDriver"
+               url="jdbc:oracle:thin:@alpha2:1521:EMBLADES"/>
+	       //-->
+</Context>

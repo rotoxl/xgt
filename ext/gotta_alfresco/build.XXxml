@@ -1,0 +1,13 @@
+<project default="build">
+  <target name="compile">
+    <javac srcdir="." />
+  </target>
+  
+  <target name="jar" depends="compile" >
+	<jar 
+		jarfile="C:/tomcat6/webapps/v200912/WEB-INF/lib/gotta_alfresco.jar"
+		basedir="."
+		includes="**/*.class"
+         />
+  </target>
+</project>

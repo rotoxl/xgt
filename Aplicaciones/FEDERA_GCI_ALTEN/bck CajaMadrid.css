@@ -1,0 +1,1428 @@
+@charset "UTF-8";
+
+/* Personalizacion del menu Unidad para que aparezca arriba */
+li#menu2 a{
+    color: #DEDEDE !important;
+    font-size: 8pt !important;
+    font-weight: normal !important;
+    z-index: 6 !important;
+}
+li#menu2 a:hover{
+    color: #77C145 !important;
+}
+
+#botoneraIzq ul li li#menu2{
+	border-right: 0px solid #FFFFFF !important;
+	position: fixed !important;
+  right: 93px !important;
+  top: 35px !important;
+  height: 30px !important;
+  margin-right: 10px;
+  width: 84px;
+}
+/* FIN Personalizacion del menu Unidad para que aparezca arriba */
+
+
+table.sortable thead th {
+    border-bottom: 2px solid #EEEEEE;
+    height: 14px !important;
+    
+}
+table.sortable thead th:hover{
+	border-bottom: 2px solid #6EAB24 !important;
+	height: 14px !important;
+}
+
+/* //////////////////ADAPTACION DE GOTTA.ESTABLE --> SIN_EXTENSORES //////////////////////// */
+.article.variables th.lvwE, .article.variables td.lvwE {
+    background-color: transparent;
+}
+td.separador {
+    background-color: #E3F4CC !important;
+    color: #0E5302 !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    padding-left: 8px !important;
+}
+td.obligatorio, td.noObligatorio {
+    font-size: 8pt;
+    font-weight: bold;
+    text-align: right;
+    color: #0E5302 !important;
+}
+a.menuML.estado_on, a.menuML.estado_hover, a.menuML:hover, a.dropdownmenu.estado_hover {
+    background-color: transparent !important;
+    color: white;
+}
+    
+div.tab.pestanhasIzquierda a.tab {
+	margin: 1px !important;
+	padding: 13px 1px;
+	
+}
+input.lvwNumero, input.lvwCurrency, input.lvwFecha, input.lvw, textarea.lvwNumero, textarea.lvwFecha, textarea.lvw, textarea.lvwMemo, select.lvw {
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    border: 1px solid #ACC395 !important;
+    
+}
+
+div.tab.pestanhasIzquierda table.tab td.pesFondoOn a.tab {
+    border-left-color: #0E5302 !important;
+  }
+div.header.panelSup {
+	   top: 5px;
+	   background: #FFFFFF url(ico/logo.png) no-repeat;
+     height: 89px;
+     width: 99%;
+     position: relative;
+     z-index: 4;
+     margin: 0 auto;
+     border-bottom: 2px solid green !important;
+}
+IMG {
+	border: 0px;
+}
+
+body {
+	margin: 0px;
+	height:100%; /* OJO PARA IE6 */
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 8pt;
+}
+
+h2 {
+	color: black;
+	font-size: 18pt;
+}
+
+/* xSplitter Styles */
+div.clsSplitter {
+	overflow: hidden;
+	visibility: hidden;
+	margin: 0; padding: 0;
+	border: none;
+}
+
+/* xSplitter Styles */
+div.clsSplitter {
+	overflow: hidden;
+	visibility: hidden;
+	margin: 0; padding: 0;
+	border: none;
+	position:absolute;
+}
+body > div#splitterV{position:fixed;} /*mejor para firefox, ie > 7*/
+
+#splitterH{
+	position: relative;
+}
+
+div.clsPane {
+	position: absolute;
+	overflow: auto;
+	visibility: visible;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+div.clsPane#panelDer {
+	margin-top:0px;
+	background-color:white;
+	z-index:1;
+	}
+
+div.clsDragBar, div.clsDragBarH {
+	position: absolute;
+	overflow: hidden;
+	visibility: visible;
+	background-color: #C3DAF9;
+	background-image: url(./split.gif);
+	background-position: left center;
+	border: 1px solid #98C0F4;
+	width: 5px;
+	cursor:col-resize;
+	z-index: 2 !important;
+}
+
+div#__panelTablas__ {
+	z-index: 3 !important;
+}
+#sepHorizontal, div.clsDragBarH {
+	cursor:ns-resize;
+	background-image: url(./splitH.gif);
+	background-position: center top;
+}
+
+/* panel superior*/
+#btnGenerarURL,#btnVersionParaImprimir,#btnRegistro,#btnModificar,#btnEliminar,#btnDisenhador,#btnDepurador,#btnMonitorSQL,#btnRecargarAplicacion,#btnRefrescar,#btnSalir,#btnCambiarContrasenha,#btnNuevaVentana,
+#btnConstructor {
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	padding: 0px 0px 0px 18px;
+/*	height: 100%;*/
+	display: block;
+}
+div#botoneraEditorNiveles a.botonera.gris{display:inline;}
+
+html, body {
+     height: 100%;
+}
+
+body { 
+     font-family: Tahoma, Helvetica, Arial, sans-serif;
+     color: #333333;
+     overflow: auto;
+}
+/* //////////////////FIN ADAPTACION DE GOTTA.ESTABLE --> SIN_EXTENSORES //////////////////////////// */
+
+
+
+/*-----------------------------------------------------------------
+Clases Gotta
+-----------------------------------------------------------------*/
+.cmd {
+    background-color: transparent !important;
+    border-width: 0px 0px 0px 0px;
+}
+.cmd:hover {
+     background-color: transparent !important;     
+}
+
+label.checkbox span {
+     visibility: visible !important;
+}
+
+#botoneraDisenho {
+     z-index: 5 !important;
+}
+
+div.panelSup {
+     background-color: #FFFFFF;
+     background-repeat: no-repeat;
+     height: 10px;
+     margin: 0 auto;
+     position: relative;
+     width: 1000px;
+     z-index: 0;
+}
+     
+#logo {     
+     background: transparent url(ico/logo_imagen.png) no-repeat !important;
+     height: 49px !important;
+     width: 191px !important;
+     z-index: 6 !important;
+     margin: 0 auto;
+     left: 20px !important;
+}
+
+#botoneraIzq {
+     margin-top: 25px;
+     display: block !important;
+     position: relative !important;
+     width: 976px !important;
+     margin: 0px auto !important;
+     background: #F1F1F1 url(ico/barrafnd.png) repeat-x scroll left top;
+     height: 25px;
+     top: 62px;
+     z-index: 6;
+}
+     
+#botoneraIzq ul li li a { 
+     color: #EFF3EB;
+     font-size: 8pt;
+     border: 0 none;
+     display: block;
+     margin: 5px 30px 0px 30px;
+     font-family: arial;
+}
+
+#botoneraIzq ul li li:hover {
+     cursor: pointer !important;
+}
+
+#botoneraIzq ul li li a:hover { 
+     background-color: transparent;
+     font-size: 8pt;
+     border: 0 none;
+     color: #6EAB24 !important;
+}
+
+#botoneraIzq ul li li a:hover { 
+     color: #6EAB24 !important;
+}
+#botoneraIzq ul li li ul li a:hover { 
+     color: #EFF3EB !important;
+}
+
+#botoneraIzq li li ul li a { 
+     color: #0E5302 !important;
+}
+
+#btnGenerarURL, #btnVersionParaImprimir, #btnRegistro, #btnModificar, #btnEliminar, #btnNuevaVentana, #btnRefrescar, span.botonera.separador { display: none; }
+     
+#botoneraIzq ul li li {
+     border-right: 1px solid grey; 
+     color: #EFF3EB !important;   
+} 
+
+#btnCambiarContrasenha {
+     font-weight: normal !important;
+     color: #DEDEDE !important;
+}
+
+#btnCambiarContrasenha:hover {
+     font-weight: normal !important;
+     color: #77C145 !important;
+}
+
+#botoneraIzq ul { 
+     background: none;
+     margin: 0;
+}
+
+li.droprightmenu {
+	background-image:url(ico/flechader.png); 
+}
+
+div#botoneraAdmin {
+     top: 11px;
+     right: 18px !important;
+     margin: 0 auto !important;
+     width: 366px !important;
+     z-index: 5;
+}
+
+div#botoneraAdmin ul li {
+     float: right !important;
+}
+     
+div#botoneraDra{
+     margin: 0 auto;
+     right: 18px !important;
+     width: 366px;
+     z-index: 5 !important;
+     top: 35px;
+}
+
+#btnCambiarContrasenha, #btnCambiarContrasenha:hover {
+     background-image: none !important;
+}
+
+#btnGenerarURL, #btnVersionParaImprimir, #btnRegistro, #btnModificar, #btnEliminar, #btnDisenhador, #btnDepurador, #btnMonitorSQL, #btnRecargarAplicacion, #btnRefrescar, #btnSalir, #btnCambiarContrasenha, #btnNuevaVentana, #btnConstructor,
+#btnGenerarURL:hover, #btnVersionParaImprimir:hover, #btnRegistro:hover, #btnModificar:hover, #btnEliminar:hover, #btnDisenhador:hover, #btnDepurador:hover, #btnMonitorSQL:hover, #btnRecargarAplicacion:hover, #btnRefrescar:hover, #btnSalir:hover, #btnCambiarContrasenha:hover, #btnNuevaVentana:hover, #btnConstructor:hover
+{
+     background-position: 100% 50% !important;
+     padding: 8px 0 2px 20px !important;
+     border: 0 none !important;
+}
+
+#btnGenerarURL:hover, #btnVersionParaImprimir:hover, #btnRegistro:hover, #btnModificar:hover, #btnEliminar:hover, #btnDisenhador:hover, #btnDepurador:hover, #btnMonitorSQL:hover, #btnRecargarAplicacion:hover, #btnRefrescar:hover, #btnSalir:hover, #btnCambiarContrasenha:hover, #btnNuevaVentana:hover, #btnConstructor:hover
+{
+     color: #707070;
+}
+
+#btnSalir { 
+     background-image: url("ico/exit16off.png") !important; 
+}
+#btnRecargarAplicacion {
+    background-image: url("ico/rec16off.png") !important;
+}
+#btnMonitorSQL {
+    background-image: url("ico/monitor16off.png") !important;
+}
+#btnConstructor {
+    background-image: url("ico/tramOff.png") !important;
+}
+a#btnDepurador.botonera {
+    background-image: url("ico/debug16off.png") !important;
+}
+a#btnDisenhador.botonera {
+    background-image: url("ico/disenho16off.png") !important;
+}
+#btnSalir:hover { 
+     background-image: url("ico/exit16on.png") !important; 
+}
+#btnRecargarAplicacion:hover {
+    background-image: url("ico/rec16on.png") !important;
+}
+#btnMonitorSQL:hover {
+    background-image: url("ico/monitor16on.png") !important;
+}
+#btnConstructor:hover {
+    background-image: url("ico/tramOn.png") !important;
+}
+a#btnDepurador.botonera:hover,
+a#btnDepurador.botonera.estado_on  {
+    background-image: url("ico/debug16on.png") !important;
+}
+a#btnDisenhador.botonera:hover,
+a#btnDisenhador.botonera.estado_on  {
+    background-image: url("ico/disenho16on.png") !important;
+}
+
+#btnSalir span { display: none; }
+
+div#botoneraDra ul li { float: right; }
+
+#splitterV {
+	   border: 1px solid #CCCCCC !important;
+     margin:0 auto !important;
+     position: relative !important;
+     top: 8px !important;
+     width:976px !important;   
+}
+
+a.email {
+     background-position: 0 50%;
+}
+
+div.exp div.panelAcordeon {
+     border: 1px solid #898C9C;
+	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+}
+
+
+/* <Pestanas horizontales/> */
+/* IE */
+div.tab div.pestanha {
+    background-color: #EFF3EB !important;
+    border: 1px solid #ACC395 !important;
+}
+
+
+table.tab {
+     border-collapse:separate !important;
+}
+
+table.tab td.pesFondoOn, table.tab td.pesFondoOff {
+     min-width: 100px;
+}
+
+div.tab table.tab td.pesFondoOn, div.tab table.tab td.pesFondoOff {
+     height: 21px;
+}
+
+td.pesFondoOn a.tab {
+     font-weight: normal;
+     color: #0E5302 !important;
+     display: block;
+     text-align: center;
+}
+
+td.pesFondoOff a.tab {
+     color: #898C9C;
+     display: block;
+     text-align: center;
+     font-style: italic;
+}
+
+td.pesFondoOff a.tab:hover {
+     color: #383838;
+}
+
+div.tab table.tab td.pesFondoOn {
+     background: #EFF3EB none repeat scroll 0 0 !important;
+     border-top:1px solid #ACC395 !important;
+     border-left: 1px solid #ACC395;
+     border-right: 1px solid #ACC395;
+     padding: 0 5px 0 5px;
+}
+
+div.tab table.tab td.pesInicioOn, div.tab table.tab td.pesFinOn,
+div.tab table.tab td.pesInicioOff, div.tab table.tab td.pesFinOff {
+     background: transparent none !important;
+     border: 0px none;
+     width: 2px !important;
+}
+
+div.tab table.tab td.pesFondoOff {
+     background: #EEEEEE none repeat scroll 0 0 !important;
+     border-top: 1px solid #CCCCCC !important;
+     border-left: 1px solid #CCCCCC !important;
+     border-right:1px solid #CCCCCC !important;    
+     border-bottom: 1px solid #ACC395 !important;
+     padding: 0 5px 0 5px;
+}
+/* </Pesta�as horizontales> */
+
+
+
+/* <Pestanas verticales/> */
+div.tab.pestanhasIzquierda div.pestanha {
+     margin-left: 123px !important;
+     margin-top: 0px !important;
+}
+
+div.tab.pestanhasIzquierda table.tab {
+     border-spacing: 6px !important;
+     border-collapse: collapse !important;
+     margin-top: 1px !important;
+     margin-bottom: 1px !important;
+     margin-left: 5px !important;
+}
+
+div.tab.pestanhasIzquierda table.tab td.pesInicioOn {
+     background: transparent none !important;
+     border: 0 none;   
+     width: 8px !important;  
+}
+
+div.tab.pestanhasIzquierda table.tab td.pesFondoOn {
+     background-image: none;
+     border-bottom: 1px solid #898C9C;
+     border-left: 1px solid #898C9C;
+     border-top: 1px solid #898C9C;
+     border-right: 0px none;
+     background: #EFF3EB url(./fndactiva.png) no-repeat scroll right center !important;
+     padding: 0px !important;
+}
+
+div.tab.pestanhasIzquierda table.tab td.pesFinOn {
+     width:0px !important;
+}
+
+div.tab.pestanhasIzquierda table.tab td.pesInicioOff {
+     background-image: none;
+}
+
+div.tab.pestanhasIzquierda table.tab td.pesFondoOff {
+     background: #EEEEEE url(./fndinactiva.png) no-repeat scroll right center !important;
+     border-right: 1px solid #898C9C !important;
+     border-top: 1px solid #CCCCCC !important;
+     border-left: 1px solid #CCCCCC !important;
+     border-bottom: 1px solid #CCCCCC !important;
+     padding: 0px !important;
+}
+
+div.tab.pestanhasIzquierda table.tab td.pesFinOff {
+     background-image: none;
+     border: 0px none !important;
+     background-color: #EEEEEE !important;
+     width: 0px !important;
+}
+
+div.tab.pestanhasIzquierda table.tab td.pesFondoOn a.tab {
+     font-weight: normal !important;
+     width: 100px !important;
+}
+
+div.tab.pestanhasIzquierda table.tab a.tab {
+     color: #999999;
+     display: block;
+     font-family: arial;
+     font-size: 8pt;
+     /*padding-left: 10px !important;*/
+     text-decoration: none;
+     vertical-align: middle;
+     white-space: normal;
+     width: 99px;
+     font-weight: normal;
+     outline-style: none;
+     outline-width: 0;
+     text-align: center !important;
+}
+/* </Pesta�as verticales> */
+
+
+
+/* <Formularios/> */
+div.cabecera {
+     border-bottom: 1px solid #A9A9A9;
+}
+
+div.pie {
+     border-top: 1px solid #A9A9A9;
+}
+
+div.cabecera div.icono {
+     display: none;
+}
+/* </Formularios> */
+
+
+
+/* <Botones de formulario/> */
+.cmdgt.aceptar {
+     background: transparent url(ico/btnAceptar.png) no-repeat scroll 0 0; 
+     border: none; 
+     color:transparent; 
+     height: 25px;
+     min-width: 104px;     
+     text-indent:-999px;
+}
+
+.cmdgt.aceptar:hover {
+     background:transparent url(ico/btnAceptarV.png) no-repeat scroll 0 0;
+}
+
+.cmdgt.cancelar {
+     background: transparent url(ico/btnCancelar.png) no-repeat scroll 0 0; 
+     border:none; 
+     color:transparent; 
+     height:25px;
+     min-width:104px;
+     text-indent:-999px;
+}
+
+.cmdgt.cancelar:hover {background:transparent url(ico/btnCancelarV.png) no-repeat scroll 0 0;}
+
+.cmdgt.si {
+     background: transparent url(ico/btnSi.png) no-repeat scroll 0 0; 
+     border: none; 
+     color: transparent; 
+     height: 25px;
+     min-width: 104px;
+     text-indent:-999px;
+}
+
+.cmdgt.si:hover {
+     background:transparent url(ico/btnSiV.png) no-repeat scroll 0 0;
+}
+
+.cmdgt.no {
+     background:transparent url(ico/btnNo.png) no-repeat scroll 0 0;
+     border:none; 
+     color:transparent; 
+     height:25px;
+     min-width:104px;
+     text-indent:-999px;
+}
+.cmdgt.no:hover {
+     background:transparent url(ico/btnNoV.png) no-repeat scroll 0 0;
+}
+/* </Botones de formulario> */
+
+
+
+/* <Formulario busquedas/> */
+div.cuadroBusqueda {
+     height: 20px !important;
+     padding: 10px;
+     margin: 0px !important;
+     width: 95%;
+     display: block !important;
+}
+
+      /* Boton "Nuevo" */
+#altaDinamica {
+     margin: 0px;
+     float: right;
+     background: transparent url(ico/btnNuevo.png) no-repeat scroll 0 0; 
+     border: none; 
+     color:transparent; 
+     height: 25px;
+     min-width: 104px;     
+     text-indent:-999px;
+}
+
+#altaDinamica:hover {
+     background:transparent url(ico/btnNuevoV.png) no-repeat scroll 0 0;
+}
+/* </Formulario busquedas> */
+
+
+
+/* <Barra de separacion paneles/> */
+div.clsDragBar{
+     background-color:#FFFFFF !important;
+     background-image: none !important;
+     border-top: 0px none !important;
+     border-bottom: 0px none !important;
+     border-left:1px solid #CCCCCC !important;
+     border-right:1px solid #CCCCCC !important;
+     height: 100% !important;
+}
+
+div.clsDragBar:hover{
+     background-color:#EEEEEE !important;
+     background-image: none !important;
+     border-top: 0px none !important;
+     border-bottom: 0px none !important;
+     border-left:1px solid #CCCCCC !important;
+     border-right:1px solid #CCCCCC !important;
+     height: 100% !important;
+}
+/* </Barra de separacion paneles> */
+
+
+
+/* <Menus/> */
+ul.menuGlobalDeLaAplicacion {
+     background-color: #EFF3EB !important;
+     border: 1px solid #898C9C !important;
+	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+}
+
+ul.menuGlobalDeLaAplicacion li {
+  border-right: 0px none !important;
+  padding: 0px !important;
+}
+
+a.botonera:hover {
+	color: #9EAFC9 !important;
+}
+
+a.botonera.dropdownmenu:after {
+	/*la flechita de abajo, pa que se vea que es un desplegable*/
+	content: none !important; 
+	margin-left: 0;
+}
+
+a.dropdownmenu.menuML:after{
+	content:none !important;
+	position:absolute;
+	margin-left:0;
+}
+
+a.menuML:hover, a.menuML.estado_hover{
+	border: 0px none !important;
+	background-color: #6EAB24 !important;
+  color: #353535 !important; 
+}
+/* </Menus> */
+
+
+/* <Submenu/> */
+a.menuML {
+   margin: 10px !important;
+   padding-left: 25px !important; 
+   padding-right: 15px !important; 
+   min-width: 175px !important;
+	 color: #333333 !important;
+}
+/* </Submenu> */
+
+
+
+/* <Depurador/> */
+div#sepHorizontal {
+     height: 7px !important;
+}
+/* </Depurador> */
+
+
+
+/* <Disenador/> */
+div#listaPanelesIzq {
+     position: relative !important;
+}
+
+div#listaPanelesIzq, div#listaPanelesIzq div.md {
+     position: absolute !important;
+     top: 0px !important;
+}
+
+span.nombreMD {
+     float: right;
+     z-index:99;
+     margin: 0px;
+}
+
+span.nombreMD.alternar {
+     bottom: 0;
+}
+
+div#control20019 div.filaRD{
+	border-bottom: 1px dotted #ACC395 !important;
+	border-top: 0px !important;
+	border-right: 0px !important;
+	border-left: 0px !important;
+	padding: 6px 0 0 !important;
+}
+
+tr.fila.seleccionada td, tr.fila.seleccionada span, tr.lvwE span, 
+a.contenido:focus, td.contenidoS a, a.contenido:hover,
+.fila:hover, tr.arb:hover, tr.bsc:hover {
+     color:#EFF3EB !important;
+     background-color: #6EAB24 !important;
+}
+.filaRD.fila.seleccionada,
+.filaRD.fila:hover{
+     color:#0E5302 !important;
+     background-color: #EFF3EB !important;
+}
+
+div.arb, div.lvw {
+     outline: 0px none;
+     border: 1px solid #898C9C !important; 
+}
+/* </Rd's, �rboles y listas> */
+
+
+
+/* <Option/> */
+div.md div.radio {
+     position: absolute !important;
+	 z-index:2;
+}
+/* </Option> */ 
+
+
+
+/* <Tablas de lvw> */
+thead tr, thead tr, tbody th {
+     background-image: url(ico/roundfondo_head.png) !important;
+    height: 17px !important;
+}
+
+th, th a.sortheader {
+     color: #EFF3EB !important;
+     padding-left: 2px !important;
+     padding-top: 0px !important;
+     margin-top: 1px;
+}
+th a.sortheader:hover {
+    color: #6EAB24 !important;
+    background-color: transparent !important
+}
+
+th div.resizableColumn, th div.resizableColumnI {
+    min-height: 14px !important;
+}
+a.volcarExcel {
+	background-position: center 0 !important;
+}
+
+table.lvw {
+     white-space: nowrap !important;
+}
+/* </Tablas de lvw> */
+
+
+
+/* <Recuadros (rec)/> */
+.rec {
+	   background: none repeat scroll 0 0 transparent;
+     border:1px solid #898C9C;
+}
+/* </Recuadros (rec)> */
+
+
+
+/*-----------------------------------------------------------------
+Clases de la aplicacion
+-----------------------------------------------------------------*/
+/*suponiendo que nuestro cd_boton sea 18*/
+a#m1CAB div ul li li {color:red;
+	height: 1px !important;
+    width: 1px !important;
+ }
+
+.email, .navegacion {
+     color: #0E5302 !important;
+     text-decoration: underline !important;
+}
+.email:hover, .navegacion:hover {
+     color: #6EAB24 !important;
+     text-decoration: underline !important;
+}
+
+.lbl {
+     border: none !important;     
+     background: transparent;
+}
+
+.conBorde {
+     border: 1px solid #CCCCCC !important; 
+     padding-left: 2px;
+     background-color: #FFFFFF !important;
+}
+
+/* .panelFiltro - Estilo para paneles basados en RD's */
+.panelFiltro div.filaRD:hover, .panelFiltro div.filaRD {
+     border: 0px none !important;
+     background-color:#EFF3EB !important;
+}
+
+#control7720 {
+     outline: 0px none !important;
+}
+/* Fin .panelFiltro*/
+
+
+
+#mlINI {
+     background: transparent url(ico/INI.png) no-repeat center !important;
+     width: 60px;
+     height: 25px;
+     margin: 0px 20px 0px 8px !important;
+}
+
+#mlINI:hover {
+     background: transparent url(ico/INIhov.png) no-repeat center !important;
+}
+
+
+/*.clsPane, */
+#panelIzq__TEX, #panelIzq__INT, #panelIzq__MAN, #panelIzq__BAN, #panelIzq__MAP,
+.divarbol, #panelDer {
+     height: 100% !important;
+}
+
+.sinBorde {
+     border: 0px none !important;
+     
+}
+
+.sinBordeCursiva {
+     border: 0px none !important;
+     font-style: italic !important;
+}
+
+/* <RDs de la p�gina inicial/> */
+div#control20005 div.txt.sinBorde a.web {
+     background-image: none !important;     
+     display: block;
+     text-align: center !important;
+     color: #EFF3EB !important;
+     padding-left: 0px !important;
+     text-decoration: none;
+     padding-top: 58px;
+}
+
+div#control20005 div.txt.sinBorde a.web:hover {
+     color: #2C4865;
+}
+div#control20005 .filaRD.fila:hover {
+     color: #6EAB24 !important;
+}
+
+div#control20005 div.filaRD.fila, 
+div#control20005 div.filaRD.fila.seleccionada {
+     border: 0px none;
+     background: none transparent !important;
+}
+
+div#control20005 div.filaRD.fila div.txt.sinBorde:hover {
+     border-bottom: 6px solid #0E5302 !important;
+     /*background: #DCF1AF !important; */
+}
+
+div#control20005 div.filaRD.fila div.txt.sinBorde {
+     padding-left: 0px !important;
+}
+
+div#control6646 {
+     outline: 0px none;
+}
+
+div#control20005443 div.txt.sinBorde {
+     text-align: center !important;
+     bottom: 0;
+     height: 30% !important;
+     left: 0px !important;
+     width: 100% !important;
+     padding-top: 58px;
+}
+
+.bordegordo {
+     border-bottom: 6px solid #ff5555 !important;
+}
+
+
+/* IE8 pone la imagen por encima del div. Se cambia el cursor para no confundir al usuario */
+div#control6646 img {
+     cursor: default;
+}
+/* </RDs de la p�gina inicial> */
+
+
+
+/* <RD notas de expediente/> */
+div#control6861 div.filaRD.fila,
+div#control6861 div.filaRD.fila.seleccionada {
+     border: 0px none;
+     background: none transparent !important;
+     color: #585858 !important;
+}
+
+div#control6861 div.filaRD.fila.seleccionada {
+     outline: 1px dotted;
+     color: #333333 !important;
+}
+
+div#control6861 div.filaRD.fila div.txt.sinBorde:hover {
+     border-bottom: 0px none !important;
+}
+
+div#control6861 {
+     outline: 0px none;
+}
+/* </RD notas de expediente> */
+
+
+
+/* <Etiquetas especiales para cabeceras/> */
+.cabeceraGrupo {
+     border: none !important;     
+     color: #FFFFFF !important;
+     background-color: #2C4865 !important;
+     padding-left: 2px;
+     font-weight: bold;     
+}
+
+.cabeceraGrupoBotonera {
+     border: none !important;     
+     background: #2C4865 url(./img/fndlbl.png) repeat-y scroll right 0 !important;
+     color: #FFFFFF !important;
+     padding-left: 2px;
+     font-weight: bold;     
+}
+
+.cabeceraGrupoCentro {
+     border: none !important;     
+     background-color: #2C4865 !important;
+     color: #FFFFFF !important;
+     text-align: center;
+     padding-left: 2px; 
+}
+/* </Etiquetas especiales para cabeceras> */
+
+
+
+
+/* <Datos enlazados s�lo lectura y no enlazados obligatorios no se muestran/> */
+.lvwNumero.obligatorio.readonly {
+    margin-top: 0 !important;
+    padding-bottom: 1px !important;
+    padding-top: 1px !important;
+    margin-left: 1px !important;
+}
+/* </Datos enlazados s�lo lectura y no enlazados obligatorios no se muestran> */
+
+
+
+
+/* <El tab de la vista inicio/> */
+div#control20005 {
+	background-color:transparent;
+	background-image:url(./sombra.png);
+	background-position:114px 0;
+	background-repeat:repeat-y;
+}
+/* </El tab de la vista inicio> */
+
+
+
+
+/* <Arbol de documentos/> */
+div#control6918 {
+     border:1px solid #A9BFD3;
+     outline: 0px none;
+}
+/* </Arbol de documentos> */
+
+
+
+
+/* <Barras> */
+.barra {
+     background: transparent url(ico/barrafnd.png) repeat-x !important;
+}
+
+.barrafina {
+     background: transparent url(ico/barrafnd20.png) repeat-x !important;     
+     font-weight: bold !important;
+     padding: 3px 0 0 6px;
+     color:#2C4865 !important;
+}
+
+.botonera2 {
+    background: transparent url(ico/botonera.png) no-repeat !important;     
+}
+/* </Barras> */
+
+
+
+
+/* <Tab simulando etiqueta/> */
+.esquinasRedondas {
+     height: 24px !important;
+}
+
+div.esquinasRedondas table.tab {
+     width: 100%;
+}
+
+.esquinasRedondas div.pestanha.activa {
+	height: 0px !important;
+	border: 0px none !important;
+}
+
+div.esquinasRedondas table.tab td.pesFondoOn {
+     background: url(ico/roundfondo.png) repeat-x !important;
+     border: 0px none !important;
+     padding: 0px !important;
+     height: 24px !important;
+}
+
+div.esquinasRedondas table.tab td.pesFondoOn a.tab {
+     color: #FFFFFF !important;
+     display: block;
+     /*font-weight: bold;*/
+     text-align: left !important;
+     font-size: 11px;
+     font-family: arial,sans-serif;
+     cursor: default;
+     outline: 0px none;
+}
+
+div.esquinasRedondas table.tab td.pesInicioOn {
+     background-image: url(ico/roundini.png) !important;
+     width: 7px !important;
+}
+
+div.esquinasRedondas table.tab td.pesFinOn {
+     background-image: url(ico/roundfin.png) !important;
+     width: 7px !important;
+}
+
+div.botonera.jquerycssmenu ul li {
+    padding-bottom: 0px !important;
+    z-index: 6 !important;
+}
+/* </Tab simulando etiqueta> */
+
+
+
+
+/* <Lista de acciones del expediente/> */
+div#control9227, div#control9232, div#control9236, div#control9786, div#control10438 {
+     border: 1px solid #898C9C;
+}
+
+div#control9227 h3.tituloAcordeon,
+div#control9232 h3.tituloAcordeon, 
+div#control9236 h3.tituloAcordeon,
+div#control9786 h3.tituloAcordeon,
+div#control10438 h3.tituloAcordeon {
+     height: 16px !important;
+     padding-left: 5px !important;
+     font-weight: bold;
+     color: #0E5302;
+}
+
+div#control9230, div#control9233, div#control9235, div#control9787, div#control10439 {
+     border: 0px none !important;
+     position: relative;
+}
+
+div#control9230 div.datos,
+div#control9233 div.datos,
+div#control9235 div.datos,
+div#control9787 div.datos,
+div#control10439 div.datos {
+     overflow-x: hidden;
+}
+
+div#control9230 div.datos table,
+div#control9233 div.datos table,
+div#control9235 div.datos table,
+div#control9787 div.datos table,
+div#control10439 div.datos table {
+     border-collapse: collapse;
+     border: 0px none;
+}
+
+div#control9230 div.datos table thead, 
+div#control9230 div.datos table tbody tr td.icono,
+div#control9233 div.datos table thead, 
+div#control9233 div.datos table tbody tr td.icono,
+div#control9235 div.datos table thead, 
+div#control9235 div.datos table tbody tr td.icono,
+div#control9787 div.datos table thead, 
+div#control9787 div.datos table tbody tr td.icono,
+div#control10439 div.datos table thead, 
+div#control10439 div.datos table tbody tr td.icono {
+     display: none;
+}
+
+
+/* Secci�n de tr�mite */
+div#control9230 div.datos table tbody tr.fila.seccion,
+div#control9233 div.datos table tbody tr.fila.seccion,
+div#control9235 div.datos table tbody tr.fila.seccion,
+div#control9787 div.datos table tbody tr.fila.seccion,
+div#control10439 div.datos table tbody tr.fila.seccion {
+     border: 0px none;
+     color: #0E5302 !important;
+     font-weight: bold;
+     cursor: default;
+}
+
+div#control9230 div.datos table tbody tr td,
+div#control9233 div.datos table tbody tr td,
+div#control9235 div.datos table tbody tr td,
+div#control9787 div.datos table tbody tr td,
+div#control10439 div.datos table tbody tr td  {
+     border: 0px none !important;
+}
+
+div#control9230 div.datos table tbody tr.fila.seccion td:hover,
+div#control9230 div.datos table tbody tr.fila.seccion.seleccionada,
+div#control9233 div.datos table tbody tr.fila.seccion td:hover,
+div#control9233 div.datos table tbody tr.fila.seccion.seleccionada,
+div#control9235 div.datos table tbody tr.fila.seccion td:hover,
+div#control9235 div.datos table tbody tr.fila.seccion.seleccionada,
+div#control9787 div.datos table tbody tr.fila.seccion td:hover,
+div#control9787 div.datos table tbody tr.fila.seccion.seleccionada,
+div#control10439 div.datos table tbody tr.fila.seccion td:hover,
+div#control10439 div.datos table tbody tr.fila.seccion.seleccionada  {
+     background-color: #fff;
+}
+
+div#control9230 div.datos table tbody tr.fila.exptram td button a,
+div#control9233 div.datos table tbody tr.fila.exptram td button a,
+div#control9235 div.datos table tbody tr.fila.exptram td button a,
+div#control9787 div.datos table tbody tr.fila.exptram td button a,
+div#control10439 div.datos table tbody tr.fila.exptram td button a {
+     padding-left: 5px;
+     text-decoration: none !important;
+}
+/* </Lista de acciones del expediente> */
+
+
+
+div.botonera.jquerycssmenu ul li ul {
+	overflow:visible!important;
+	}
+	
+body#monitorSQL table.lvw{white-space:normal !important;}
+
+/* ***** Fin CSS PARA PAGINA DE ENTRADA ***** */
+/* EFECTOS ESPECIALES */
+.bombilla  {
+        background-image:url(bombilla.png);background-repeat: no-repeat;
+        background-position:left center;
+
+        background-color:#FFFADB;color:#776B1B; border:1px solid #CBB945;
+
+        font-family:helvetica,sans-serif; font-size:11px;
+
+        vertical-align:middle;
+        }
+.postit  {
+        background-image:url(postit.jpg);background-repeat: no-repeat;
+        border:none;
+        color:#776B1B;
+        font-family:helvetica,sans-serif; font-size:13px;
+        padding-left:26px; padding-top:26px;
+        vertical-align:middle;
+        }
+/* FIN EFECTOS ESPECIALES */
+
+.texto_menu_ico {
+	text-align: center !important;
+  font-size: 9px;
+  font-family: arial;
+}
+    
+.texto_ficha_usu {
+	border: 0px none !important;
+	color: #0E5302 !important;
+}
+div#menuIni {
+	  display: none !important;
+    color: #FFFFFF;
+    height: 47px !important;
+    overflow: visible;
+    position: absolute;
+    width: 400px;
+    left: 20px !important;
+	  top: 16px !important;
+	  z-index: 4 !important;
+}
+
+div#menuIni a.botonera {
+    display: none;
+    height: 47px;
+    text-decoration: none;
+    width: 400px;
+}
+
+div#divarbol {
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+    overflow: auto !important;
+    position: absolute;
+    width: 100%;
+}
+
+.label_01 {
+	color: #0E5302 !important;
+  font-family:arial,sans-serif !important;
+  font-size: 8pt !important;
+  height: 14px !important;
+  text-align: right !important;
+  vertical-align: middle !important;
+  border: 0px none !important;
+}
+input.label_01{
+	color: #0E5302 !important;
+  font-family:arial,sans-serif !important;
+  font-size: 8pt !important;
+  height: 14px !important;
+  text-align: right !important;
+  vertical-align: middle !important;
+  border: 0px none !important;
+}
+.label_02 {
+	color: #0E5302 !important;
+  font-family:arial,sans-serif !important;
+  font-size: 8pt !important;
+  height: 12pt !important;
+  text-align: left !important;
+  vertical-align: middle !important;
+  border: 0px none !important;
+}
+.titulo_frm {
+  color: #EFF3EB/*#0E5302*/ !important;
+  background: url(ico/roundfondo_tit.png) repeat !important;
+  background-color: #414B37 !important;
+  border: 0px none !important;
+  padding: 2px 0 0 12px !important;
+  font-family: arial,sans-serif !important;
+  font-size: 8pt;
+  width: 100%;
+  height: 18px !important;
+}
+
+.boton_frm {
+	background: url(ico/boton_fondo.png) repeat !important;
+	height: 20px !important;
+	font-family: arial,sans-serif !important;
+	font-size: 8pt !important;
+	color: #0E5302 !important;
+	border: 1px solid #ACC395 !important;
+}
+
+.boton_frm:hover {
+	color: #6EAB24 !important;
+}
+
+.titulo_lista {
+  color: #EFF3EB !important;
+  background-color: #6EAB24;
+  border: 1px solid #ACC395 !important;
+  height: 16px !important;
+  font-family: arial,sans-serif !important;
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: center !important;
+}
+
+.cuadro_filtros {
+  background: #E3F4CC !important;
+  border: 1px solid #ACC395 !important;
+  z-index: 1 !important;
+}
+
+.cuadro_datos {
+  background: #EFF3EB !important;
+  border: 1px solid #ACC395 !important;
+  z-index: 1 !important;
+}
+
+div.texto_01 div div div {
+    border: 0px solid #ACC395 !important;
+    padding-left: 0 !important;
+    overflow: hidden;
+}
+
+div.texto_01 div div {
+    border: 0px solid #ACC395 !important;
+    padding-left: 0 !important;
+    overflow: hidden;
+}
+
+div.texto_01 input{
+	color: #0E5302 !important;
+  font-family:arial,sans-serif !important;
+  font-size: 8pt !important;
+  border: 0px solid #ACC395 !important; 
+  background: white !important;
+  height: 12px !important;
+}
+
+div.texto_01{
+	color: #0E5302 !important;
+  font-family:arial,sans-serif !important;
+  font-size: 8pt !important;
+  border: 1px solid #ACC395 !important; 
+  background: white !important;
+  height: 14px !important;
+  padding: 0 2px 0 4px !important;
+  overflow: hidden;
+}
+
+div.texto_01_multi input{
+	color: #0E5302 !important;
+  font-family:arial,sans-serif !important;
+  font-size: 8pt !important;
+  border: 0px solid #ACC395 !important; 
+  background: white !important;
+}
+
+div.texto_01_multi{
+	color: #0E5302 !important;
+  font-family:arial,sans-serif !important;
+  font-size: 8pt !important;
+  border: 1px solid #ACC395 !important; 
+  background: white !important;
+  padding: 0 2px 0 4px !important;
+  overflow: auto !important;
+}
+
+div.busca_01 input{
+	color: #0E5302 !important;
+  font-family:arial,sans-serif !important;
+  font-size: 8pt !important;
+  border: 1px solid #ACC395 !important; 
+  background: white !important;
+  height: 14px !important;
+}
+
+div.busca_01{
+     border: 0px none !important;
+     font-style: italic !important;
+     height: 14px !important;
+     padding-bottom: 2px;
+}
+
+label.des_bsc, div.des_bsc {
+    background-color: transparent !important;
+    font-family:arial,sans-serif !important;
+    font-size: 8pt !important;
+    color: #0E5302 !important;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}   
+ 
+div.bloqueo {
+    z-index: 7 !important;
+}
+
+.fondo_transparente {
+	background-color: transparent !important;
+	color: #0E5302;
+}
+
+.fondo_transparente2 {
+	background-color: transparent !important;
+}
+
+.cuadro_transparente {
+	border: 1px solid #ACC395 !important;
+	background-color: transparent !important;
+}
+
+.imagen_foto {
+	border: 1px solid #ACC395 !important;
+}

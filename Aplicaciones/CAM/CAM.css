@@ -1,0 +1,254 @@
+div#menuUpper {
+    background-image: url("../../Aplicaciones/CAM/png/CAM_LOGO.png");
+    left: 0;
+    top: 0;
+    width: 292px;
+}
+div#menuUpper.botonera {
+    height: 75px;
+}
+div.header.panelSup {
+    background: -moz-linear-gradient(center top , #CEDBED, #2172AD) repeat-x scroll 0 0 transparent;
+	background-color:#2172AD;
+    height: 95px;
+}
+#botoneraDisenho {
+    top: 95px;
+}
+#botoneraIzq {
+    top: 75px;
+}
+#botoneraAdmin {
+    top: 75px;
+}
+#botoneraDra {
+    top: 75px;
+}
+#sepSplitterV {
+    background-color: #2172AD;
+    background-image: none;
+    border: 1px solid #2172AD;
+    width: 1px;
+}
+a.botonera {
+    border: 2px solid transparent;
+}
+a.menuML:hover, a.menuML.estado_hover {
+    background-color: #9BBCDA;
+}
+div.tab div.lbl {
+    background-color: #F0F2FF !important;
+    border-color: #F0F2FF !important;
+    color: #000000;
+}
+thead tr, thead tr, tbody th {
+    background-color: #9BBCDA;
+    background-image: none;
+}
+td.contenidoS a, a.contenido:focus {
+    background-color: #2172AD;
+    color: white;
+}
+#control72pest0 {
+}
+#control72pest1 {
+}
+div.title {
+    background-color: #2172AD;
+    border: 0 none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 1px;
+    margin-right: 1px;
+    vertical-align: middle;
+}
+.accion {
+    border: medium none;
+    color: #666666 !important;
+    font-family: Verdana,Arial,Tahoma !important;
+    font-size: 12px !important;
+    text-align: left;
+}
+div#botoneraIzq {
+    width: 600px;
+}
+.cajainicio {
+    height: 24px !important;
+}
+div.cajainicio table.tab {
+    width: 100%;
+}
+.cajainicio div.pestanha.activa {
+    border: 0 none !important;
+    height: 0 !important;
+}
+div.cajainicio table.tab td.pesFondoOn {
+    background: url("./png/roundfondo.png") repeat-x scroll 0 0 transparent !important;
+    border: 0 none !important;
+    height: 24px !important;
+    padding: 0 !important;
+}
+div.cajainicio table.tab td.pesFondoOn a.tab {
+    color: #FFFFFF !important;
+    cursor: default;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    outline: 0 none;
+    text-align: left !important;
+}
+div.cajainicio table.tab td.pesInicioOn {
+    background-image: url("./png/roundini.png") !important;
+    width: 7px !important;
+}
+div.cajainicio table.tab td.pesFinOn {
+    background-image: url("./png/roundfin.png") !important;
+    width: 7px !important;
+}
+.bombilla {
+    background-color: #FFFADB;
+    background-image: url("bombilla.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    border: 1px solid #CBB945;
+    color: #776B1B;
+    font-family: helvetica,sans-serif;
+    font-size: 11px;
+    vertical-align: middle;
+}
+div#menuInicio {
+    color: #FFFFFF;
+    height: 47px;
+    left: 10px !important;
+    overflow: visible;
+    position: absolute;
+    top: 3px !important;
+    width: 234px;
+}
+div#menuInicio a.botonera {
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    display: block;
+    height: 60px;
+    text-decoration: none;
+    width: 400px;
+}
+div#mododetalle__Inicial.md div.rd div.filaRD {
+    border: medium none;
+    padding-bottom: 10px;
+}
+div#mododetalle__Inicial.md div.rd .ctlGotta {
+    z-index: 0;
+}
+div#mododetalle__Inicial.md div.rd button.cmd {
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  filter: alpha(opacity=10);
+	opacity:.1;
+    padding: 0;
+    z-index: 1;
+}
+.cmd, .cmd:hover {
+    background-repeat: no-repeat;
+}
+.boton, .boton:hover {
+    background-color: white !important;
+    border-style: outset;
+    border-width: 2px 1px 2px 2px;
+    cursor: pointer;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 10px;
+    padding: 0;
+}
+div#mododetalle__Inicial.md div.rd div.txt {
+    overflow: visible;
+    padding-bottom: 5px;
+    text-align: center;
+}
+div#mododetalle__Inicial.pic {
+    z-index: 2;
+}
+div#mododetalle__Inicial.md div.rec {
+    border: 1px solid #A9BFD3;
+}
+div#control1083.rd div.txt {
+    text-align: left !important;
+}
+div#control1083 .filaRD button.cmd {
+    height: 40.4px !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 153px !important;
+}
+.recTituloSinBorde {
+    border: medium none;
+    color: #2172AD;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left !important;
+}
+div#mododetalle__DET_MANT.md button.cmd {
+    background-color: #FFFFFF !important;
+}
+div#mododetalle__DET_MANT.md button.cmd {
+    background-color: #FFFFFF !important;
+}
+div#COND01_1.md div.filaRD.fila.seleccionada {
+    background-color: transparent !important;
+    border: medium none;
+}
+div#mododetalle__Comp2.md div.filaRD.fila.seleccionada {
+    background-color: #EEEEEE !important;
+    border: 1px solid #6699FF;
+}
+div#COND01_2.md div.filaRD:hover {
+    background-color: white !important;
+    border: 1px solid white !important;
+}
+div#mododetalle__detalleClientes.md div.rec {
+    background-color: #F0F2FF !important;
+}
+div#mododetalle__detalleClientes.md div.lbl {
+    background-color: transparent !important;
+    border: 0 solid transparent !important;
+}
+a.botonera, a.botonera.estado_on {
+    border: 2px solid transparent;
+}
+a.botonera:hover, a.botonera.estado_on:hover {
+    background-color: #2272AD;
+    border: 2px solid transparent;
+}
+a.botonera.estado_hover {
+    background-color: #2272AD;
+}
+div.nav.botonera.jquerycssmenu ul li ul {
+    background-color: #2272AD;
+    border-color: #2272AD;
+}
+a.menuML.estado_on, a.menuML.estado_hover, a.menuML:hover, a.dropdownmenu.estado_hover {
+    background-color: #9BBCDA;
+}
+div#control1081 button.cmd {
+    opacity: 0.1;
+}
+div#control1081 div.txt {
+    background-color: transparent !important;
+    overflow: visible !important;
+}
+tr.fila.seleccionada, tr.fila.seleccionada:hover, div.filaRD.fila.seleccionada, div.filaRD.fila.seleccionada:hover, tbody.fila.seleccionada, tbody.fila.seleccionada:hover {
+    background-color: #2272AD;
+}
+div#mododetalle__Inicial.md div.filaRD.fila.seleccionada div.ctlGotta.txt {
+    color: white !important;
+}
+
+div#mododetalle__Inicial.md div.rd div.filaRD {
+    padding-bottom: 5px;
+}
+
+div#tramiteSeleccionPlantillas-50000 td.obligatorio
+, div#tramiteSeleccionPlantillas-50000 td.noObligatorio{
+	width: 75%;
+}
+

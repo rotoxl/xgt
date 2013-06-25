@@ -1,0 +1,5 @@
+1;0;1;40405003000242;2005;;Unidad de día FEPAMIC: segunda fase de construcción subfase b;2004/10/15;1000;100;Construcción;Si;15/2005;2005/03/23;G14208128;
+2;0;2;40405000000262;2005;;Adecuación de una sala polivalente para el servicio de terapia ocupacional;2004/10/15;2000;1200;;Si;15/2005;2005/03/23;G17053588;
+3;0;2;40405000000282;2005;;Rehabilitación e integración a grandes lesionados medulares;2004/10/15;3000;1300;;Si;15/2005;2005/03/23;G02168706;
+4;0;2;40405000000283;2005;;Reforma y equipamiento centro de día FRÁTER Madrid;2004/10/15;4000;2400;;Si;15/2005;2005/03/23;G79591699;
+5;0;1;40405001000284;2005;;Nuevo centro de programas y servicios de la Fundación Síndrome de Down;2004/10/15;5000;2500;Equipamiento: - Sala de estimulación.;Si;15/2005;2005/03/23;G81854283;

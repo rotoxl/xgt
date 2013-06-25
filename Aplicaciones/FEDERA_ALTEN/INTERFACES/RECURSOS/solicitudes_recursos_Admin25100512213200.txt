@@ -1,0 +1,21 @@
+0;2005;00023403;         10.00;         10.00;16/03/2005;27/09/2005;          ;02912078w;esto es el concepto de datos basicos;;Aprobada
+0;2005;00345340;         15.00;         15.00;23/03/2005;10/10/2005;          ;02912078w;;;Aprobada
+0;2005;MTO03459;       2132.00;     123456.00;03/06/2005;;          ;02912078w;Es una prueba;;Aprobada
+0;2005;;        100.00;        100.00;19/09/2005;;          ;02912078w;Ahora que es invierno y sale más barato;;Anulada
+0;2005;03456456;        101.00;        111.00;19/09/2005;07/10/2005;          ;02912078w;dfada;;Aprobada
+1;2005;03345009;      12335.00;     123456.00;06/04/2005;05/10/2005;          ;02912078w;ghdfhdfghdghdf;Comité de Medios ;Aprobada
+1;2005;03445007;       8970.20;       8970.20;24/12/2004;03/01/2005;          ;02912078w;SISTEMA DE SEGURIDAD;Director Gerente OS ;Aprobada
+1;2005;00534508;       1386.73;       1386.73;24/12/2004;09/03/2005;          ;02912078w;Ampliación sistema de seguridad;Director Gerente OS ;Aprobada
+1;2005;00357604;      37273.63;        112.00;24/02/2005;05/10/2005;          ;02912078w;Equipamiento distintos departamnetos;;Aprobada
+1;2005;00356845;       1830.78;       1830.78;16/02/2005;16/02/2005;          ;02912078w;Material audiovisual;Director Gerente OS ;Aprobada
+1;2005;04789789;       4966.25;       4966.25;16/02/2005;16/02/2005;          ;02912078w;Material electrónico;Director Gerente OS ;Aprobada
+1;2005;00348791;      14780.60;      14780.60;03/01/2005;03/01/2005;          ;02912078w;Instalacion de aire acondicionado;Director Gerente OS ;Aprobada
+10E;2005;00397802;        515.79;        515.79;08/02/2005;08/02/2005;          ;02912078w;Actualizacion de imagen;Director Gerente OS ;Aprobada
+1;2005;00370911;       3442.66;      65456.00;16/02/2005;16/02/2005;          ;02912078w;Canastas;Director Gerente OS ;Aprobada
+1;2005;00378010;      11199.17;      11199.17;16/02/2005;05/10/2005;          ;02912078w;Mobiliario;Director Gerente OS ;Aprobada
+2;2005;00437895;       2111.20;       2111.20;23/02/2005;16/09/2005;          ;02912078w;Fotocopiadora 5308B;Director Gerente OS ;Aprobada
+2;2005;00078002;     157260.92;     157260.92;01/02/2005;01/02/2005;          ;02912078w;Adecuacion eléctrica a normativa;;Aprobada
+2;2005;00789451;      30895.49;      30895.49;28/12/2004;28/12/2004;          ;02912078w;Reforma formacion;Director Gerente OS ;Aprobada
+2;2005;03478903;       2026.52;       2026.52;16/02/2005;16/02/2005;          ;02912078w;Peladora de patatas;Director Gerente OS ;Aprobada
+4;2005;00347892;       5220.00;         25.00;24/02/2005;05/10/2005;          ;02912078w;Software;;Aprobada
+4;2005;00437891;       4889.98;       4889.98;21/12/2004;21/12/2004;          ;02912078w;Estudio geotecnico;Director Gerente OS ;Aprobada

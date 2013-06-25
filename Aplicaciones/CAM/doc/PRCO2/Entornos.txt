@@ -1,0 +1,27 @@
+
+La dirección donde se encuentra ahora la aplicación de kere es:
+
+http://demos.alten.es/gotta.picos/ -> Aplicación KERE
+
+para entrar como emisor de facturas electrónicas es:  
+
+usuario: nacho
+contraseña: sescam1
+
+para entrar como receptor de facturas electrónicas es:
+
+usuario: admin
+contraseña: sescam1
+
+La base de datos de la que tira es:
+
+EMBLA_PICOS/EMBLA_PICOS@BDESA10G.BURKE.NET
+
+
+Datos Kere.
+
+La base de datos nueva es KERE/KERE@EMBLADES.BURKE.NET
+
+Para el tema de usuarios, cuando al acceder a la aplicación no metas usuario ni contraseña
+, en la pantalla que sale deberíamos poner un botón que ejecutara el tramite 40 – Registro Emisor.
+

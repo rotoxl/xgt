@@ -1,0 +1,1007 @@
+body
+{
+	font-family : Verdana, Arial, Helvetica, sans-serif !important;
+
+}
+
+/* -----------------------------------Para los cal----------------------------------------------*/
+Table.cal {
+	background-color:#ff00000;
+    color:#666666;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: inset;
+    border-color: ;
+}
+TH.cal {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	background : #eeeeee;
+	color :#000000;
+	vertical-align : middle;
+	text-align : center;
+	font-weight : bold;
+		
+}
+TD.cal {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #000000;
+	font-size : 10px;
+	text-align : center;
+	vertical-align : middle;
+	background : #ffffff;
+}
+A.cal:link{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #001A5F;
+	font-size : 10px;
+	text-align: left;
+	TEXT-DECORATION: none;
+}
+A.cal:hover{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #001A5F;
+	font-size : 10px;
+	text-align: left;
+	TEXT-DECORATION: none;
+	background : #C6E7EF;
+}
+A.cal:active;A.cal:visited{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #001A5F;
+	font-size : 10px;
+	text-align: left;
+	TEXT-DECORATION: none;
+	}
+div.calen.cal {
+scrollbar-face-color: #068CBA;
+scrollbar-shadow-color: #068CBA;
+scrollbar-highlight-color: #068CBA;
+scrollbar-darkshadow-color: #C6E7EF;
+scrollbar-track-color: #C6E7EF;
+scrollbar-arrow-color: #C6E7EF;
+scrollbar-3dlight-color: #C6E7EF;
+background-color:#BFDCC0;
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : 10px;
+color: #B66369;
+border-style: inset;
+height:60px;
+}
+
+
+
+/* - COLORES DE LOS VINCULOS DEL PANEL IZQUIERDO REFERIDO AL ESTILO DE LOS MODOS DEL ÁRBOL - */
+.contenido{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #515151;
+	font-size : 10px;
+	text-align: left;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+	}
+A.contenido{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #515151;
+	font-size : 9px;
+	text-align: left;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+A.contenido:link{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #515151;
+	font-size : 9px;
+	text-align: left;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+}
+A.contenido:hover{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #515151;
+	/*font-size : 10px;  Sandra Inc.1402: CM-FéD - Elemento del árbol al pasar puntero sobre él*/
+	font-size : 9px;
+	text-align: left;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+	background : #E1EED5;
+}
+A.contenido:active;A.contenido:visited{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #515151;
+	font-size : 10px;
+	text-align: left;
+	/*font-weight: bold;*/
+	TEXT-DECORATION: none;
+	font-weight: bold;
+	}
+/* - FIN COLORES DE LOS VINCULOS DEL PANEL IZQUIERDO REFERIDO AL ESTILO DE LOS MODOS DEL ÁRBOL - */	
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA EL TEXTO QUE ESTÁ EN LA CELDA DE LOS TXT DE LOS FORMULARIOS DINÁMICOS - */	 
+.textog{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: #4A4A4A;
+	font-size : 10px;
+	text-align: justify;
+	text-decoration : none;
+	}
+/* - FIN ESTILO PARA EL TEXTO QUE ESTÁ EN LA CELDA DE LOS TXT DE LOS FORMULARIOS DINÁMICOS - */
+
+/* --------------------Para un texto en campos obligatorios--------------------*/ 
+
+.obligatorio{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color: Black;
+	font-size : 11px;
+	font-weight : bold;
+	text-align: right;
+	text-decoration : none;
+}
+
+/*---------------------------------------------*/
+
+/* - ESTILO DEL TEXTO DE LAS PESTAÑAS DE LAS FICHAS - */
+
+A.pestanas {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	text-transform: uppercase;
+	color: #006300;
+	text-align : center;
+	text-decoration : none;
+}
+
+A.pestanas:visited {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	text-transform: uppercase;
+	color: #006300;
+	text-align : center;
+	text-decoration : none;
+}
+
+A.pestanas:link {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	text-transform: uppercase;
+	color: #006300;
+	text-align : center;
+	text-decoration : none;
+}
+A.pestanas:hover {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	text-transform: uppercase;
+	color: #006300;
+	text-align : center;
+	text-decoration : none;
+	cursor: hand;
+}
+
+A.pestanas:active {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	text-transform: uppercase;
+	color: #006300;
+	text-align : center;
+	text-decoration : none;
+	/*	background-image : url(../images/solapa1.gif);*/
+	cursor: hand;
+	/*font-weight:bold !important;*/
+}
+
+/* - FIN ESTILO DEL TEXTO DE LAS PESTAÑAS DE LAS FICHAS - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA LOS BOTONES DEL BUSCADOR, FORMULARIOS Y MENSAJES - */
+
+input.button.cmd{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #484848;
+	border-width : 1px;
+	border-style : solid;
+	text-align : center;
+	background :#F2F2F2;
+	border-color : #4A4A4A #4A4A4A #4A4A4A #4A4A4A;
+}
+
+
+
+/* - FIN ESTILO PARA LOS BOTONES DEL BUSCADOR, FORMULARIOS Y MENSAJES - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO DE LOS BOTONES DE LOS BUSCADORES DEL MODO DETALLE - */
+
+input.button.cmd_bsp{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #484848;
+	border-width : 1px;
+	border-style : solid;
+	text-align : center;
+	background :#F2F2F2;
+	border-color : #4A4A4A #4A4A4A #4A4A4A #4A4A4A;
+}
+
+/* - FIN ESTILO DE LOS BOTONES DE LOS BUSCADORES DEL MODO DETALLE - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO DE LA CABECERA DE LAS LISTAS (LISTAS LVW Y SORTABLES) - */
+
+TABLE.lvw {
+	background-color : F6F7F8;
+}
+
+TH.lvw {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	/*color : #181818;*/ 
+	color : #5B5B5B;
+	font-size : 8pt;
+	/*background : #A2A2A3;*/
+	background : #D3D3D3;
+	vertical-align : middle;
+	text-align : center;
+	/*height: 35px;*/
+	/*border-top: solid 1px #AAAB8B;
+	border-bottom: solid 1px #AAAB8B;*/
+	white-space : nowrap;
+}
+
+TD.lvw {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color :#000000;
+	/*color :#4A4A4A;*/
+	font-size : 7pt;
+	text-align : left;
+	/*background : #F6F7F8;*/
+	white-space : nowrap;
+}
+
+.lvwResaltado {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #4A4A4A;
+	background : #CECDCD;
+	font-size : 8pt;
+	text-align : right;
+	font-weight: bold;
+}
+
+TD.lvw_num {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #000000;
+	/*background : #F6F7F8;*/
+	font-size : 7pt;
+	text-align : right;
+	white-space : nowrap;
+}
+
+.lvw_num {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #4A4A4A;
+/*	background : #F7F6EC;*/
+	font-size : 8pt;
+	text-align : right;
+}
+
+.lvw_numResaltado {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #4A4A4A;
+	background : #CECDCD;
+	font-size : 8px;
+	text-align : right;
+	font-weight: bold;
+}
+
+
+table.sortable tr {
+	cursor: hand;
+	
+}
+
+table.sortable {
+	background-color:#515151;/*Este color nos da el color de borde de las celdas*/
+	
+}
+
+table.sortable a.sortheader {
+    /*color: #181818;*/
+	color : #5B5B5B;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+	/* background-color: #A2A2A3;*/
+	 background-color : #D3D3D3;
+	 text-transform: lowercase !important;
+	 
+}
+table.sortable span.sortarrow {
+    color: #181818;
+    text-decoration: none;
+	
+}
+
+#Layer1 {
+	background-color: #f6f7f8;
+}
+/* - FIN ESTILO DE LA CABECERA DE LAS LISTAS (LISTAS LVW Y SORTABLES) - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA LOS SCROLL - */
+
+/* SCROLL EN FICHAS  */
+.ficha {
+scrollbar-face-color: #8F888F;
+scrollbar-shadow-color: #FFFFFF;
+scrollbar-highlight-color: #CAC7CA;
+scrollbar-darkshadow-color: #B3B3B3;
+scrollbar-track-color: #E5E5E5;
+scrollbar-arrow-color: #333333;
+scrollbar-3dlight-color: #959196;
+}
+
+
+/* SCROLL EN PANEL IZQUIERDO  */
+/*#panelIzq {
+scrollbar-face-color: #8F888F;
+scrollbar-shadow-color: #FFFFFF;
+scrollbar-highlight-color: #CAC7CA;
+scrollbar-darkshadow-color: #B3B3B3;
+scrollbar-track-color: #E5E5E5;
+scrollbar-arrow-color: #333333;
+scrollbar-3dlight-color: #959196;
+border-color: #515151 !important;
+border-right-width: 2px !important;
+border-right-style: solid !important;
+background-color: #FFFFFF;
+}*/
+
+
+#panelIzq {
+scrollbar-face-color: #8F888F;
+scrollbar-shadow-color: #FFFFFF;
+scrollbar-highlight-color: #CAC7CA;
+scrollbar-darkshadow-color: #B3B3B3;
+scrollbar-track-color: #E5E5E5;
+scrollbar-arrow-color: #333333;
+scrollbar-3dlight-color: #959196;
+    background-color: #FFFFFF;
+    border-color: #515151 !important;
+    border-right-style: solid;
+    border-right-width: 2px !important;
+}
+
+
+/* SCROLL EN PANEL DERECHO  */
+#panelDer  { 
+scrollbar-face-color: #8F888F;
+scrollbar-shadow-color: #FFFFFF;
+scrollbar-highlight-color: #CAC7CA;
+scrollbar-darkshadow-color: #B3B3B3;
+scrollbar-track-color: #E5E5E5;
+scrollbar-arrow-color: #333333;
+scrollbar-3dlight-color: #959196;
+/*border-left-style: solid !important;*/
+overflow-x: hidden;
+    background-color: #FFFFFF;
+    /*border-color: #515151 !important;
+    border-left-style: solid;
+    border-left-width: 2px !important;*/
+}
+ 
+#formulario
+{
+background-color: #FFFFFF;
+
+} 
+ 
+ 
+/* - FIN ESTILO PARA LOS SCROLL - */
+
+/*---------------------------------------------*/
+
+
+/* - ESTILO PARA LOS MENÚS CONTEXTUALES EN LAS LISTAS LVW - */
+
+.skin0{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color: #515151;
+	position:absolute;
+	width:175px;
+	border:2px solid;
+	border-color: #515151;
+	background-color: #E7AD00;
+	font-size: 10px;
+	line-height:15px;
+	cursor:default;
+	visibility:hidden;
+}
+.menuitems{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* - FIN ESTILO PARA LOS MENÚS CONTEXTUALES EN LAS LISTAS LVW - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO DE LAS LISTAS DE LOS BUSCADORES - */
+
+th.cabecera {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #F6F7F3;
+	background: #AAAB8B;
+	text-align: left;
+}
+TR.lineabuscador {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color : #181818;
+	cursor:hand;
+}
+
+/* - FIN ESTILO DE LAS LISTAS DE LOS BUSCADORES - */
+
+/*---------------------------------------------*/
+
+
+/*---------------------------------------------*/
+
+/* - PARA LOS CONTROLES CALENDARIO - */
+
+/* -----------------------------------Estilos para el calendario----------------------------------------------*/
+.pelao{
+	font-weight: bold; 
+	color:#00FF00; 
+	border-style: solid; 
+	border-color:#0051A0; 
+	border-width: 1px;
+}
+td.cabe {
+	text-align:center;
+	font-weight:bold;
+	color:#0051A0;
+	background-color:#23A6DD;
+	font-size:10px; 
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+td.par {
+	text-align:center;
+	color:#0051A0;
+	background-color:#A7DBF1;
+	font-size:10px; 
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+td.impar {
+	text-align:center;
+	color:#0051A0;
+	background-color:#ffffff;
+	font-size:10px; 
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+Input.boton {
+	font-size:10px; 
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-color:#0051A0
+}
+A.cal {
+	font-size:10px; 
+	text-decoration:none;
+	color:#0051A0
+}
+/* - FIN PARA LOS CONTROLES CALENDARIO - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA LOS RADIO BUTTON Y LOS OPTION - */
+
+input.radio {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #4A4A4A;
+	font-size : 9px;
+	border-width : 0px;
+	border-style : solid;
+	border-color : #666666;
+	background : #FFFFFF;
+	
+}
+
+.option {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #4A4A4A;
+	font-size : 9px;
+	border-color : #666666 #666666 #666666 #666666;
+	border-width : 1px;
+	border-style: solid;
+	background : #FFFFFF;
+}
+
+/* - FIN ESTILO PARA LOS RADIO BUTTON Y LOS OPTION - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA LOS BOTONES DE MODOS DETALLE  - */
+input.button.cmd_det{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #484848;
+	border-width : 2px;
+	border-style : solid;
+	text-align : center;
+	background :#F2F2F2;
+	border-color : #4A4A4A #4A4A4A #4A4A4A #4A4A4A;
+
+}
+
+/* - FIN ESTILO PARA LOS BOTONES DE MODOS DETALLE  - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA LOS FORMULARIOS DINÁMICOS - */ 
+#formulario {
+	background-image: url(icoCajaMadrid/frm_raya.png);
+	background-repeat: repeat-y;
+}
+#tabla_frm {
+	padding: 5px;
+	border-right: 2px dotted #86BB58;
+	border-left: 2px dotted #86BB58;
+	border-bottom: 2px dotted #86BB58;
+	background-color: #F6F7F8;
+	/*background-image:url(ImagenesGotta/logo.png);*/
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+.titulo_frm {
+    background-color: transparent;
+    background-image: none;
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #2C500F;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    /*margin-left: 20%;*/
+    text-align: center;
+}
+	
+hr.linea_frm{
+	border-top: 2px solid #68AA2E;
+	border-right: 2px solid #68AA2E;
+	border-left: 2px solid #68AA2E;
+	border-bottom: 2px solid #68AA2E;
+	background-color: #F9FAFF;
+	width: 80%;
+}
+td.cabecera{
+	background-color:#F6F7F8;
+	border-right: 2px dotted #86BB58;
+	border-top: 2px dotted #86BB58;
+	border-left: 2px dotted #86BB58;	
+}
+/*td.icono{
+	background-image:url(ImagenesGotta/GottaN.png);
+	width: 50px ; 
+	height: 56px;
+}*/
+
+td.icono {
+    background-image: none;
+	background-color: transparent;
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+/* - FIN ESTILO PARA LOS FORMULARIOS DINÁMICOS - */ 
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA LOS TEXTOS DE ERROR DE LOS FORMULARIOS DINÁMICOS - */
+
+.txterror_frm {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #181818;
+	font-weight: bold;
+}
+
+/* - FIN ESTILO PARA LOS TEXTOS DE ERROR DE LOS FORMULARIOS DINÁMICOS - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA LOS MSN DE LOS FORMULARIOS DINÁMICOS - */
+
+/* ----------------------------Mensajes: acción MSG ------------------------------*/ 
+td.txtmsg {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #181818;
+}
+
+/* - FIN ESTILO PARA LOS MSN DE LOS FORMULARIOS DINÁMICOS - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA EL PANEL SUPERIOR (Complementa a propiedades de Dic Configuración)- */ 
+
+td.ml {
+	width: 30px;
+}
+
+/* - FIN ESTILO PARA EL PANEL SUPERIOR (Complementa a propiedades de Dic Configuración)- */ 
+
+/*---------------------------------------------*/
+
+/* - ESTILOS CONTENIDOS, TÍTULOS Y SUBTÍTULOS - */ 
+p {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #181818;
+	font-size : 14px;
+	font-weight : bold;
+	text-align : left;
+	/*text-decoration : blink;*/
+	text-decoration : none;
+}
+
+P.titulo {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #181818;
+	font-size : 14px;
+	font-weight : bold;
+	text-align : left;
+	text-decoration : blink;
+}
+
+.titulo {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	/*text-align: center; */
+	color: #4A4A4A;
+ 	font: bold;
+	text-align: center; 	
+	background-color: #CECDCD;
+	width: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+P.subtitulo{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : #181818;
+	font-weight : bold;
+	text-align: center;
+}
+
+.subtitulo{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : #181818;
+	font-weight : bold;
+	text-align: left;
+}
+
+/* - FIN ESTILOS CONTENIDOS, TÍTULOS Y SUBTÍTULOS - */ 
+
+/*---------------------------------------------*/
+
+/* - ESTILO DE TEXTO SIN VÍNCULO (color negro derecha) - */ 
+.lbl{
+    color: #000000;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    text-align: right;
+    text-decoration: none;
+}
+
+/* - FIN ESTILO DE TEXTO SIN VÍNCULO (color negro derecha) - */ 
+
+/*---------------------------------------------*/
+
+/* - ESTILOS PARA LAS LISTAS - */
+UL {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 8px;
+	color: red/*#9AA1A5*/;
+	list-style-type : disc;
+	padding-left : 25px;
+	margin-left : 10px;
+	margin-top : 0px;
+	margin-bottom : 0px;
+	text-align : justify;
+}
+
+OL {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color: #9AA1A5;
+	padding-left : 25px;
+	margin-left : 10px;
+	margin-top : 0px;
+	margin-bottom : 0px;
+	text-align : justify;
+}
+
+LI {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color: #9AA1A5;
+}
+
+/* - FIN ESTILO PARA LAS LISTAS - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA LOS TEXAREA - */
+
+textarea {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	background : #FFFFFF;
+	color : #000000;
+	border-color: #A4A4A4;
+	border-width : 1px;
+	border-style : solid;
+	scrollbar-face-color: #8F888F;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #CAC7CA;
+	scrollbar-darkshadow-color: #B3B3B3;
+	scrollbar-track-color: #E5E5E5;
+	scrollbar-arrow-color: #333333;
+	scrollbar-3dlight-color: #959196;
+}
+
+textarea.txt {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #000000;
+	border-width : 1px;
+	border-style : solid;
+	text-align : left;
+	border-color :#A4A4A4;
+	background : #FFFFE5  !important;
+}
+	
+
+/* - FIN ESTILO PARA LOS TEXAREA - */
+
+/*---------------------------------------------*/
+
+/* - PANEL SUPERIOR - */
+
+#panelSup {
+	background-image: url("icoCajaMadrid/CM_peque.gif");
+	background-repeat: no-repeat;
+    padding-left: 40px;
+}
+TD.psinicio {
+	background-image:url("ico/ps_inicio.png");
+	background-repeat: repeat;
+	width:10px;
+	/*width:20px;*/
+}
+TD.psmedio {
+	background-image:url("ico/ps_medio.png");
+	background-repeat: repeat;
+}
+TD.psfin {
+	background-image:url("ico/ps_fin.png");
+	background-repeat: repeat;
+	width:10px;
+}
+.pstitulo {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #FFFFFF;
+	font-size : 14px;
+	font-weight : bold;
+}
+
+/* - FIN PANEL SUPERIOR - */
+
+/*---------------------------------------------*/
+
+/* - ESTILO PARA PÁGINAS PROCESANDO, ESPERE… (también hay propiedades en panelOculto.jsp) - */
+
+.procesando {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 18px;
+	color : #4A4A4A;
+	}
+
+.espere {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	text-justify: distribute;
+	color : #4A4A4A;
+	}
+
+/* - FIN ESTILO PARA PÁGINAS PROCESANDO, ESPERE… (también hay propiedades en panelOculto.jsp) - */
+
+
+
+input.cmd, input.cmd_det {
+   /* background: url("ico/fondo_boton.gif") repeat-x scroll left top #E2E5EA;*/
+    border-color:  #C5C5C5 #C5C5C5 #68A82D #B8B8B8  !important;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-width: 2px !important;
+    cursor: pointer;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 0.6em !important;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-left: 0.5em;
+    overflow: visible;
+    padding: 0 0.3636em 0em 0.45em;
+    width: auto !important;
+	font-size-adjust:none;
+	background-color: #ffffff !important;
+}
+
+input.cmd_bsp {
+   /* background: url("ico/fondo_boton.gif") repeat-x scroll left top #E2E5EA;*/
+    border-color:  #C5C5C5 #C5C5C5 #68A82D #B8B8B8  !important;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-width: 2px !important;
+    cursor: pointer;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 0.6em !important;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-left: 0.5em;
+    overflow: visible;
+    padding: 0;
+    width: auto !important;
+	font-size-adjust:none;
+	background-color: #ffffff !important;
+    height: 17px !important;	
+}
+
+
+input.cmd, input.cmd_det {
+    height: 23px !important;
+	color: #484848;
+}
+
+
+a#buscar
+{
+    color: #484848;
+    text-decoration: none !important;
+    border-color:  #C5C5C5 #C5C5C5 #68A82D #B8B8B8  !important;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-width: 2px !important;
+    cursor: pointer;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 0.9em !important;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    /*margin-left: 0.5em;*/
+    overflow: visible;
+    /*padding: 0 0.3636em 0.0909em 0.45em;*/
+	/*padding: 2px 4px 3px;*/
+    width: auto !important;
+	font-size-adjust:none;
+	font-size:10px;
+	background-color: #ffffff !important;
+	position: absolute;
+	height: 23px !important;
+    vertical-align: bottom;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;	
+	
+}
+
+
+/*Merry: oculta las descripciones de estos bsp de Facturas para que no se muestren en la aplicación*/
+#des_p_exp,
+#des_p_cen,
+#des_p_con,
+#des_p_sub,
+#des_p_cta
+{
+      display: none;
+}
+/*Fin Merry: oculta las descripciones de estos bsp de Facturas para que no se muestren en la aplicación*/
+
+
+input 
+{
+	border: 1px solid #8f8f8f !important;	
+	background-color: #FFFFE5 !important;
+	/*height: 23px;*/
+	/*border: 1px outset #5B5B5B !important;	*/
+/*	width:100%;*/
+}
+
+input.text 
+{
+	border: 1px solid #8f8f8f !important;
+	/*border: 1px outset #5B5B5B !important;	*/
+/*	width:auto;*/
+}
+
+
+/* - ESTILO DE CAMPOS DE TEXTO Y TEXAREAS - */
+
+input.txt {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #000000;
+	border-width : 1px;
+	border-style : solid;
+	text-align : left;
+	border-color :#A4A4A4;
+	background : #FFFFE5  !important;
+}
+
+
+/*Estilo de campos bloqueados en los formularios dinámicos, txt de sólo lectura*/
+
+input.txt_sl {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #000000;
+	border-width : 1px;
+	border-style : solid;
+	text-align : left;
+	border-color :#A4A4A4;
+	background : #FFFFFF !important;
+}
+
+/* - FIN ESTILO DE CAMPOS DE TEXTO Y TEXAREAS - */
+
+
+/*Merry: estilo por defecto para los enlaces*/
+a {
+	font-size: 10px;
+}
+/*Fin Merry: estilo por defecto para los enlaces*/
+
+/*Sandra: Ancho específicos en campos de formularios*/
+#asstterrissccoppunnttoDAT_CUENTASBANCARIASppunnttoNUMCUENTA{
+	width : 75px; /*10 caracteres*/
+}
+#asstterrissccoppunnttoDAT_CUENTASBANCARIAS2ppunnttoNUMCUENTA{
+	width : 75px; /*10 caracteres*/
+}
+#asstterrissccoppunnttoDAT_INTERVINIENTESppunnttoCD_DOCFISCAL{
+	width : 75px; /*10 caracteres*/
+}
+#CD_DOCFISCAL{
+	width : 75px; /*10 caracteres*/
+}
+#c{
+	width : 89px; /*12 caracteres*/
+}
+#CD_CONEXION{
+	width : 89px; /*12 caracteres*/
+}
+#COD_PAGO{
+	width : 68px; /*9 caracteres*/
+}
+#g{
+	width : 68px; /*9 caracteres*/
+}
+
+/*Fin Sandra: Ancho específicos  en campos de formularios*/

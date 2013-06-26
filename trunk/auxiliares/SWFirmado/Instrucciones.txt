@@ -1,0 +1,26 @@
+Hay un ejemplo más o menos autónomo en la rama SVN "https://svn.burke.net/svn/svnProductos/Gotta.Java/auxiliares/ejemplo Servicios Web"
+
+La estructura del .jar que funciona:
+
+
+WebContent
+	WEB-INF
+		lib
+sw
+	TestSWFirmado.class
+	SWFirmado.class
+	MyCallBack.class
+META-INF
+	MANIFEST.MF
+axis2
+	modules
+	axis2.xml
+scsp-keystore.jks
+rampart.properties
+PWCBHandler.class
+log4j.properties
+imortar.cmd
+
+
+MUY IMPORTANTE:
+Cuando de error de handshake, hay que tocar también el almacén de certificados de Java (java/jre/lib/security/cacerts) y añadir, al menos, el de la url de destino

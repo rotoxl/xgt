@@ -1,0 +1,24 @@
+<project name="Deployer" default="compile" basedir=".">
+
+  <!-- Executable Targets -->
+
+  <target name="compile" description="Compile web application">
+    <mkdir dir="${basedir}/build/classes"/>
+
+    <javac destdir="${basedir}/build/classes"
+           optimize="off"
+           debug="on"
+           failonerror="true"
+           srcdir="${basedir}/src"
+           encoding="UTF-8"
+	   excludes="**/*.smap">
+      <classpath>
+        <fileset dir="${basedir}/WebContent/WEB-INF/lib">
+          <include name="*.jar"/>
+        </fileset>
+      </classpath>
+      <include name="**" />
+      <exclude name="tags/**" />
+    </javac>
+  </target>
+</project>
